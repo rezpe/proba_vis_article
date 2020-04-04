@@ -1,0 +1,82 @@
+\documentclass[a4paper,3p,sort&compress]{elsarticle}
+
+\usepackage[draft]{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage[draft,inline,nomargin]{fixme}
+\usepackage{makecell}
+\usepackage{lineno}
+\usepackage{natbib}
+\usepackage{amsmath}
+\DeclareRobustCommand{\citeext}[1]{\citeauthor{#1}~\cite{#1}}
+
+\journal{-}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\linenumbers
+
+% Macro para escribir NO$_2$
+\newcommand{\no}{NO\textsubscript{2}\xspace}
+
+\begin{frontmatter}
+
+  \title{Superior uncertainty visualization for Time Series}
+
+
+  \author{Sebasti\'an P\'erez Vasseur}
+  \author{Jos\'e L. Aznarte}
+  \address{Artificial Intelligence Department\\Universidad Nacional de
+    Educaci\'on a Distancia --- UNED\\c/ Juan del Rosal, 16, Madrid, Spain}
+  \ead{jlaznarte@dia.uned.es}
+  
+
+\begin{abstract}
+  
+\end{abstract}
+
+\begin{keyword}
+probabilistic forecasting \sep visualization \sep dotplot
+\end{keyword}
+
+\end{frontmatter}
+
+%\linenumbers
+
+\section{Introduction}
+\label{sec:intro}
+As noted by Fernandez et Al., Uncertainty improves decision making. Indeed, most of the times, only point information without uncertainty is shown and this creates a false sense of deterministic result that can lead to false confidence in the decision. 
+Uncertainty is then needed and we need tools tomconvey that information.
+The first approach is to complement the point information with uncertainty. The first example that.comes to our mind is the error bars in the bar chart (get ref)
+However, Kai et Al. shows that the information has to be intrinsic to the visualization and offer better alternatives. Uncertainty can be modelled through the PDF function that provides the probability of ranges of values through the area under the function. From the PDF, we can build other visualizations like the stripplot, the box plot. CDF could be used too, but as Fernandez et Al. states, the lack of statistical knowledge of some users deter from using it. 
+Also Kai et Al. notes that it's better to use discrete outcomes to.communicate probabilities. The reason for this is that people prefer to think in terms of natural frecuencies (2/10) instead of probabilities (.2). Therefore we have seen several papers that have obtained better results using quantile dotplots to communicate the uncertainty. 
+Quantile dotplots are built from the PDF as we can see in figure ... There instead of using area to calculate the probability, we count the number of dots in the desired range.
+
+Time series Data can also have uncertainty and they have usually been graphed in 3 main ways: gradient, interval and EPS.
+Gradient uses color to communicate the percentile, however as noted by (get ref) color is a bad visual encoding to show value as users have problems to see the value it is encoded.
+Interval only shows the low and bottom quantile (usually 5\% and 95\%) and lacks information that the user would have to imagine. For symwtrical pdf, it can be useful, but non symwtrical are not shown.
+Finally, EPS diagrams show the range and some quantile as a box plot would do.
+
+All those visualizations have a problem, they either encode with a bad encoding the values or have missing information quantiles. 
+Many times the objective is to calculate the probability that the value will be in a certain range for a certain hour.
+We propose a novel visualization technique to show the Data, that is as well discrete. We will call it Time series dotplots . I'm time series dotplots, we build a stripplot for each hour, but then we use a dot instead of a bar. This way we can count the probability of a range, simply by counting the number of dots in that range at that hour.
+
+\section{Time Series}
+\label{sec:time_series}
+
+\section{Results}
+\label{sec:results}
+
+\section{Conclusions}
+\label{sec:concl}
+
+\bibliography{refs}
+
+\end{document} 
+
