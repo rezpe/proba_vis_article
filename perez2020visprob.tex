@@ -82,10 +82,15 @@ We propose a novel visualization technique to show the Data, that is as well dis
 
 Air quality has become a concern in recent years and lately pollution peaks have forced local authorities to take measures like cutting traffic or blocking certain city areas. Those measures are purely reactive and therefore a forecast of pollution might be preferrable as proactive measures could be taken and prevent the pollution peak before it happens.
 
+Several stations in Madrid record the levels of NO in different parts of the city. We use a probabilistic
+machine learning model to predict the levels of No in one of the stations. Instead of providing a point estimate, it provides a probability distribution at each of the prediction horizons. We represent the predictions. in a chart. This chart will be used by the authorities whenever a decision must be reached regarding the levels of pollution and preventive actions to be taken.
+
 \section{Experimental Design}
 \label{sec:exp_design}
 
-    We request the participation of volunteers through the Amazon Mechanical Turk website. As seen in cite, we selected Masters level participant. This website allows for the recruitment of volunteers, who will perform a task in exchange for a small fee (few euros). The assigned task is a test where we measure how well can the participants read the charts.
+We would like to compare 4 different types of charts that display probabilistic forecast. For this, we will test the charts with a randomized set of users.
+
+    We will request the participation of volunteers through the Amazon Mechanical Turk website. As seen in cite, we selected Masters level participant. This website allows for the recruitment of volunteers, who will perform a task in exchange for a small fee (few euros). The assigned task is a test where we measure how well can the participants read the charts.
 
 For each type of chart, we designed a test. Each test has a presentation part where the different steps to read the chart are presented and a questions part with 5 questions whose answer require reading the chart. The questions are related to finding the probability of the No levels being inside an interval. We also measure the time it took the participant to answer each question. We are also asking at the end of the survey how difficult was reading the chart and answering the questions and how confident are they with their answers.
 
