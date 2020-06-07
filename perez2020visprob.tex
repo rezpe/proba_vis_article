@@ -66,17 +66,16 @@ Also Kai et Al. investigation noted that users prefer to think in terms of natur
 
 Quantile dotplots are built from the PDF as we can see in figure .. Then instead of using area to calculate the probability, we count the number of dots in the desired range.
 
-\section{Time Series}
+\section{Time Series probabilistic charts}
 \label{sec:time_series}
 
-Time series data can also have uncertainty and they have usually been graphed in 3 main ways: gradient, interval and EPS.
-Gradient uses color to communicate the percentile, however as noted by (get ref) color is a bad visual encoding to show value as users have problems to see the value it is encoded.
+Time series data could also have uncertainty and they have usually been represented in 3 main types of charts: gradient, interval and box plot. Gradient time series charts uses color to represent the percentiles, however as noted by (get ref) color is a bad visual encoding to show value as users have problems to see the value it is encoded.
 Interval only shows the low and bottom quantile (usually 5\% and 95\%) and lacks information that the user would have to imagine. For symwtrical pdf, it can be useful, but non symwtrical are not shown.
 Finally, EPS diagrams show the range and some quantile as a box plot would do.
 
 All those visualizations have a problem, they either encode with a bad encoding the values or have missing information quantiles. 
 Many times the objective is to calculate the probability that the value will be in a certain range for a certain hour.
-We propose a novel visualization technique to show the Data, that is as well discrete. We will call it Time series dotplots . I'm time series dotplots, we build a stripplot for each hour, but then we use a dot instead of a bar. This way we can count the probability of a range, simply by counting the number of dots in that range at that hour.
+We propose a novel visualization technique to show the Data, that is as well discrete. We will call it time series dot plot. I'm time series dotplots, we build a stripplot for each hour, but then we use a dot instead of a bar. This way we can count the probability of a range, simply by counting the number of dots in that range at that hour.
 
 \subsection{Application: No levels forecast in Madrid}
 
@@ -88,13 +87,11 @@ machine learning model to predict the levels of No in one of the stations. Inste
 \section{Experimental Design}
 \label{sec:exp_design}
 
-We would like to compare 4 different types of charts that display probabilistic forecast. For this, we will test the charts with a randomized set of users.
+We would like to compare 4 different types of charts displaying a probabilistic time series forecast. For this, we will evaluate how well the charts can help answering a probability question regarding the NO levels. We will request the participation of users through the Amazon Mechanical Turk website. Those users will perform a small task in exchange for a small fee (few dollars). The assigned task is a test where we measure how well can the participants read the charts. As seen in cite, we are selecting Masters Level Participants.
 
-    We will request the participation of volunteers through the Amazon Mechanical Turk website. As seen in cite, we selected Masters level participant. This website allows for the recruitment of volunteers, who will perform a task in exchange for a small fee (few euros). The assigned task is a test where we measure how well can the participants read the charts.
+For each type of chart, we designed a test. Each test has a presentation part where we explain how the charts works and how it can be read and a questions part with 5 probability questions. Figure _ shows the presentation part of the time series dot chart. The questions require reading the chart to estimate the probability of the NO levels inside a certain interval. We will measure for each question the error in the estimation and the time it took to answer. Inspired by the work of /cite, we are also asking at the end of the survey how difficult was reading the chart and answering the questions and how confident are they with their answers. Brenner et al. called this the load and confidence of each chart.
 
-For each type of chart, we designed a test. Each test has a presentation part where the different steps to read the chart are presented and a questions part with 5 questions whose answer require reading the chart. The questions are related to finding the probability of the No levels being inside an interval. We also measure the time it took the participant to answer each question. We are also asking at the end of the survey how difficult was reading the chart and answering the questions and how confident are they with their answers.
-
-Regarding the metrics, besides time to answer and accuracy of the answer, we will be measuring confidence in the answer and cognitive load. Indeed, Brenner et al. suggested using it to evaluate uncertainty charts as they bring a measure of the difficulty of the task and effort to complete the task.
+Figure shows the layout of one of the questions for the time series dot chart
 
 \section{Results}
 \label{sec:results}
