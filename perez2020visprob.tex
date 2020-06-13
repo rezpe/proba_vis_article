@@ -77,6 +77,15 @@ All those visualizations have a problem, they either encode with a bad encoding 
 Many times the objective is to calculate the probability that the value will be in a certain range for a certain hour.
 We propose a novel visualization technique to show the Data, that is as well discrete. We will call it time series dot plot. I'm time series dotplots, we build a stripplot for each hour, but then we use a dot instead of a bar. This way we can count the probability of a range, simply by counting the number of dots in that range at that hour.
 
+\begin{figure}
+  \centering
+  \multicolumn{2}[c}{\includegraphics[width=0.6\textwidth]{gradient} \includegraphics[width=0.6\textwidth]{boxplot}}
+  \multicolumn{2}[c}{\includegraphics[width=0.6\textwidth]{ci} \includegraphics[width=0.6\textwidth]{dot}}
+  \caption{\label{figure:charts} Probabilistic Time Series Chart. 
+  Top Left: Gradient Chart. Top Right: Box Plot. 
+  Bottom Left: Confidence Interval. Bottom Right: Dot Chart.  }
+\end{figure}
+
 \subsection{Application: No levels forecast in Madrid}
 
 Air quality has become a concern in recent years and lately pollution peaks have forced local authorities to take measures like cutting traffic or blocking certain city areas. Those measures are purely reactive and therefore a forecast of pollution might be preferrable as proactive measures could be taken and prevent the pollution peak before it happens.
@@ -96,11 +105,31 @@ Figure shows the layout of one of the questions for the time series dot chart
 \section{Results}
 \label{sec:results}
 
-Figure X shows the histogram of errors for each type of chart. As we can see, the time series dot chart is clearly superior to the other charts as most of the errors are around the zero value. We will use the rank order statistic to order the performance of each type of visualization. Figure X shows the rank.
+Figure \ref{figure:errors} shows the histogram of errors for each type of chart. As we can see, the time series dot chart is clearly superior to the other charts as most of the errors are around the zero value. We will use the rank order statistic to order the performance of each type of visualization. Figure X shows the rank. We did not see an improvement in the error rate as users were answering questions.
 
-Confidence and load also prove the superior performance of the time series dot chart. Figure X shows how the dot chart reports higher levels of confidence and lower levels of load of difficulty.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{probability_errors}
+  \caption{\label{figure:errors}Distribution of absolute error for all questions per type of chart.}
+\end{figure}
 
-We also see the lack of statistical knowledge from standard users as some users were reporting probabilities above 1, showing they do not understand the basic theory of statistics. 
+We also see in figure \ref{figure:duration} that for every chart, the time it takes to read and answer the question decreases for every question answered. We also did not see noticeable difference between the charts. However, the difficulty of reading the chart might impact this number for a higher number of questions.
+
+\begin{figure}
+  \centering
+   \includegraphics[width=0.6\textwidth]{gradient}
+  \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
+\end{figure}
+
+Confidence and load also prove the superior performance of the time series dot chart. Figure \ref{figure:confi_load} shows how the dot chart reports higher levels of confidence and lower levels of load of difficulty.
+
+\begin{figure}
+  \centering
+   \multicolumn{2}[c}{\includegraphics[width=0.6\textwidth]{confidence} \includegraphics[width=0.6\textwidth]{load}}
+  \caption{\label{figure:confi_load}Confidence (left) and Difficulty (right) in reading and answering the questions for each chart}
+\end{figure}
+
+We also see a lack of statistical knowledge from standard users as some users were reporting probabilities above 1, showing they do not understand the basic theory of statistics. We reported 9 users from 80 whose answers could not be used as their answers could not be applicable (probability higher than 100 o text).
 
 \section{Conclusions}
 \label{sec:concl}
