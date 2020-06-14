@@ -108,16 +108,25 @@ Figure \ref{figure:charts} shows a summary of the main types of probabilistic ti
 Air quality has become a concern in recent years and lately pollution peaks have forced local authorities to take measures like cutting traffic or blocking certain city areas. Those measures are purely reactive and therefore a forecast of pollution might be preferrable as proactive measures could be taken and prevent the pollution peak before it happens.
 
 Several stations in Madrid record the levels of NO in different parts of the city. We use a probabilistic
-machine learning model to predict the levels of No in one of the stations. Instead of providing a point estimate, it provides a probability distribution at each of the prediction horizons. We represent the predictions. in a chart. This chart will be used by the authorities whenever a decision must be reached regarding the levels of pollution and preventive actions to be taken.
+machine learning model to predict the levels of No in one of the stations. Instead of providing a point estimate, it provides a 
+probability distribution at each of the prediction horizons. We represent the predictions. in a chart. This chart will be used by the
+authorities whenever a decision must be reached regarding the levels of pollution and preventive actions to be taken.
 
 \section{Experimental Design}
 \label{sec:exp_design}
 
-We would like to compare 4 different types of charts displaying a probabilistic time series forecast. For this, we will evaluate how well the charts can help answering a probability question regarding the NO levels. We will request the participation of users through the Amazon Mechanical Turk website. Those users will perform a small task in exchange for a small fee (few dollars). The assigned task is a test where we measure how well can the participants read the charts. As seen in cite, we are selecting Masters Level Participants.
+We would like to compare the readability of the four main types of probabilistic time series charts displayed in figure 
+\ref{figure:charts}. We will evaluate how well the charts can help answering a probability question regarding the NO levels.
 
-For each type of chart, we designed a test. Each test has a presentation part where we explain how the charts works and how it can be read and a questions part with 5 probability questions. Figure X shows the presentation part of the time series dot chart. The questions require reading the chart to estimate the probability of the NO levels inside a certain interval. We will measure for each question the error in the estimation and the time it took to answer. Inspired by the work of /cite, we are also asking at the end of the survey how difficult was reading the chart and answering the questions and how confident are they with their answers. Brenner et al. called this the load and confidence of each chart.
+For this, we will request the participation of users through the Amazon Mechanical Turk website. Those users will perform a small task
+in exchange for a small fee (few dollars): the assigned task is a test where we measure how well can the participants read the charts.
+As suggested by Brenner et al., we will be selecting Masters Level Participants.
 
-Figure shows the layout of one of the questions for the time series dot chart
+For each type of chart, we designed a test with a presentation part where we explain how the charts can be read and a questions part
+with 5 probability questions. As an example, we show in figure X the presentation part of the time series dot chart. The questions
+require reading the chart to estimate the probability of the NO levels inside a certain range. We will then measure for each question
+the error in the estimation and the time it took to answer. Inspired by the work of Brenner et al., we are also asking at the end of 
+the survey how difficult was reading the chart and answering the questions and how confident are they with their answers. 
 
 \section{Results}
 \label{sec:results}
