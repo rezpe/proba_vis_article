@@ -54,28 +54,43 @@ probabilistic forecasting \sep visualization \sep dotplot
 
 Hothorn \emph{et al.} stated that the real
 objective in a machine learning regression analysis is to find the full conditional distribution
-of the target variable. Currently, many machine learning models today only provide a point distribution, which is usually the predicted
-mean of the target variable. Then the users of the model must take a decision based on the value predicted. However, only point information without uncertainty creates a false sense of deterministic result that can lead to false confidence in the decision. That's why as noted by Fernandez et Al., uncertainty improves decision making. However, users rely on visual tools and the typical visualization tools are not suited for probabilistic information, those visual tools are adapted to deterministic information.
+of the target variable. Currently, many machine learning models today only provide a point distribution, 
+which is usually the predicted
+mean of the target variable. Then the users of the model must take a decision based on the value predicted. 
+However, only point information without uncertainty creates a false sense of deterministic result that can lead 
+to false confidence in the decision. That's why as noted by Fernandez et Al., uncertainty improves decision making. 
+However, the typical visualization tools that users rely on are not suited for probabilistic information, 
+as they are designed for deterministic information. This also adds an additional difficulty for this charts. Users do not read
+a single value but have to determine the probability of the target value within a certain range.
 
-There have been several workarounds around such issue. The first approach is to complement the point information with uncertainty. The first example that comes to our mind is the error bars in the bar chart. However, Kai et Al. showed that the information has to be intrinsic to the visualization and offered better alternatives. 
+If we focus on categorical data, the standard visualization is the bar chart. This visualization uses a rectangle as marker and 
+encodes the category as the x-axis and the target value as the y-axis (or vice versa). If we wish to add probabilistic information 
+to the chart, we could add error bars to the already present bars. However as noted by Kai et Al. 
+the information has to be intrinsic to the visualization. Therefore we need a different way to display the uncertainty in the target.
 
-The PDF function provides a full picture of the probability. Same goes for the CDF function. However, as Fernandez et Al. states, the lack of statistical knowledge of some users deter from using those functions.  
-Users can rely on less data to understand the uncertainty: Stripplots provide deciles of the target variable and the box plot provides the mean and the quantiles. This is the reason why they are more used than the pdf or cdf functions.
-
-Also Kai et Al. investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead of probabilities (.2), and therefore it's better to use discrete outcomes to communicate probabilities. cite1 cite2 used a novel visualization chart called quantile dotplot and they obtained better interpretation results using this chart to communicate uncertainty.
-
-Quantile dotplots are built from the PDF as we can see in figure .. Then instead of using area to calculate the probability, we count the number of dots in the desired range.
+Several approaches exist already. The most straightforward solution is the violin plot which displays the probability density function for each category. As Fernandez et Al. states, users do not tend to have enough statistical knowledge to interpret this type of chart making it difficult to extract information. The other solution is the box plot, introduced by Tukey et al. in 1977. This type of chart uses a rectangle which top and bottom parts show the 1st and 3rd quantile of the target value for each category and a line to show the 2nd quantile. This chart is much simpler to read and has been showcased as the main solution to show uncertainty or probability distribution. The boxen plot brings additional rectangle per category that enable to show more percentiles than the box plot.
 
 \section{Time Series probabilistic charts}
 \label{sec:time_series}
 
-Time series data could also have uncertainty and they have usually been represented in 3 main types of charts: gradient, interval and box plot. Gradient time series charts uses color to represent the percentiles, however as noted by (get ref) color is a bad visual encoding to show value as users have problems to see the value it is encoded.
-Interval only shows the low and bottom quantile (usually 5\% and 95\%) and lacks information that the user would have to imagine. For symwtrical pdf, it can be useful, but non symwtrical are not shown.
-Finally, EPS diagrams show the range and some quantile as a box plot would do.
+Time series data representation could be a subset of categorical data visualization where the categories are the ordered time slots. Therefore, we could apply the solutions seen above to represent probabilistic time series data. Usually the number of time categories
+is high and we have to deal with limited space per category. Therefore, this constraint rules out the violin plot. However, the use of boxen plots for time series has been showcased specially for EPS diagrams, very used for meteorological data.
 
-All those visualizations have a problem, they either encode with a bad encoding the values or have missing information quantiles. 
-Many times the objective is to calculate the probability that the value will be in a certain range for a certain hour.
-We propose a novel visualization technique to show the Data, that is as well discrete. We will call it time series dot plot. I'm time series dotplots, we build a stripplot for each hour, but then we use a dot instead of a bar. This way we can count the probability of a range, simply by counting the number of dots in that range at that hour.
+However, time series data have usually been represented with a dedicated type of chart: line charts, where the marker is a 
+line where the x-axis represent time and the y-axis represents the target value. Also, we could use error bars to represent uncertainty,
+but other intrinsic solutions are being used. The first one is to represent the confidence interval, where instead of a single line, we 
+will draw 3 lines: the first one for the 5\% percentile, the second one for the mean and the third one for the 95\% percentile. 
+Another solution is the gradient chart where colour areas represent each of the deciles of the probabilistic time series.
+
+However Kai et Al. investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead 
+of probabilities (.2), and therefore it's better to use discrete outcomes to communicate probabilities. All the charts above 
+represent probabilities or percentile and a discrete solution would improve readability and understanding of the charts: We
+propose therefore a novel visualization technique to show time series data: time series dot plot. 
+
+This chart would draw a dot for each of the deciles of the target variable. This simplifies the readability of the chart as
+users just need to count the number of dots to estimate approximately the natural frequencies.
+
+Figure \ref{figure:charts} shows a summary of the main types of probabilistic time series charts.
 
 \begin{figure}
   \centering
