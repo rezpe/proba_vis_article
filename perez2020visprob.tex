@@ -27,7 +27,7 @@
 
 \begin{frontmatter}
 
-  \title{Dicrete uncertainty visualization for no levels time series forecast}
+  \title{Pollution Forecast: Introducing a novel visualization technique for time series uncertainty visualization}
 
 
   \author{Sebasti\'an P\'erez Vasseur}
@@ -120,18 +120,30 @@ We would like to compare the readability of the four main types of probabilistic
 
 For this, we will request the participation of users through the Amazon Mechanical Turk website. Those users will perform a small task
 in exchange for a small fee (few dollars): the assigned task is a test where we measure how well can the participants read the charts.
-As suggested by Brenner et al., we will be selecting Masters Level Participants.
+As suggested by Brenner et al., we will be selecting Masters Level Participants. We will be testing 20 users per type of chart 
+and as each is answering 5 questions, we will have 100 answers per type of chart.
 
 For each type of chart, we designed a test with a presentation part where we explain how the charts can be read and a questions part
-with 5 probability questions. As an example, we show in figure X the presentation part of the time series dot chart. The questions
+with 5 probability questions. As an example, we show in figure \ref{figure:explanation} the presentation part of the time series 
+dot chart. The questions
 require reading the chart to estimate the probability of the NO levels inside a certain range. We will then measure for each question
 the error in the estimation and the time it took to answer. Inspired by the work of Brenner et al., we are also asking at the end of 
-the survey how difficult was reading the chart and answering the questions and how confident are they with their answers. 
+the survey how difficult was reading the chart and how confident are they with their answers. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{dot_explanation}
+  \caption{\label{figure:explanation} Image explaining how the chart is read.  }
+\end{figure}
 
 \section{Results}
 \label{sec:results}
 
-Figure \ref{figure:errors} shows the histogram of errors for each type of chart. As we can see, the time series dot chart is clearly superior to the other charts as most of the errors are around the zero value. We will use the rank order statistic to order the performance of each type of visualization. Figure X shows the rank. We did not see an improvement in the error rate as users were answering questions.
+Figure \ref{figure:errors} shows the histogram of the absolute value of the probability errors in percentage. 
+Although the majority 
+of users report errors on the 0-20\% section, the dot chart almost has no errors outside of this band. 
+Also, we did not see an improvement in 
+the error rate as users were answering questions, therefore we combined all errors together.
 
 \begin{figure}
   \centering
@@ -139,7 +151,11 @@ Figure \ref{figure:errors} shows the histogram of errors for each type of chart.
   \caption{\label{figure:errors}Distribution of absolute error for all questions per type of chart.}
 \end{figure}
 
-We also see in figure \ref{figure:duration} that for every chart, the time it takes to read and answer the question decreases for every question answered. We also did not see noticeable difference between the charts. However, the difficulty of reading the chart might impact this number for a higher number of questions.
+However, users seem to reflect their learning in the time it takes to read 
+and answer the question. we see in figure \ref{figure:duration} that for every chart, the time it takes 
+to read and answer the question decreases for every question answered. We also did not see 
+noticeable difference between the type of charts. However, the difficulty of reading the chart might impact 
+this number for a higher number of questions.
 
 \begin{figure}
   \centering
@@ -147,7 +163,9 @@ We also see in figure \ref{figure:duration} that for every chart, the time it ta
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Confidence and load also prove the superior performance of the time series dot chart. Figure \ref{figure:confi_load} shows how the dot chart reports higher levels of confidence and lower levels of load of difficulty.
+Confidence and load also prove the superior performance of the time series dot chart. 
+Figure \ref{figure:confi_load} shows how the dot chart reports higher levels of confidence and 
+lower levels of load of difficulty.
 
 \begin{figure}
   \centering
@@ -155,7 +173,10 @@ Confidence and load also prove the superior performance of the time series dot c
   \caption{\label{figure:confi_load} Difficulty (left) and Confidence (right) in reading and answering the questions for each chart}
 \end{figure}
 
-We also see a lack of statistical knowledge from standard users as some users were reporting probabilities above 1, showing they do not understand the basic theory of statistics. We reported 9 users from 80 whose answers could not be used as their answers could not be applicable (probability higher than 100 o text).
+We also see a lack of statistical knowledge from standard users as some users were reporting 
+probabilities above 1, showing they do not understand the basic theory of statistics. 
+We reported 9 users from 80 whose answers could not be used as their answers could not be 
+applicable (probability higher than 1 or text).
 
 \section{Conclusions}
 \label{sec:concl}
