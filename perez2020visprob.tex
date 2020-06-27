@@ -52,20 +52,21 @@ probabilistic forecasting \sep visualization \sep dotplot
 \section{Introduction}
 \label{sec:intro}
 
-Hothorn \emph{et al.} stated that the real
+Hothorn \emph{et al.} \cite{hothorn_conditional_2014} stated that the real
 objective in a machine learning regression analysis is to find the full conditional distribution
 of the target variable. Currently, many machine learning models today only provide a point distribution, 
 which is usually the predicted
 mean of the target variable. Then the users of the model must take a decision based on the value predicted. 
 However, only point information without uncertainty creates a false sense of deterministic result that can lead 
-to false confidence in the decision. That's why as noted by Fernandez et Al., uncertainty improves decision making. 
+to false confidence in the decision. That's why as noted by Fernandes et Al. \cite{fernandes_uncertainty_2018}, 
+uncertainty improves decision making. 
 However, the typical visualization tools that users rely on are not suited for probabilistic information, 
 as they are designed for deterministic information. This also adds an additional difficulty for this charts. Users do not read
 a single value but have to determine the probability of the target value within a certain range.
 
 If we focus on categorical data, the standard visualization is the bar chart. This visualization uses a rectangle as marker and 
 encodes the category as the x-axis and the target value as the y-axis (or vice versa). If we wish to add probabilistic information 
-to the chart, we could add error bars to the already present bars. However as noted by Kai et Al. 
+to the chart, we could add error bars to the already present bars. However as noted by Kay et Al. \cite{kay_when_2016}
 the information has to be intrinsic to the visualization. Therefore we need a different way to display the uncertainty in the target.
 
 Several approaches exist already. The most straightforward solution is the violin plot which displays the probability density function for each category. As Fernandez et Al. states, users do not tend to have enough statistical knowledge to interpret this type of chart making it difficult to extract information. The other solution is the box plot, introduced by Tukey et al. in 1977. This type of chart uses a rectangle which top and bottom parts show the 1st and 3rd quantile of the target value for each category and a line to show the 2nd quantile. This chart is much simpler to read and has been showcased as the main solution to show uncertainty or probability distribution. The boxen plot brings additional rectangle per category that enable to show more percentiles than the box plot.
@@ -73,7 +74,8 @@ Several approaches exist already. The most straightforward solution is the violi
 \section{Time Series probabilistic charts}
 \label{sec:time_series}
 
-Time series data representation could be a subset of categorical data visualization where the categories are the ordered time slots. Therefore, we could apply the solutions seen above to represent probabilistic time series data. Usually the number of time categories
+Time series data representation could be a subset of categorical data visualization where the categories are the ordered time slots. 
+Therefore, we could apply the solutions seen above to represent probabilistic time series data. Usually the number of time categories
 is high and we have to deal with limited space per category. Therefore, this constraint rules out the violin plot. However, the use of boxen plots for time series has been showcased specially for EPS diagrams, very used for meteorological data.
 
 However, time series data have usually been represented with a dedicated type of chart: line charts, where the marker is a 
@@ -82,7 +84,7 @@ but other intrinsic solutions are being used. The first one is to represent the 
 will draw 3 lines: the first one for the 5\% percentile, the second one for the mean and the third one for the 95\% percentile. 
 Another solution is the gradient chart where colour areas represent each of the deciles of the probabilistic time series.
 
-However Kai et Al. investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead 
+However Kay et Al. \cite{kay_when_2016} investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead 
 of probabilities (.2), and therefore it's better to use discrete outcomes to communicate probabilities. All the charts above 
 represent probabilities or percentile and a discrete solution would improve readability and understanding of the charts: We
 propose therefore a novel visualization technique to show time series data: time series dot plot. 
@@ -170,7 +172,7 @@ lower levels of load of difficulty.
 \begin{figure}
   \centering
    \includegraphics[width=0.5\textwidth]{confi_load}
-  \caption{\label{figure:confi_load} Difficulty (left) and Confidence (right) in reading and answering the questions for each chart}
+  \caption{\label{figure:confi_load} Difficu mjkiulty (left) and Confidence (right) in reading and answering the questions for each chart}
 \end{figure}
 
 We also see a lack of statistical knowledge from standard users as some users were reporting 
@@ -180,6 +182,27 @@ applicable (probability higher than 1 or text).
 
 \section{Conclusions}
 \label{sec:concl}
+
+We have compared 4 probabilistic time 
+series charts when answering a quantitative probability question: 
+gradient time series chart, box plot time series chart, confidence interval 
+time series chart and time series dot chart.
+We have applied them to the field of \no pollution levels probabilistic 
+time series as an application example and to build the user tests.
+We enrolled a panel of volunteers and asked them to read the charts 
+and determine the probability of \no to be in a certain interval at a certain 
+hour.
+All users learned to use the charts and after 5 questions all charts 
+need almost the same amount 
+of time to be read.
+However, the results show that users have the highest accuracy when using 
+the time series dot chart. Also this chart represents the easiest method 
+to get the answer while also providing the highest confidence in the answer.
+
+
+\section{References}
+\label{sec:ref}
+
 
 \bibliography{refs}
 
