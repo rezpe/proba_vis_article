@@ -6,12 +6,16 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 \usepackage{booktabs}
-\usepackage[draft,inline,nomargin]{fixme}
 \usepackage{makecell}
 \usepackage{lineno}
 \usepackage{natbib}
 \usepackage{amsmath}
 \DeclareRobustCommand{\citeext}[1]{\citeauthor{#1}~\cite{#1}}
+
+\usepackage[nomargin,inline,draft]{fixme}
+\fxsetup{theme=color,mode=multiuser}
+\FXRegisterAuthor{j}{jla}{\color{purple}JLA}
+\FXRegisterAuthor{s}{spv}{\color{teal}SPV}
 
 \journal{-}
 
@@ -52,23 +56,44 @@ probabilistic forecasting \sep visualization \sep dotplot
 \section{Introduction}
 \label{sec:intro}
 
-Hothorn \emph{et al.} stated that the real
-objective in a machine learning regression analysis is to find the full conditional distribution
-of the target variable. Currently, many machine learning models today only provide a point distribution, 
-which is usually the predicted
-mean of the target variable. Then the users of the model must take a decision based on the value predicted. 
-However, only point information without uncertainty creates a false sense of deterministic result that can lead 
-to false confidence in the decision. That's why as noted by Fernandez et Al., uncertainty improves decision making. 
-However, the typical visualization tools that users rely on are not suited for probabilistic information, 
-as they are designed for deterministic information. This also adds an additional difficulty for this charts. Users do not read
-a single value but have to determine the probability of the target value within a certain range.
+\jnote{Usa bibtex+referencias para las citas.} Hothorn \emph{et al.} stated that
+the real objective in a machine learning regression analysis is to find the full
+conditional distribution of the target variable.\jnote{Es una afirmación
+  demasiado general como para asignarla a un único autor. Diría que es algo más
+  generalizado.} Currently, many machine learning models only provide a point
+distribution, which is usually the expected value of the target variable. Then
+the users of the model must take a decision based on this single predicted
+estimation. However, only point information without uncertainty creates a false
+sense of deterministic result that can lead to false confidence in the decision.
+That's why as noted by Fernandez et Al., uncertainty improves decision making.
+However, as we will see, the typical visualization tools that users rely on are
+not really suited for probabilistic information, as they are designed for
+deterministic information. This also adds an additional difficulty for this
+charts \jnote{No se entiende a qué ``this charts'' te refieres}. Users do not
+read a single value but have to determine the probability of the target value
+within a certain range.
 
-If we focus on categorical data, the standard visualization is the bar chart. This visualization uses a rectangle as marker and 
-encodes the category as the x-axis and the target value as the y-axis (or vice versa). If we wish to add probabilistic information 
-to the chart, we could add error bars to the already present bars. However as noted by Kai et Al. 
-the information has to be intrinsic to the visualization. Therefore we need a different way to display the uncertainty in the target.
+If we focus on categorical data, the standard visualization tool is the bar or
+column chart. As is known, this particular chart uses a rectangle as marker and
+encodes the category as the x-axis and the target value as the y-axis (or vice
+versa). If we wish to add probabilistic information to the chart, we could add
+error bars to the already present bars. However as noted by Kai et Al. the
+information should be intrinsic to the visualization. Therefore we should think
+of a different way to display the uncertainty in the target.
 
-Several approaches exist already. The most straightforward solution is the violin plot which displays the probability density function for each category. As Fernandez et Al. states, users do not tend to have enough statistical knowledge to interpret this type of chart making it difficult to extract information. The other solution is the box plot, introduced by Tukey et al. in 1977. This type of chart uses a rectangle which top and bottom parts show the 1st and 3rd quantile of the target value for each category and a line to show the 2nd quantile. This chart is much simpler to read and has been showcased as the main solution to show uncertainty or probability distribution. The boxen plot brings additional rectangle per category that enable to show more percentiles than the box plot.
+Several approaches exist already. The most straightforward solution is the
+violin plot \jnote{Antes que el violín, ¿no sería mejor hablar del diagrama de
+  cajas, que es más sencillo y más antiguo? Añadiría a la lista el histograma y
+  la estimación KDE.} which displays the probability density function for each
+category. As Fernandez et Al. states, users do not tend to have enough
+statistical knowledge to interpret this type of chart making it difficult to
+extract information. The other solution is the box plot, introduced by Tukey et
+al. in 1977. This type of chart uses a rectangle which top and bottom parts show
+the 1st and 3rd quantile of the target value for each category and a line to
+show the 2nd quantile. This chart is much simpler to read and has been showcased
+as the main solution to show uncertainty or probability distribution. The boxen
+plot brings additional rectangles per category that enable to show more
+percentiles than the box plot.
 
 \section{Time Series probabilistic charts}
 \label{sec:time_series}
@@ -80,7 +105,8 @@ However, time series data have usually been represented with a dedicated type of
 line where the x-axis represent time and the y-axis represents the target value. Also, we could use error bars to represent uncertainty,
 but other intrinsic solutions are being used. The first one is to represent the confidence interval, where instead of a single line, we 
 will draw 3 lines: the first one for the 5\% percentile, the second one for the mean and the third one for the 95\% percentile. 
-Another solution is the gradient chart where colour areas represent each of the deciles of the probabilistic time series.
+Another solution is the gradient chart where colour areas represent each of the
+deciles of the probabilistic time series.
 
 However Kai et Al. investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead 
 of probabilities (.2), and therefore it's better to use discrete outcomes to communicate probabilities. All the charts above 
