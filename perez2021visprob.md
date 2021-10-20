@@ -34,8 +34,17 @@ Deepar states nodel need minimal manual intervention in order to set ti but it d
 Interactive ML to calibrate and then use the model.
 
 # Tool Description
+
+The tool is comprised of 2 parts:
+- Training part where the user understands the inner working of the trained model. Users can select used features, model and check the evaluation of the model for a user defined test set and specific test points.
+- Forecasting part where the user can see the evaluations with an easy to use interface. The predictions are displayed in a tested visualization.
+
 # Experiments
 ## Training Experiment
 ## Visualization Experiment
 # Results
 # Conclusion
+
+# Source
+
+- DeepAR: https://www.sciencedirect.com/science/article/pii/S0169207019301888 
