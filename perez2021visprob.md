@@ -27,7 +27,12 @@ No use of statistical tools for the comparison
 No user guidance on the process
 No visualization of the process
 
+Deepar states nodel need minimal manual intervention in order to set ti but it does not explain the result of the training.
+
 # State of Art
+
+Interactive ML to calibrate and then use the model.
+
 # Tool Description
 # Experiments
 ## Training Experiment
