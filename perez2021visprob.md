@@ -68,6 +68,14 @@ Description of the Interactive ML tool:
     - Based on natural frequencies [8]
     - Use of Amazon Mechanical Turk to compare the dot plot with several types of visualizations [9]
 
+## Experiment
+
+ML Model:
+- Measure of training times and metrics: RMSE, CRPS, BIAS and MAPE.
+
+Dot plot time series evaluation:
+    - Use of Amazon Mechanical Turk to compare the dot plot with several types of visualizations [9]
+
 ## Results
 
 - Analyst explores a much smaller feature space, which takes less time than algorithms.
