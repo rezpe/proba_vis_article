@@ -1,32 +1,28 @@
 # Interactive Machine Learning for Probabilistic Forecasting of Pollution levels in Madrid
 
+Structure:
+- Introduction: Why this topic is relevant ?
+- Related Work: Interactive ML state
+- Our Approach
+- Experiment
+- Results
+- Conclusion
+
 ## Introduction
 
-There has been a recent push in reseearch towards automatic solutions like AutoML. [1]
+As noted by Piazentin et al. [1], we see an increasing trend in research for automated machine learning or AutoML which generates machine learning pipelines without human intervention. The rise of Big Data is one of cause of this trend. For example, the M4 competition [3] features 100 000 time series to forecast, which leaves no space for human intervention in the models due to the scale of the competition.
 
-We also have papers like DeepAR which underlines the merits of creating an algorithm with minimal human intervention. [2]
+Generating a machine learning pipeline usually revolves around 3 aspects: feature engineering, model selection and hyperparameter search. Testing all the different combinations is not feasible and AutoML algorythms have different strategies to limit this search space. However, this creates a situation where users can not influence this search space and can not transfer their expertise to the models. Also, as noted by Piazentin et al. [1], AutoML presents challenges to understand the generated model. Users are faced directly with the generated model and are required an extra effort to understand it. All those challenges lead to a loss of trust in the AutoML models.
 
-In the case of time series, the M4 competition are also a cause for this [3]: 100 000 time series are forecasted, which leaves no space for human intervention in the models due to the scale of the competition.
+We see that those problems are in fact due to the lack of interaction between the user and the machine learning building process, and especially how to transfer the user knowledge in the machine learning building process. Interactive machine learning provides a ground of research in this area. 
 
-However, no human in the ML buildind results in:
+Time series forecasting autoregressive forecasting model.
+There's a lot of automated model building:
+hyndman based on hyperparameter
+deepar
 
-- Loss of trust in the results
-- No understanding of the ml model
-- No visibility on the process and experiments done by the machine
-
-In order to overcome those problems, we propose as a solution:
-
-- Interactive ML pipeline (Feature selection + ML Model selectin) built iteratively in a UI
-- It shows the evaluation of the model for every iteration with low interaction friction:
-    - For individual points in the test set chosen by the user: comparison of time series with its probabilistic prediction
-    - For the whole test set, the following metrics: RMSE, BIAS, CRPS, MAPE
-    - Metrics are shown instantly: great care on optimizing the models have been taken to ensure this.
-- Analyst can see the evolution of the metrics for every iteration, so he can monitor the improvements/downgrade of the model as the consequence of its actions.
-    - The evolution of the metrics is show as a line chart for every iteration
-    - A summary of the improvement/downgrade in metrics per feature is also displayed
-- The final model is then used to forecast new values and the prediction is displayed using natural frequencies for higher readability
-
-## State of the art
+--> Full manual process
+## Related Work
 
 (References: [4] [5] [6] [7])
 
@@ -56,7 +52,19 @@ Knowledge Generation:
 - Interactive ML let analyst build knowledge on the model and features by testing hypothesis, generating insights and then synthesizing the results.
 - Help for decision making and generating trust in the model
 
-## Experiments
+## Our approach
+
+In order to overcome those problems, we propose as a solution:
+
+- Interactive ML pipeline (Feature selection + ML Model selectin) built iteratively in a UI
+- It shows the evaluation of the model for every iteration with low interaction friction:
+    - For individual points in the test set chosen by the user: comparison of time series with its probabilistic prediction
+    - For the whole test set, the following metrics: RMSE, BIAS, CRPS, MAPE
+    - Metrics are shown instantly: great care on optimizing the models have been taken to ensure this.
+- Analyst can see the evolution of the metrics for every iteration, so he can monitor the improvements/downgrade of the model as the consequence of its actions.
+    - The evolution of the metrics is show as a line chart for every iteration
+    - A summary of the improvement/downgrade in metrics per feature is also displayed
+- The final model is then used to forecast new values and the prediction is displayed using natural frequencies for higher readability
 
 Description of the Interactive ML tool:
 
@@ -102,7 +110,7 @@ Dot plot time series evaluation:
 
 ## Reference
 
-1.  AUTOML: [https://ai.googleblog.com/2020/12/using-automl-for-time-series-forecasting.html](https://arxiv.org/abs/1908.00709)
+1.  https://pubmed.ncbi.nlm.nih.gov/33048694/: PipelineProfiler: A Visual Analytics Tool for the Exploration of AutoML Pipelines
 2. DeepAR: [https://www.sciencedirect.com/science/article/pii/S0169207019301888](https://www.sciencedirect.com/science/article/pii/S0169207019301888) 
 3. M4 Competition: [https://www.sciencedirect.com/science/article/pii/S0169207019301128](https://www.sciencedirect.com/science/article/pii/S0169207019301128)
 4. Manual Classifier: [https://www.cs.waikato.ac.nz/~ml/publications/2000/00MW-etal-Interactive-ML.pdf](https://www.cs.waikato.ac.nz/~ml/publications/2000/00MW-etal-Interactive-ML.pdf)
