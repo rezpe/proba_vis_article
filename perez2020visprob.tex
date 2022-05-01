@@ -56,44 +56,61 @@ probabilistic forecasting \sep visualization \sep dotplot
 \section{Introduction}
 \label{sec:intro}
 
-\jnote{Usa bibtex+referencias para las citas.} Hothorn \emph{et al.} stated that
-the real objective in a machine learning regression analysis is to find the full
-conditional distribution of the target variable.\jnote{Es una afirmación
-  demasiado general como para asignarla a un único autor. Diría que es algo más
-  generalizado.} Currently, many machine learning models only provide a point
-distribution, which is usually the expected value of the target variable. Then
-the users of the model must take a decision based on this single predicted
-estimation. However, only point information without uncertainty creates a false
-sense of deterministic result that can lead to false confidence in the decision.
-That's why as noted by Fernandez et Al., uncertainty improves decision making.
-However, as we will see, the typical visualization tools that users rely on are
-not really suited for probabilistic information, as they are designed for
-deterministic information. This also adds an additional difficulty for this
-charts \jnote{No se entiende a qué ``this charts'' te refieres}. Users do not
-read a single value but have to determine the probability of the target value
-within a certain range.
+Uncertainty is an inherent part of data analysis and decision making and its correct estimation 
+is necessary to estimate risks and possible outcomes. For example, Rouston et al. showed that 
+in the case of weather forecasts, analysts could improve their rewards and reduce their exposure 
+to risk thanks to the presented uncertainty. In this paper, we define uncertainty as the probability 
+distribution of a numeric value.
 
-If we focus on categorical data, the standard visualization tool is the bar or
-column chart. As is known, this particular chart uses a rectangle as marker and
-encodes the category as the x-axis and the target value as the y-axis (or vice
-versa). If we wish to add probabilistic information to the chart, we could add
-error bars to the already present bars. However as noted by Kai et Al. the
-information should be intrinsic to the visualization. Therefore we should think
-of a different way to display the uncertainty in the target.
+However, uncertainty visualization and understanding has faced many challenges. 
 
-Several approaches exist already. The most straightforward solution is the
-violin plot \jnote{Antes que el violín, ¿no sería mejor hablar del diagrama de
-  cajas, que es más sencillo y más antiguo? Añadiría a la lista el histograma y
-  la estimación KDE.} which displays the probability density function for each
-category. As Fernandez et Al. states, users do not tend to have enough
-statistical knowledge to interpret this type of chart making it difficult to
-extract information. The other solution is the box plot, introduced by Tukey et
-al. in 1977. This type of chart uses a rectangle which top and bottom parts show
-the 1st and 3rd quantile of the target value for each category and a line to
-show the 2nd quantile. This chart is much simpler to read and has been showcased
-as the main solution to show uncertainty or probability distribution. The boxen
-plot brings additional rectangles per category that enable to show more
-percentiles than the box plot.
+As Padilla et al. points out, this could be due not only by the abstract nature of probability 
+but also to poor communication techniques. Weiskopf et al. reaches a similar conclusion and states 
+that uncertainty communication should be linked to the way it is communicated.
+
+For instance, one of the most typical approaches, Visual Boundaries such as isocontours and error 
+bars display value areas within a certain  confidence interval. The problem with this approach is 
+that individuals may exclude as possible values outside the confidence interval, which are still 
+plausible, only less probable. 
+
+Also, Bella et al showed that leading researchers had trouble reading error bars and they confused 
+standard errors and confidence intervals. 
+
+However, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
+information as deterministic, for example by considering the confidence interval for wether temperature 
+forecast as high and low temperature.
+
+As noted by Josly et al., this has lead to a new surge of research in visualization techniques: Van 
+der Bles et al. point that there is more than error bars to show uncertainty. 
+
+One possible solution to this problem is the use of HOPs (hypothetical outcome plot). HOPs display 
+random draws from a distribution and animate the draws over time. However, this technique can not be 
+applied to static visualizations. 
+
+An alternative approach, Visual Semiotics uses visual encoding such as fuzziness or color to represent 
+the probability of a certain value. An example of this would be the use of gradients to represent the 
+full probabiliity distribution. Neverthless, this type of encoding makes it difficult to read specific 
+values. Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
+Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
+lead to the development of the quantile dot plot. The quantile dot plot, created by Kay et al. represents 
+the probability distribution with dots: each dot represents 5\% probability and are sampled proportional 
+to the quantiles of the distribution. Quantiles dot plot have proved to lead to better distribution 
+understanding and probability estimates reading.
+
+An important field on uncertainty is the uncertainty in time series: For instance, time series forecasting 
+produces a time series with uncertainty that is used by analyst to take decisions.
+
+Communication of uncertainty in time series involves showing the evolution of uncertainty in time: this 
+is specially challenging as a visualization must display several distributions in a constrained space.  
+As pointed out by Leffrang et al., not much research has been applied to the field of uncertainty visualization 
+in the field of time series. However, we can see already solutions for this problem as confidence interval charts,
+ time box plots or gradient charts. Nonetheless, those solutions have not been properly compared in terms of 
+ probability reading and estimation. Also, we have not seen yet a solution involving frequency framing.
+
+Therefore, this paper presents the results of a comparison in terms of probability reading between 4 different 
+uncertainty visualization techniques confidence interval, time series box plot, visual semiotics and a 
+novel technique using frequency framing. We will use air quality probabilistic forecasting as the ground 
+for the comparisons.
 
 \section{Time Series probabilistic charts} 
 \label{sec:time_series}
