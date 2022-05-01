@@ -98,26 +98,35 @@ percentiles than the box plot.
 \section{Time Series probabilistic charts} 
 \label{sec:time_series}
 
-Time series data representation could be a subset of categorical data visualization where the categories are the ordered time slots. 
-Therefore, we could apply the solutions seen above to represent probabilistic time series data. Usually the number of time categories
-is high and we have to deal with limited space per category. Therefore, this constraint rules out the violin plot. However, the use of boxen plots for time series has been showcased specially for EPS diagrams, very used for meteorological data.
+The confidence interval chart shows in a line the evolution of the mean of the distribution
+ over time alongside 2 lines: the evolution of the 5\% and 95\% percentile of the distribution. 
+ User estimates the probabilities with the distance of the points to those lines.
 
-However, time series data have usually been represented with a dedicated type of chart: line charts, where the marker is a 
-line where the x-axis represent time and the y-axis represents the target value. Also, we could use error bars to represent uncertainty,
-but other intrinsic solutions are being used. The first one is to represent the confidence interval, where instead of a single line, we 
-will draw 3 lines: the first one for the 5\% percentile, the second one for the mean and the third one for the 95\% percentile. 
-Another solution is the gradient chart where colour areas represent each of the
-deciles of the probabilistic time series.
+The box plot chart shows different percentile with “boxes”. For each point in time, a white 
+line shows the location of mean, then a rectangle (or box) lower and upper part will be located 
+at the 25\% and 75\% percentile respectively, a narrower box upper and lower part will show 
+the 5\% and 95\% percentile and finally a line’s edge will show the 1\% and 99\% percentile. 
+This visual boundary representation shows more percentile than the confidence interval and 
+is recommended when the distribution is not symmetrical and to show the edges of the distribution.
 
-However Kay et Al. \cite{kay_when_2016} investigation noted that users prefer to think in terms of natural frecuencies (2/10) instead 
-of probabilities (.2), and therefore it's better to use discrete outcomes to communicate probabilities. All the charts above 
-represent probabilities or percentile and a discrete solution would improve readability and understanding of the charts: We
-propose therefore a novel visualization technique to show time series data: time series dot plot. 
+The gradient chart shows the evolution of the mean in a line and then displays areas whose 
+color changes as we get further from the mean. We end up having an area with a gradient 
+delimited by 2 lines: the 1\% and 99\% percentile. This representation allows to have the
+ full range of percentiles represented.
 
-This chart would draw a dot for each of the deciles of the target variable. This simplifies the readability of the chart as
-users just need to count the number of dots to estimate approximately the natural frequencies.
+Finally, the time series dot plot is a novel technique based on frequency framing. First, 
+it shows the evolution of the mean of the distribution in a line. And then, for each time 
+step, a circle for each decile is drawn: this way, we can estimate the percentage 
+probability of being in an interval as 10 times the number of circles in that interval. 
+This technique has 
+specifically been designed for readability and although it displays less information than 
+the gradient chart for instance, is much more readable.
 
-Figure \ref{figure:charts} shows a summary of the main types of probabilistic time series charts.
+This chart would draw a dot for each of the deciles of the target variable. This simplifies the 
+readability of the chart as users just need to count the number of dots to estimate approximately 
+the natural frequencies.
+
+Figure \ref{figure:charts} shows a summary of those probabilistic time series charts.
 
 \begin{figure}
   \centering
@@ -129,15 +138,6 @@ Figure \ref{figure:charts} shows a summary of the main types of probabilistic ti
   Top Left: Gradient Chart. Top Right: Box Plot. 
   Bottom Left: Confidence Interval. Bottom Right: Dot Chart.  }
 \end{figure}
-
-\subsection{Application: No levels forecast in Madrid}
-
-Air quality has become a concern in recent years and lately pollution peaks have forced local authorities to take measures like cutting traffic or blocking certain city areas. Those measures are purely reactive and therefore a forecast of pollution might be preferrable as proactive measures could be taken and prevent the pollution peak before it happens.
-
-Several stations in Madrid record the levels of NO in different parts of the city. We use a probabilistic
-machine learning model to predict the levels of No in one of the stations. Instead of providing a point estimate, it provides a 
-probability distribution at each of the prediction horizons. We represent the predictions. in a chart. This chart will be used by the
-authorities whenever a decision must be reached regarding the levels of pollution and preventive actions to be taken.
 
 \section{Experimental Design}
 \label{sec:exp_design}
