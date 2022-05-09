@@ -71,12 +71,12 @@ that uncertainty communication should be linked to the way it is communicated.
 For instance, one of the most typical approaches, Visual Boundaries such as isocontours and error 
 bars display value areas within a certain  confidence interval. The problem with this approach is 
 that individuals may exclude as possible values outside the confidence interval, which are still 
-plausible, only less probable. 
+possible, only less probable. 
 
-Also, Bella et al showed that leading researchers had trouble reading error bars and they confused 
+Also, Bella et al showed that even leading researchers had trouble reading error bars and they confused 
 standard errors and confidence intervals. 
 
-However, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
+In addition, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
 information as deterministic, for example by considering the confidence interval for wether temperature 
 forecast as high and low temperature.
 
@@ -108,9 +108,14 @@ in the field of time series. However, we can see already solutions for this prob
  probability reading and estimation. Also, we have not seen yet a solution involving frequency framing.
 
 Therefore, this paper presents the results of a comparison in terms of probability reading between 4 different 
-uncertainty visualization techniques confidence interval, time series box plot, visual semiotics and a 
-novel technique using frequency framing. We will use air quality probabilistic forecasting as the ground 
-for the comparisons.
+uncertainty visualization techniques: confidence interval, time series box plot, visual semiotics and a 
+novel technique using frequency framing.
+In order to track the air quality monitoring in Madrid, the city has placed 25 air quality stations which monitor 
+metrics like small particles density in air, O3 levels or NO2 levels. We use past information 
+to generate a probabilistic forecast of the NO2 level (i.e. a forecast with uncertainty) in one of the 
+stations and we display this very same time series with uncertainty in each of the visualization mentioned above. 
+We then estimate for each one how well its numeric values are read by assessing how several individuals read 
+and understand the charts.
 
 \section{Time Series probabilistic charts} 
 \label{sec:time_series}
@@ -120,9 +125,9 @@ The confidence interval chart shows in a line the evolution of the mean of the d
  User estimates the probabilities with the distance of the points to those lines.
 
 The box plot chart shows different percentile with “boxes”. For each point in time, a white 
-line shows the location of mean, then a rectangle (or box) lower and upper part will be located 
-at the 25\% and 75\% percentile respectively, a narrower box upper and lower part will show 
-the 5\% and 95\% percentile and finally a line’s edge will show the 1\% and 99\% percentile. 
+line shows the location of mean, then a rectangle (or box) lower and upper part is located 
+at the 25\% and 75\% percentile respectively, a narrower box upper and lower part shows 
+the 5\% and 95\% percentile and finally a line’s edge shows the 1\% and 99\% percentile. 
 This visual boundary representation shows more percentile than the confidence interval and 
 is recommended when the distribution is not symmetrical and to show the edges of the distribution.
 
@@ -136,8 +141,8 @@ it shows the evolution of the mean of the distribution in a line. And then, for 
 step, a circle for each decile is drawn: this way, we can estimate the percentage 
 probability of being in an interval as 10 times the number of circles in that interval. 
 This technique has 
-specifically been designed for readability and although it displays less information than 
-the gradient chart for instance, is much more readable.
+specifically been designed for readability although it displays less information than 
+the gradient chart for instance.
 
 This chart would draw a dot for each of the deciles of the target variable. This simplifies the 
 readability of the chart as users just need to count the number of dots to estimate approximately 
@@ -147,10 +152,7 @@ Figure \ref{figure:charts} shows a summary of those probabilistic time series ch
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{gradient} 
-  \includegraphics[width=0.4\textwidth]{boxplot}
-  \includegraphics[width=0.4\textwidth]{ci} 
-  \includegraphics[width=0.4\textwidth]{dot}
+  \includegraphics[width=1\textwidth]{charts} 
   \caption{\label{figure:charts} Probabilistic Time Series Chart. 
   Top Left: Gradient Chart. Top Right: Box Plot. 
   Bottom Left: Confidence Interval. Bottom Right: Dot Chart.  }
@@ -159,51 +161,48 @@ Figure \ref{figure:charts} shows a summary of those probabilistic time series ch
 \section{Experimental Design}
 \label{sec:exp_design}
 
-We would like to compare the readability of the four main types of probabilistic time series charts 
-displayed in figure 1. We will evaluate how well the charts can be read to estimate the probability 
+We compare the readability of the four main types of probabilistic time series charts 
+displayed in figure 1. We evaluate how well the charts can be read to estimate the probability 
 that the evolving target is within a certain interval at a certain time point. As stated previously, 
 the evolving distribution is the probabilistic forecast of NO levels. 
 
-For this, we will request the participation of users through the Amazon Mechanical Turk website. 
-This service will pick randomly 100 individuals with a minimum skill set (as proposed by Brenner 
-et al., we will select Master level participants).
+For this, we request the participation of users through the Amazon Mechanical Turk website. 
+This service picks randomly 100 individuals with a minimum skill set (as proposed by Brenner 
+et al., we select Master level participants, who are workers who have proven the best performance 
+on the overall tasks in the platform).
 
 Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
-explanation on how it works and he will have to estimate 5 probabilities from the chart. As an 
-example, we show in figure 2 the presentation part of the time series dot chart. We will also 
-be measuring the time it took to perform each estimation. As inspired by the work of Brenner et 
-al. , once the individual has estimated the probabilities, he/she will be asked how confident he 
+explanation on how it works and they have to estimate 5 probabilities from the chart. An example of
+probability question is: "What is the probability of the NO2 levels being between 150 and 200 on 
+November 21st at 22:00 ?". We are also measuring the time it took to perform each estimation. 
+As inspired by the work of Brenner et 
+al. , once the individuals have estimated the probabilities, they are asked how confident they 
 felt and how difficult the task was considered.
 
-We will be testing 20 individuals per type of chart and therefore we will have 100 answers per 
+We are testing 20 individuals per type of chart and therefore we have 100 answers per 
 type of chart.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{dot_explanation}
-  \caption{\label{figure:explanation} Image explaining how the chart is read.  }
-\end{figure}  
 
 \section{Results}
 \label{sec:results}
 
-Figure \ref{figure:errors} shows the histogram of the absolute value of the probability errors in percentage. 
-Although the majority 
-of users report errors on the 0-20\% section, the dot chart almost has no errors outside of this band. 
-Also, we did not see an improvement in 
-the error rate as users were answering questions, therefore we combined all errors together.
+For each answer, we calculate the error rate of each answer as the absolute value of the difference 
+between the provided answer and the true probability displayed in the chart. Figure \ref{figure:errors} shows 
+the distribution of this error rate per type of chart. We see clearly how the time series dot chart
+has a much lower error rate then the other charts. Also, we did not see an evolution of the error rate as 
+users were answering questions.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.6\textwidth]{probability_errors}
-  \caption{\label{figure:errors}Distribution of absolute error for all questions per type of chart.}
+  \includegraphics[width=0.6\textwidth]{box_errors}
+  \caption{\label{figure:errors}% Difference between answer and true probability per type of visualization.}
 \end{figure}
 
-However, users seem to reflect their learning in the time it takes to read 
-and answer the question. we see in figure \ref{figure:duration} that for every chart, the time it takes 
-to read and answer the question decreases for every question answered. We also did not see 
-noticeable difference between the type of charts. However, the difficulty of reading the chart might impact 
-this number for a higher number of questions.
+However, users does seem to need less time to answer the question as they were answering the questions. 
+We see in figure \ref{figure:duration} that for every chart, the time it takes 
+to read and answer the question decreases for every question answered. As we see in the figure, those times 
+are very similar for all the types of charts. However, we do believe the difference in cognitive load would 
+create higher differences in the answering times if the number of questions was higher (users were only confronted
+to 5 questions).
 
 \begin{figure}
   \centering
@@ -211,9 +210,9 @@ this number for a higher number of questions.
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Confidence and load also prove the superior performance of the time series dot chart. 
-Figure \ref{figure:confi_load} shows how the dot chart reports higher levels of confidence and 
-lower levels of load of difficulty.
+Confidence and cognitive load charts (figure \ref{figure:confi_load}) also prove the superior performance 
+of the time series dot chart. Users reported higher levels of confidence and 
+lower levels of cognitive load for the time series dot chart.
 
 \begin{figure}
   \centering
@@ -221,29 +220,20 @@ lower levels of load of difficulty.
   \caption{\label{figure:confi_load} Difficulty (left) and Confidence (right) in reading and answering the questions for each chart}
 \end{figure}
 
-We also see a lack of statistical knowledge from standard users as some users were reporting 
-probabilities above 1, showing they do not understand the basic theory of statistics. 
-We reported 9 users from 80 whose answers could not be used as their answers could not be 
-applicable (probability higher than 1 or text).
+Finally although we selected users with master level, we still did received answers with probabilities 
+above 1 or a probability as an interval. This shows a lack of basic statistical knowledge from those 
+users and reinforces the fears discussed in the introduction. 
+We identified 9 users from 80 whose answers could not be used because of those reasons.
 
 \section{Conclusions}
 \label{sec:concl}
 
-We have compared 4 probabilistic time 
-series charts when answering a quantitative probability question: 
-gradient time series chart, box plot time series chart, confidence interval 
-time series chart and time series dot chart.
-We have applied them to the field of \no pollution levels probabilistic 
-time series as an application example and to build the user tests.
-We enrolled a panel of volunteers and asked them to read the charts 
-and determine the probability of \no to be in a certain interval at a certain 
-hour.
-All users learned to use the charts and after 5 questions all charts 
-need almost the same amount 
-of time to be read.
-However, the results show that users have the highest accuracy when using 
-the time series dot chart. Also this chart represents the easiest method 
-to get the answer while also providing the highest confidence in the answer.
+We can conlude from this work that the application of natural frequencies in an uncertainty chart does indeed
+provide better numeric readability than any previous alternative. Natural frequencies does indeed simplify 
+the statistic knowledge requirement and is also easier to read as it consists on counting. However, we could 
+also remark that other types of charts are better at providing an overall picture of the uncertainty in the time
+series. Also, we could have alleviate even more the cognitive load with interactive elements in the chart. for example
+by applying different colors to the decile depending on its value.
 
 
 \section{References}
