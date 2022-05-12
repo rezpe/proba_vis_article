@@ -131,8 +131,8 @@ the 5\% and 95\% percentile and finally a line’s edge shows the 1\% and 99\% p
 This visual boundary representation shows more percentile than the confidence interval and 
 is recommended when the distribution is not symmetrical and to show the edges of the distribution.
 
-The gradient chart shows the evolution of the mean in a line and then displays areas whose 
-color changes as we get further from the mean. We end up having an area with a gradient 
+The gradient chart shows the evolution of the mean in a line and then displays the different percentiles
+with overlapping areas whose color corresponds to the percentile. We end up having an area with a gradient 
 delimited by 2 lines: the 1\% and 99\% percentile. This representation allows to have the
  full range of percentiles represented.
 
@@ -174,7 +174,9 @@ on the overall tasks in the platform).
 Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
 explanation on how it works and they have to estimate 5 probabilities from the chart. An example of
 probability question is: "What is the probability of the NO2 levels being between 150 and 200 on 
-November 21st at 22:00 ?". We are also measuring the time it took to perform each estimation. 
+November 21st at 22:00 ?". Individuals can provide their answers as a percentage or a 
+decimal number between 0
+and 1. We are also measuring the time it took to perform each estimation. 
 As inspired by the work of Brenner et 
 al. , once the individuals have estimated the probabilities, they are asked how confident they 
 felt and how difficult the task was considered.
@@ -185,7 +187,8 @@ type of chart.
 \section{Results}
 \label{sec:results}
 
-For each answer, we calculate the error rate of each answer as the absolute value of the difference 
+First, we are putting all the answers in the same format: percentage, then for each answer, we calculate the 
+error rate of each answer as the absolute value of the difference 
 between the provided answer and the true probability displayed in the chart. Figure \ref{figure:errors} shows 
 the distribution of this error rate per type of chart. We see clearly how the time series dot chart
 has a much lower error rate then the other charts. Also, we did not see an evolution of the error rate as 
@@ -193,7 +196,7 @@ users were answering questions.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.6\textwidth]{boxerrors}
+  \includegraphics[width=0.6\textwidth]{chart_vector}
   \caption{\label{figure:errors}Difference between answer and true probability per type of visualization.}
 \end{figure}
 
@@ -206,19 +209,14 @@ to 5 questions).
 
 \begin{figure}
   \centering
-   \includegraphics[width=0.6\textwidth]{duration_evo}
+   \includegraphics[width=0.6\textwidth]{duration_evo2}
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Confidence and cognitive load charts (figure \ref{figure:confi_load}) also prove the superior performance 
+Confidence and cognitive load charts (also shown on figure \ref{figure:errors}) also prove the superior performance 
 of the time series dot chart. Users reported higher levels of confidence and 
 lower levels of cognitive load for the time series dot chart.
 
-\begin{figure}
-  \centering
-   \includegraphics[width=0.5\textwidth]{confi_load}
-  \caption{\label{figure:confi_load} Difficulty (left) and Confidence (right) in reading and answering the questions for each chart}
-\end{figure}
 
 Finally although we selected users with master level, we still did received answers with probabilities 
 above 1 or a probability as an interval. This shows a lack of basic statistical knowledge from those 
