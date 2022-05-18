@@ -168,8 +168,8 @@ the evolving distribution is the probabilistic forecast of NO levels.
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
 This service picks randomly 100 individuals with a minimum skill set (as proposed by Brenner 
-et al., we select Master level participants, who are workers who have proven the best performance 
-on the overall tasks in the platform).
+et al., we select Master level participants, who are workers who 
+\textquote[{}]{have consistently demonstrated a high degree of success in performing a wide range of HITs across a large number of Requesters}).
 
 Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
 explanation on how it works and they have to estimate 5 probabilities from the chart. An example of
@@ -191,21 +191,19 @@ First, we align all the answers in the same format: percentage, then for each an
 reading error as the absolute value of the difference 
 between the provided answer and the true probability displayed in the chart. Figure \ref{figure:errors} shows 
 the distribution of the reading error per type of chart. We see clearly how the time series dot chart
-has a much lower reading error then the other charts. Also, we did not see an evolution of the reading accuracy as 
-users were answering questions on any of the charts.
+has a much lower reading error then the other charts. 
 
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{comparison}
-  \caption{\label{figure:errors}Error rate, confidence and cognitive load per type of visualization. The whiskers represent the 10 and 90 percentile and the box shows the 25 and 75 percentile.}
+  \caption{\label{figure:errors}Error rate, confidence and cognitive load per type of visualization. 
+  The whiskers represent the 10 and 90 percentile and the box shows the 25 and 75 percentile.}
 \end{figure}
 
 However, users does seem to need less time to answer the question as they were answering the questions. 
 We see in figure \ref{figure:duration} that for every chart, the time it takes 
 to read and answer the question decreases for every question answered. As we see in the figure, those times 
-are very similar for all the types of charts. However, we do believe the difference in cognitive load would 
-create higher differences in the answering times if the number of questions was higher (users were only confronted
-to 5 questions).
+are very similar for all the types of charts. 
 
 \begin{figure}
   \centering
@@ -213,13 +211,13 @@ to 5 questions).
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Confidence and cognitive load charts (also shown on figure \ref{figure:errors}) also prove the superior performance 
+Confidence and cognitive load charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
 of the time series dot chart. Users reported higher levels of confidence and 
 lower levels of cognitive load for the time series dot chart.
 
 
 Finally although we selected users with master level, we still did received answers with probabilities 
-above 1 or a probability as an interval. This shows a lack of basic statistical knowledge from those 
+above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
 users and reinforces the fears discussed in the introduction. 
 We identified 9 users from 80 whose answers could not be used because of those reasons.
 
@@ -228,10 +226,12 @@ We identified 9 users from 80 whose answers could not be used because of those r
 
 We can conlude from this work that the application of natural frequencies in an uncertainty chart does indeed
 provide better numeric readability than any previous alternative. Natural frequencies does indeed simplify 
-the statistic knowledge requirement and is also easier to read as it consists on counting. However, we could 
-also remark that other types of charts are better at providing an overall picture of the uncertainty in the time
-series. Also, we could have alleviate even more the cognitive load with interactive elements in the chart. for example
-by applying different colors to the decile depending on its value.
+the statistic knowledge requirement and is also easier to read as it consists on counting. 
+We do believe the difference in cognitive load would also
+create higher differences in the answering times if the number of questions was higher (users were only confronted
+to 5 questions).
+In this type of experiment, we could alleviate even more the cognitive load with interactive elements in the chart. for example
+by applying different colors to the decile depending on the user input.
 
 
 \section{References}
