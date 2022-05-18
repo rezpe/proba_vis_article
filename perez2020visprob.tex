@@ -120,7 +120,7 @@ and understand the charts.
 \section{Time Series probabilistic charts} 
 \label{sec:time_series}
 
-The confidence interval chart shows in a line the evolution of the mean of the distribution
+The confidence interval chart shows in a line the evolution of the median of the distribution
  over time alongside 2 lines: the evolution of the 5\% and 95\% percentile of the distribution. 
  User estimates the probabilities with the distance of the points to those lines.
 
@@ -131,13 +131,13 @@ the 5\% and 95\% percentile and finally a line’s edge shows the 1\% and 99\% p
 This visual boundary representation shows more percentile than the confidence interval and 
 is recommended when the distribution is not symmetrical and to show the edges of the distribution.
 
-The gradient chart shows the evolution of the mean in a line and then displays the different percentiles
+The gradient chart shows the evolution of the median in a line and then displays the different percentiles
 with overlapping areas whose color corresponds to the percentile. We end up having an area with a gradient 
 delimited by 2 lines: the 1\% and 99\% percentile. This representation allows to have the
  full range of percentiles represented.
 
 Finally, the time series dot plot is a novel technique based on frequency framing. First, 
-it shows the evolution of the mean of the distribution in a line. And then, for each time 
+it shows the evolution of the median of the distribution in a line. And then, for each time 
 step, a circle for each decile is drawn: this way, we can estimate the percentage 
 probability of being in an interval as 10 times the number of circles in that interval. 
 This technique has 
@@ -224,14 +224,21 @@ We identified 9 users from 80 whose answers could not be used because of those r
 \section{Conclusions}
 \label{sec:concl}
 
-We can conlude from this work that the application of natural frequencies in an uncertainty chart does indeed
+Although we could remark that the gradient chart, the box plot or the confidence interval charts are very good at 
+providing an overall picture of the uncertainty in the time series, we can see from this work that the application of natural 
+frequencies in an uncertainty chart does indeed
 provide better numeric readability than any previous alternative. Natural frequencies does indeed simplify 
-the statistic knowledge requirement and is also easier to read as it consists on counting. 
+the statistic knowledge requirement and is also easier to read as it consists on counting.
+
+This type of chart is less well known that the other alternatives and an information effort should be made to motivate 
+researchers and the general public to use it.
+
 We do believe the difference in cognitive load would also
 create higher differences in the answering times if the number of questions was higher (users were only confronted
 to 5 questions).
 In this type of experiment, we could alleviate even more the cognitive load with interactive elements in the chart. for example
 by applying different colors to the decile depending on the user input.
+
 
 
 \section{References}
