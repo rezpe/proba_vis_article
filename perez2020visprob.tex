@@ -16,7 +16,7 @@
 \fxsetup{theme=color,mode=multiuser}
 \FXRegisterAuthor{j}{jla}{\color{purple}JLA}
 \FXRegisterAuthor{s}{spv}{\color{teal}SPV}
-
+ 
 \journal{-}
 
 %% `Elsevier LaTeX' style
@@ -64,9 +64,9 @@ distribution of a numeric value.
 
 However, uncertainty visualization and understanding has faced many challenges. 
 
-As Padilla et al. points out, this could be due not only by the abstract nature of probability 
+As Padilla et al. points out, this could be due not only to the abstract nature of probability 
 but also to poor communication techniques. Weiskopf et al. reaches a similar conclusion and states 
-that uncertainty communication should be linked to the way it is communicated.
+that uncertainty understanding should be linked to the way it is communicated.
 
 For instance, one of the most typical approaches, Visual Boundaries such as isocontours and error 
 bars display value areas within a certain  confidence interval. The problem with this approach is 
@@ -77,14 +77,14 @@ Also, Bella et al showed that even leading researchers had trouble reading error
 standard errors and confidence intervals. 
 
 In addition, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
-information as deterministic, for example by considering the confidence interval for wether temperature 
+information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
-As noted by Josly et al., this has lead to a new surge of research in visualization techniques: Van 
+As noted by Joslyn et al., this has lead to a new surge of research in visualization techniques: Van 
 der Bles et al. point that there is more than error bars to show uncertainty. 
 
 One possible solution to this problem is the use of HOPs (hypothetical outcome plot). HOPs display 
-random draws from a distribution and animate the draws over time. However, this technique can not be 
+sequentially in an animation, random values from a distribution. However, this technique can not be 
 applied to static visualizations. 
 
 An alternative approach, Visual Semiotics uses visual encoding such as fuzziness or color to represent 
@@ -92,16 +92,17 @@ the probability of a certain value. An example of this would be the use of gradi
 full probabiliity distribution. Neverthless, this type of encoding makes it difficult to read specific 
 values. Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
 Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
-lead to the development of the quantile dot plot. The quantile dot plot, created by Kay et al. represents 
-the probability distribution with dots: each dot represents 5\% probability and are sampled proportional 
-to the quantiles of the distribution. Quantiles dot plot have proved to lead to better distribution 
+lead to the development of the quantile dot plot. This plot, created by Kay et al. represents 
+the probability distribution with dots: by using 20 dots, each would represent 1/20 probability 
+and are placed according 
+to the quantiles of the distribution. Quantile dot plot have proved to lead to better distribution 
 understanding and probability estimates reading.
 
 An important field on uncertainty is the uncertainty in time series: For instance, time series forecasting 
 produces a time series with uncertainty that is used by analyst to take decisions.
 
 Communication of uncertainty in time series involves showing the evolution of uncertainty in time: this 
-is specially challenging as a visualization must display several distributions in a constrained space.  
+is especially challenging as a visualization must display several distributions in a constrained space.  
 As pointed out by Leffrang et al., not much research has been applied to the field of uncertainty visualization 
 in the field of time series. However, we can see already solutions for this problem as confidence interval charts,
  time box plots or gradient charts. Nonetheless, those solutions have not been properly compared in terms of 
@@ -110,15 +111,16 @@ in the field of time series. However, we can see already solutions for this prob
 Therefore, this paper presents the results of a comparison in terms of probability reading between 4 different 
 uncertainty visualization techniques: confidence interval, time series box plot, visual semiotics and a 
 novel technique using frequency framing.
-In order to track the air quality monitoring in Madrid, the city has placed 25 air quality stations which monitor 
-metrics like small particles density in air, O3 levels or NO2 levels. We use past information 
-to generate a probabilistic forecast of the NO2 level (i.e. a forecast with uncertainty) in one of the 
-stations and we display this very same time series with uncertainty in each of the visualization mentioned above. 
+We use as an application ground for this comparison a probabilistic forecast of NO levels 
+in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
+and we display this very same time series with uncertainty in each of the visualization mentioned above. 
 We then estimate for each one how well its numeric values are read by assessing how several individuals read 
 and understand the charts.
 
 \section{Time Series probabilistic charts} 
 \label{sec:time_series}
+
+Figure \ref{figure:charts} shows a summary of the studied probabilistic time series charts.
 
 The confidence interval chart shows in a line the evolution of the median of the distribution
  over time alongside 2 lines: the evolution of the 5\% and 95\% percentile of the distribution. 
@@ -148,14 +150,14 @@ This chart would draw a dot for each of the deciles of the target variable. This
 readability of the chart as users just need to count the number of dots to estimate approximately 
 the natural frequencies.
 
-Figure \ref{figure:charts} shows a summary of those probabilistic time series charts.
+
 
 \begin{figure}
   \centering
-  \includegraphics[width=.8\textwidth]{charts_vector} 
+  \includegraphics[width=.9\textwidth]{charts_vector} 
   \caption{\label{figure:charts} Probabilistic Forecast of NO2 levels in Madrid with different types of time Series Chart. 
-  Top Left: Gradient Chart. Top Right: Box Plot. 
-  Bottom Left: Confidence Interval. Bottom Right: Dot Chart.  }
+  Top Left: Confidence Interval. Top Right: Box Plot. 
+  Bottom Left: Gradient Chart. Bottom Right: Dot Chart.  }
 \end{figure}
 
 \section{Experimental Design}
@@ -172,8 +174,8 @@ et al., we select Master level participants, who are workers who
 ''have consistently demonstrated a high degree of success in performing a wide range of HITs across a large number of Requesters'').
 
 Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
-explanation on how it works and they have to estimate 5 probabilities from the chart. An example of
-probability question is: "What is the probability of the NO2 levels being between 150 and 200 on 
+explanation on how it works and they have to estimate 5 probabilities from the chart. An example question is: 
+"What is the probability of the NO2 levels being between 150 and 200 on 
 November 21st at 22:00 ?". Individuals can provide their answers as a percentage or a 
 decimal number between 0
 and 1. We are also measuring the time it took to perform each estimation. 
@@ -196,11 +198,12 @@ has a much lower reading error then the other charts.
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{comparison}
-  \caption{\label{figure:errors}Error rate, confidence and cognitive load per type of visualization. 
-  The whiskers represent the 10 and 90 percentile and the box shows the 25 and 75 percentile.}
+  \caption{\label{figure:errors}Error rate, confidence and perceived difficulty per 
+  type of visualization. Black vertical line represents median.
+  The whiskers represent the 10 and 90 percentile and the box shows the 25 and 
+  75 percentile.}
 \end{figure}
 
-However, users does seem to need less time to answer the question as they were answering the questions. 
 We see in figure \ref{figure:duration} that for every chart, the time it takes 
 to read and answer the question decreases for every question answered. As we see in the figure, those times 
 are very similar for all the types of charts. 
@@ -211,9 +214,9 @@ are very similar for all the types of charts.
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Confidence and cognitive load charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
+Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
 of the time series dot chart. Users reported higher levels of confidence and 
-lower levels of cognitive load for the time series dot chart.
+lower levels of perceived difficulty for the time series dot chart.
 
 
 Finally although we selected users with master level, we still did received answers with probabilities 
