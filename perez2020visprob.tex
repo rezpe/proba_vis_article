@@ -57,14 +57,15 @@ probabilistic forecasting \sep visualization \sep dotplot
 \label{sec:intro}
 
 Uncertainty is an inherent part of data analysis and decision making and its correct estimation 
-is necessary to estimate risks and possible outcomes. For example, Rouston et al. showed that 
+is necessary to estimate risks and possible outcomes. For example, Rouston et al. 
+\cite{roulston_laboratory_2006} showed that 
 in the case of weather forecasts, analysts could improve their rewards and reduce their exposure 
 to risk thanks to the presented uncertainty. In this paper, we define uncertainty as the probability 
 distribution of a numeric value.
 
 However, uncertainty visualization and understanding has faced many challenges. 
 
-As Padilla et al. points out, this could be due not only to the abstract nature of probability 
+As Padilla et al. \cite{balakrishnan_uncertainty_2021} points out, this could be due not only to the abstract nature of probability 
 but also to poor communication techniques. Weiskopf et al. reaches a similar conclusion and states 
 that uncertainty understanding should be linked to the way it is communicated.
 
@@ -73,15 +74,18 @@ bars display value areas within a certain  confidence interval. The problem with
 that individuals may exclude as possible values outside the confidence interval, which are still 
 possible, only less probable. 
 
-Also, Bella et al showed that even leading researchers had trouble reading error bars and they confused 
+Also, Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
+trouble reading error bars and they confused 
 standard errors and confidence intervals. 
 
 In addition, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
-As noted by Joslyn et al., this has lead to a new surge of research in visualization techniques: Van 
-der Bles et al. point that there is more than error bars to show uncertainty. 
+As noted by Joslyn et al. \cite{joslyn_communicating_2010}, this has lead to a new surge of 
+research in visualization techniques: Van 
+der Bles et al. \cite{van_der_bles_communicating_nodate} point that there is more than 
+error bars to show uncertainty. 
 
 One possible solution to this problem is the use of HOPs (hypothetical outcome plot). HOPs display 
 sequentially in an animation, random values from a distribution. However, this technique can not be 
@@ -92,7 +96,9 @@ the probability of a certain value. An example of this would be the use of gradi
 full probabiliity distribution. Neverthless, this type of encoding makes it difficult to read specific 
 values. Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
 Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
-lead to the development of the quantile dot plot. This plot, created by Kay et al. represents 
+lead to the development of the quantile dot plot. This plot, created by Kay et al. 
+\cite{2016-when-ish-is-my-bus} 
+represents 
 the probability distribution with dots: by using 20 dots, each would represent 1/20 probability 
 and are placed according 
 to the quantiles of the distribution. Quantile dot plot have proved to lead to better distribution 
@@ -103,7 +109,8 @@ produces a time series with uncertainty that is used by analyst to take decision
 
 Communication of uncertainty in time series involves showing the evolution of uncertainty in time: this 
 is especially challenging as a visualization must display several distributions in a constrained space.  
-As pointed out by Leffrang et al., not much research has been applied to the field of uncertainty visualization 
+As pointed out by Leffrang et al. \cite{leffrang_should_2021}, not much research has been applied to the 
+field of uncertainty visualization 
 in the field of time series. However, we can see already solutions for this problem as confidence interval charts,
  time box plots or gradient charts. Nonetheless, those solutions have not been properly compared in terms of 
  probability reading and estimation. Also, we have not seen yet a solution involving frequency framing.
@@ -170,8 +177,9 @@ the evolving distribution is the probabilistic forecast of NO levels.
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
 This service picks randomly 100 individuals with a minimum skill set (as proposed by Brenner 
-et al., we select Master level participants, who are workers who 
-''have consistently demonstrated a high degree of success in performing a wide range of HITs across a large number of Requesters'').
+et al. \cite{brennen_instrument_2018}, we select Master level participants, who are workers who 
+''have consistently demonstrated a high degree of success in performing a wide range of HITs across a 
+large number of Requesters'').
 
 Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
 explanation on how it works and they have to estimate 5 probabilities from the chart. An example question is: 
@@ -197,7 +205,7 @@ has a much lower reading error then the other charts.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.9\textwidth]{comparison}
+  \includegraphics[width=0.8\textwidth]{comparison2}
   \caption{\label{figure:errors}Error rate, confidence and perceived difficulty per 
   type of visualization. Black vertical line represents median.
   The whiskers represent the 10 and 90 percentile and the box shows the 25 and 
@@ -237,9 +245,6 @@ by applying different colors to the circles within a certain interval defined by
 
 This type of chart is less well known that the other alternatives and an information effort should be made to motivate 
 researchers and the general public to use it.
-
-
-
 
 \section{References}
 \label{sec:ref}
