@@ -56,21 +56,35 @@ probabilistic forecasting \sep visualization \sep dotplot
 \section{Introduction}
 \label{sec:intro}
 
-Uncertainty is an inherent part of data analysis and decision making and its correct estimation 
-is necessary to estimate risks and possible outcomes. For example, Rouston et al. 
-\cite{roulston_laboratory_2006} showed that 
-in the case of weather forecasts, analysts could improve their rewards and reduce their exposure 
-to risk thanks to the presented uncertainty. In this paper, we define uncertainty as the probability 
-distribution of a numeric value.
+Uncertainty is an inherent part of data analysis and decision making, specially when assessing the predictions 
+of machine learning models. As stated by Padilla et al., uncertainty is necessary for establishing 
+scientific transparency which helps to correctly estimate risks and rewards
+derived from the predictions. For example in the context of weather forecast, Joslyn et al explain 
+that people can use uncertainty to correct invalid biases from their expectations.
+Also in weather forecast, Rouston et al. 
+\cite{roulston_laboratory_2006} showed that analysts could improve their rewards and reduce their exposure 
+to risk. In this paper, we define uncertainty as the probability distribution of a numeric value.
 
-However, uncertainty visualization and understanding has faced many challenges. 
+One of the subfields of Machine Learning: Time Series Forecasting also benefits from uncertainty in the predictions.
+One way to present uncertainty is to present probabilistic forecasting, which instead of showing the evolution 
+of the predicted value of a target variable, presents the evolution of the full distribution or main quantiles 
+of the target variable. Pinson et al. mentions how the presence of the uncertainty permits to optimize the value 
+of wind energy generation. In air quality forecasting, Perez-Vasseur et al. showed how probabilistic forecasting 
+enables the estimation of the probability the No2 pollutant will reach a certain threshold and become a danger 
+to the city inhabitants.
 
-As Padilla et al. \cite{balakrishnan_uncertainty_2021} points out, this could be due not only to the abstract nature of probability 
+However, uncertainty visualization and understanding has faced many challenges. As Padilla et al. \cite{balakrishnan_uncertainty_2021} 
+points out, this could be due not only to the abstract nature of probability 
 but also to poor communication techniques. Weiskopf et al. reaches a similar conclusion and states 
-that uncertainty understanding should be linked to the way it is communicated.
+that uncertainty understanding should be linked to the way it is communicated. 
 
-For instance, one of the most typical approaches, Visual Boundaries such as isocontours and error 
-bars display value areas within a certain  confidence interval. The problem with this approach is 
+One area of research which could alleviate this problem is data visualization. Indeed, as 
+stated by Islam et al., visualizations are easier for the human brain to understand and process.
+For instance, Perez Cota et al. mentions how visualization are playing an important role in the business 
+environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
+
+One of the most typical approaches, Visual Boundaries such as isocontours and error 
+bars display value areas within a certain confidence interval. The problem with this approach is 
 that individuals may exclude as possible values outside the confidence interval, which are still 
 possible, only less probable. 
 
@@ -104,21 +118,24 @@ and are placed according
 to the quantiles of the distribution. Quantile dot plot have proved to lead to better distribution 
 understanding and probability estimates reading.
 
-An important field on uncertainty is the uncertainty in time series: For instance, time series forecasting 
-produces a time series with uncertainty that is used by analyst to take decisions.
-
-Communication of uncertainty in time series involves showing the evolution of uncertainty in time: this 
+However those approaches do not address specifically the problem of uncertainty in the case of time series.
+The visualizatoins would need to show the evolution of uncertainty in time: this 
 is especially challenging as a visualization must display several distributions in a constrained space.  
 As pointed out by Leffrang et al. \cite{leffrang_should_2021}, not much research has been applied to the 
-field of uncertainty visualization 
-in the field of time series. However, we can see already solutions for this problem as confidence interval charts,
- time box plots or gradient charts. Nonetheless, those solutions have not been properly compared in terms of 
- probability reading and estimation. Also, we have not seen yet a solution involving frequency framing.
+field of uncertainty visualization in this field. 
+However, we have already seen in the literature solutions for this problem as confidence interval charts,
+ box plots or gradient charts. Those 3 types of charts correspond to the different solutions for uncertainty 
+ we have seen above. However, we have not seen yet a solution involving frequency framing. As stated by van Wijk,
+ data visualization can be considered an art and therefore subject to criteria like taste or design aesthetics. 
+However, we can also evaluate the performance of those visualizations on probability readability.
+Brenner et al. \cite{brennen_instrument_2018} developed a methodology to systematically evaluate the performance
+of uncertainty visualizations, based on four measures: cognitive load, confidence, accuracy and time to read. 
 
-Therefore, this paper presents the results of a comparison in terms of probability reading between 4 different 
-uncertainty visualization techniques: confidence interval, time series box plot, visual semiotics and a 
-novel technique using frequency framing.
-We use as an application ground for this comparison a probabilistic forecast of NO levels 
+Therefore, inspired by Brenner et al., we propose a social experiment where we will compare those charts 
+in terms of probability reading: confidence interval, time series box plot, visual semiotics.
+Also, we are introducing a novel type of chart based on frequency framing: Natural frequency time chart.
+
+We will use as an application ground for this comparison a probabilistic forecast of NO levels 
 in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
 and we display this very same time series with uncertainty in each of the visualization mentioned above. 
 We then estimate for each one how well its numeric values are read by assessing how several individuals read 
