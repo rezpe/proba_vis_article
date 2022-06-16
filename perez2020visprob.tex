@@ -46,7 +46,7 @@
 \end{abstract}
 
 \begin{keyword}
-probabilistic forecasting \sep visualization \sep dotplot
+probabilistic forecasting \sep visualization \sep natural frequency chart
 \end{keyword}
 
 \end{frontmatter}
@@ -141,7 +141,7 @@ and we display this very same time series with uncertainty in each of the visual
 We then estimate for each one how well its numeric values are read by assessing how several individuals read 
 and understand the charts.
 
-\section{Time Series probabilistic charts} 
+\section{Time Series probabilistic charts}  
 \label{sec:time_series}
 
 Figure \ref{figure:charts} shows a summary of the studied probabilistic time series charts.
@@ -162,18 +162,15 @@ with overlapping areas whose color corresponds to the percentile. We end up havi
 delimited by 2 lines: the 1\% and 99\% percentile. This representation allows to have the
  full range of percentiles represented.
 
-Finally, the time series dot plot is a novel technique based on frequency framing. First, 
+Finally, the time series natural frequency chart is a novel technique based on frequency framing. First, 
 it shows the evolution of the median of the distribution in a line. And then, for each time 
-step, a circle for each decile is drawn: this way, we can estimate the percentage 
+step, 10 percentiles from 5\% to 95\% (5\%, 10\%, 15\%, ...) are represented: this way, we can estimate the percentage 
 probability of being in an interval as 10 times the number of circles in that interval. 
+We have chosen 10 percentiles as it makes it easy to calculate the probability (just multiply by 10), also a higher number
+would have cramped the chart and made it difficult to view the circles as separate. 
 This technique has 
 specifically been designed for readability although it displays less information than 
-the gradient chart for instance.
-
-This chart would draw a dot for each of the deciles of the target variable. This simplifies the 
-readability of the chart as users just need to count the number of dots to estimate approximately 
-the natural frequencies.
-
+the gradient chart for instance. 
 
 
 \begin{figure}
@@ -181,8 +178,8 @@ the natural frequencies.
   \includegraphics[width=.9\textwidth]{charts_vector} 
   \caption{\label{figure:charts} Probabilistic Forecast of NO2 levels in Madrid with different types of time Series Chart. 
   Top Left: Confidence Interval. Top Right: Box Plot. 
-  Bottom Left: Gradient Chart. Bottom Right: Dot Chart.  }
-\end{figure}
+  Bottom Left: Gradient Chart. Bottom Right: Natural Frequency Time Chart. }
+\end{figure} 
 
 \section{Experimental Design}
 \label{sec:exp_design}
@@ -217,12 +214,12 @@ type of chart.
 First, we align all the answers in the same format: percentage, then for each answer, we define the 
 reading error as the absolute value of the difference 
 between the provided answer and the true probability displayed in the chart. Figure \ref{figure:errors} shows 
-the distribution of the reading error per type of chart. We see clearly how the time series dot chart
+the distribution of the reading error per type of chart. We see clearly how the natural frequency time chart
 has a much lower reading error then the other charts. 
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{comparison2}
+  \includegraphics[width=0.8\textwidth]{comparison}
   \caption{\label{figure:errors}Error rate, confidence and perceived difficulty per 
   type of visualization. Black vertical line represents median.
   The whiskers represent the 10 and 90 percentile and the box shows the 25 and 
@@ -240,8 +237,8 @@ are very similar for all the types of charts.
 \end{figure}  
 
 Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
-of the time series dot chart. Users reported higher levels of confidence and 
-lower levels of perceived difficulty for the time series dot chart.
+of the natural frequency time chart. Users reported higher levels of confidence and 
+lower levels of perceived difficulty for the natural frequency time chart.
 
 
 Finally although we selected users with master level, we still did received answers with probabilities 
