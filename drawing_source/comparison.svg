@@ -25,7 +25,7 @@
      inkscape:deskcolor="#505050"
      showgrid="false"
      inkscape:zoom="1.4871221"
-     inkscape:cx="447.50865"
+     inkscape:cx="448.18109"
      inkscape:cy="233.33659"
      inkscape:window-width="1920"
      inkscape:window-height="1015"
@@ -4487,7 +4487,7 @@
      id="text6295"
      style="stroke-miterlimit:10"
      x="306"
-     y="25">Error Rate</text>
+     y="25">Reading Error</text>
   <path
      class="foreground"
      aria-hidden="true"

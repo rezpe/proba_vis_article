@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    class="marks"
    width="1413.2478"
@@ -14,10 +7,17 @@
    viewBox="0 0 1413.2478 803.68824"
    id="svg1498"
    sodipodi:docname="charts_vector.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    inkscape:export-filename="/home/sperez/chartspng.png"
    inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata1504">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,22 +41,25 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3000"
-     inkscape:window-height="1587"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
      id="namedview1500"
      showgrid="false"
      inkscape:snap-grids="true"
      inkscape:zoom="0.9495256"
-     inkscape:cx="1035.2247"
-     inkscape:cy="270.59676"
+     inkscape:cx="1035.7804"
+     inkscape:cy="354.91407"
      inkscape:window-x="0"
-     inkscape:window-y="50"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1498"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <path
      class="foreground"
      aria-hidden="true"
@@ -95,11 +98,7 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="17.986044"
      y="-445.80603"
-     id="text10926"><tspan
-       sodipodi:role="line"
-       id="tspan10924"
-       x="17.986044"
-       y="-410.41537" /></text>
+     id="text10926" />
   <path
      style="display:none;fill:none;stroke-miterlimit:10"
      inkscape:connector-curvature="0"
@@ -686,7 +685,7 @@
                          transform="translate(0,16)"
                          font-size="20px"
                          font-weight="bold"
-                         id="text2714">NO2 prediction levels - Box Plot Chart</text>
+                         id="text2714">NO2 prediction levels - Box Plot</text>
                     </g>
                   </g>
                   <path
@@ -937,9 +936,9 @@
        id="text10847"
        y="-311.78979"
        x="940.1106"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
          y="-311.78979"
          x="940.1106"
          id="tspan10845"
@@ -954,14 +953,14 @@
          id="tspan10849"
          x="939.2356"
          y="-119.52943"
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1">1% percentile</tspan></text>
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1">1% percentile</tspan></text>
     <text
        id="text10847-3"
        y="-279.74643"
        x="940.1106"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
          y="-279.74643"
          x="940.1106"
          id="tspan10845-6"
@@ -972,7 +971,7 @@
        x="939.75513"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
          y="-247.70302"
          x="939.75513"
          id="tspan10845-6-5"
@@ -983,7 +982,7 @@
        x="939.84625"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
          y="-215.65961"
          x="939.84625"
          id="tspan10845-6-5-5"
@@ -998,14 +997,14 @@
          id="tspan2004"
          x="939.75513"
          y="-183.61623"
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1">25% percentile</tspan></text>
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1">25% percentile</tspan></text>
     <text
        id="text2010"
        y="-151.57283"
        x="939.75513"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
          y="-151.57283"
          x="939.75513"
          id="tspan2008"
@@ -1648,7 +1647,7 @@
        x="62.233356"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
          y="-221.88751"
          x="62.233356"
          id="tspan5931"
@@ -1663,14 +1662,14 @@
          id="tspan5977-5"
          x="62.497681"
          y="-277.51428"
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1">95% percentile</tspan></text>
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1">95% percentile</tspan></text>
     <text
        id="text6001"
        y="-159.94023"
        x="62.233356"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
          y="-159.94023"
          x="62.233356"
          id="tspan5999"
@@ -2341,7 +2340,7 @@
                          transform="translate(0,16)"
                          font-size="20px"
                          font-weight="bold"
-                         id="text4318">Visual Semiotics - Gradient Chart</text>
+                         id="text4318">Visual Semiotics - Gradient</text>
                     </g>
                   </g>
                   <path
@@ -2379,9 +2378,9 @@
        id="text12082"
        y="1110.8131"
        x="360.38907"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
        xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
          y="1110.8131"
          x="360.38907"
          sodipodi:role="line"
@@ -2396,7 +2395,7 @@
          sodipodi:role="line"
          x="361.88995"
          y="1135.6901"
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1">with color</tspan></text>
+         style="font-size:18.6667px;fill:#fe3400;fill-opacity:1">with color</tspan></text>
     <g
        transform="matrix(1.7359073,0,0,1.3727679,635.76214,928.33891)"
        id="g2670">
@@ -2866,1102 +2865,1109 @@
        style="fill:#fe3400;fill-opacity:1;stroke:#fe3400;stroke-width:0.89450455;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
-     id="g4813"
-     transform="translate(-39.804966,-571.23686)">
+     transform="translate(738.24785,408.68821)"
+     id="g4124">
+    <rect
+       style="fill:#ffffff"
+       y="0"
+       x="0"
+       width="675"
+       height="395"
+       id="rect3669" />
     <g
-       transform="translate(778.05282,979.92507)"
-       id="g4124">
-      <rect
-         style="fill:#ffffff"
-         y="0"
-         x="0"
-         width="675"
-         height="395"
-         id="rect3669" />
+       style="fill:none;stroke-miterlimit:10"
+       stroke-miterlimit="10"
+       transform="translate(70,39)"
+       id="g3965">
       <g
-         style="fill:none;stroke-miterlimit:10"
-         stroke-miterlimit="10"
-         transform="translate(70,39)"
-         id="g3965">
+         class="mark-group role-frame root"
+         role="graphics-object"
+         aria-roledescription="group mark container"
+         id="g3963">
         <g
-           class="mark-group role-frame root"
-           role="graphics-object"
-           aria-roledescription="group mark container"
-           id="g3963">
+           id="g3961">
+          <path
+             style="stroke:#dddddd"
+             inkscape:connector-curvature="0"
+             class="background"
+             aria-hidden="true"
+             d="m 0.5,0.5 h 600 v 300 H 0.5 Z"
+             id="path3671" />
           <g
-             id="g3961">
-            <path
-               style="stroke:#dddddd"
-               inkscape:connector-curvature="0"
-               class="background"
-               aria-hidden="true"
-               d="m 0.5,0.5 h 600 v 300 H 0.5 Z"
-               id="path3671" />
+             id="g3957">
             <g
-               id="g3957">
+               class="mark-group role-axis"
+               aria-hidden="true"
+               id="g3693">
               <g
-                 class="mark-group role-axis"
-                 aria-hidden="true"
-                 id="g3693">
+                 transform="translate(0.5,300.5)"
+                 id="g3691">
+                <path
+                   inkscape:connector-curvature="0"
+                   class="background"
+                   aria-hidden="true"
+                   d="M 0,0 Z"
+                   pointer-events="none"
+                   id="path3673" />
                 <g
-                   transform="translate(0.5,300.5)"
-                   id="g3691">
-                  <path
-                     inkscape:connector-curvature="0"
-                     class="background"
-                     aria-hidden="true"
-                     d="M 0,0 Z"
-                     pointer-events="none"
-                     id="path3673" />
+                   id="g3687">
                   <g
-                     id="g3687">
-                    <g
-                       class="mark-rule role-axis-grid"
-                       pointer-events="none"
-                       id="g3685">
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(60,-300)"
-                         x2="0"
-                         y2="300"
-                         id="line3675" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(180,-300)"
-                         x2="0"
-                         y2="300"
-                         id="line3677" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(300,-300)"
-                         x2="0"
-                         y2="300"
-                         id="line3679" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(420,-300)"
-                         x2="0"
-                         y2="300"
-                         id="line3681" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(540,-300)"
-                         x2="0"
-                         y2="300"
-                         id="line3683" />
-                    </g>
+                     class="mark-rule role-axis-grid"
+                     pointer-events="none"
+                     id="g3685">
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(60,-300)"
+                       x2="0"
+                       y2="300"
+                       id="line3675" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(180,-300)"
+                       x2="0"
+                       y2="300"
+                       id="line3677" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(300,-300)"
+                       x2="0"
+                       y2="300"
+                       id="line3679" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(420,-300)"
+                       x2="0"
+                       y2="300"
+                       id="line3681" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(540,-300)"
+                       x2="0"
+                       y2="300"
+                       id="line3683" />
                   </g>
-                  <path
-                     style="display:none"
-                     inkscape:connector-curvature="0"
-                     class="foreground"
-                     aria-hidden="true"
-                     d=""
-                     pointer-events="none"
-                     display="none"
-                     id="path3689" />
                 </g>
-              </g>
-              <g
-                 class="mark-group role-axis"
-                 aria-hidden="true"
-                 id="g3721">
-                <g
-                   transform="translate(0.5,0.5)"
-                   id="g3719">
-                  <path
-                     inkscape:connector-curvature="0"
-                     class="background"
-                     aria-hidden="true"
-                     d="M 0,0 Z"
-                     pointer-events="none"
-                     id="path3695" />
-                  <g
-                     id="g3715">
-                    <g
-                       class="mark-rule role-axis-grid"
-                       pointer-events="none"
-                       id="g3713">
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,300)"
-                         x2="600"
-                         y2="0"
-                         id="line3697" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,257)"
-                         x2="600"
-                         y2="0"
-                         id="line3699" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,214)"
-                         x2="600"
-                         y2="0"
-                         id="line3701" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,171)"
-                         x2="600"
-                         y2="0"
-                         id="line3703" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,129)"
-                         x2="600"
-                         y2="0"
-                         id="line3705" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,86)"
-                         x2="600"
-                         y2="0"
-                         id="line3707" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,43)"
-                         x2="600"
-                         y2="0"
-                         id="line3709" />
-                      <line
-                         style="opacity:1;stroke:#dddddd;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         x2="600"
-                         y2="0"
-                         id="line3711" />
-                    </g>
-                  </g>
-                  <path
-                     style="display:none"
-                     inkscape:connector-curvature="0"
-                     class="foreground"
-                     aria-hidden="true"
-                     d=""
-                     pointer-events="none"
-                     display="none"
-                     id="path3717" />
-                </g>
-              </g>
-              <g
-                 class="mark-group role-axis"
-                 role="graphics-symbol"
-                 aria-roledescription="axis"
-                 aria-label="X-axis titled 'Time of Day' for a discrete scale with 5 values: t0, t1, t2, t3, t4"
-                 id="g3763">
-                <g
-                   transform="translate(0.5,300.5)"
-                   id="g3761">
-                  <path
-                     inkscape:connector-curvature="0"
-                     class="background"
-                     aria-hidden="true"
-                     d="M 0,0 Z"
-                     pointer-events="none"
-                     id="path3723" />
-                  <g
-                     id="g3757">
-                    <g
-                       class="mark-rule role-axis-tick"
-                       pointer-events="none"
-                       id="g3735">
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(60)"
-                         x2="0"
-                         y2="5"
-                         id="line3725" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(180)"
-                         x2="0"
-                         y2="5"
-                         id="line3727" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(300)"
-                         x2="0"
-                         y2="5"
-                         id="line3729" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(420)"
-                         x2="0"
-                         y2="5"
-                         id="line3731" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(540)"
-                         x2="0"
-                         y2="5"
-                         id="line3733" />
-                    </g>
-                    <g
-                       class="mark-text role-axis-label"
-                       pointer-events="none"
-                       id="g3747">
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(60,23)"
-                         font-size="20px"
-                         id="text3737">t0</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(180,23)"
-                         font-size="20px"
-                         id="text3739">t1</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(300,23)"
-                         font-size="20px"
-                         id="text3741">t2</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(420,23)"
-                         font-size="20px"
-                         id="text3743">t3</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(540,23)"
-                         font-size="20px"
-                         id="text3745">t4</text>
-                    </g>
-                    <g
-                       class="mark-rule role-axis-domain"
-                       pointer-events="none"
-                       id="g3751">
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         x2="600"
-                         y2="0"
-                         id="line3749" />
-                    </g>
-                    <g
-                       class="mark-text role-axis-title"
-                       pointer-events="none"
-                       id="g3755">
-                      <text
-                         style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(300,47)"
-                         font-size="20px"
-                         font-weight="bold"
-                         id="text3753">Time of Day</text>
-                    </g>
-                  </g>
-                  <path
-                     style="display:none"
-                     inkscape:connector-curvature="0"
-                     class="foreground"
-                     aria-hidden="true"
-                     d=""
-                     pointer-events="none"
-                     display="none"
-                     id="path3759" />
-                </g>
-              </g>
-              <g
-                 class="mark-group role-axis"
-                 role="graphics-symbol"
-                 aria-roledescription="axis"
-                 aria-label="Y-axis titled 'NO2 level (µg/m3)' for a linear scale with values from 40 to 180"
-                 id="g3817">
-                <g
-                   transform="translate(0.5,0.5)"
-                   id="g3815">
-                  <path
-                     inkscape:connector-curvature="0"
-                     class="background"
-                     aria-hidden="true"
-                     d="M 0,0 Z"
-                     pointer-events="none"
-                     id="path3765" />
-                  <g
-                     id="g3811">
-                    <g
-                       class="mark-rule role-axis-tick"
-                       pointer-events="none"
-                       id="g3783">
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,300)"
-                         x2="-5"
-                         y2="0"
-                         id="line3767" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,257)"
-                         x2="-5"
-                         y2="0"
-                         id="line3769" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,214)"
-                         x2="-5"
-                         y2="0"
-                         id="line3771" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,171)"
-                         x2="-5"
-                         y2="0"
-                         id="line3773" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,129)"
-                         x2="-5"
-                         y2="0"
-                         id="line3775" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,86)"
-                         x2="-5"
-                         y2="0"
-                         id="line3777" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,43)"
-                         x2="-5"
-                         y2="0"
-                         id="line3779" />
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         x2="-5"
-                         y2="0"
-                         id="line3781" />
-                    </g>
-                    <g
-                       class="mark-text role-axis-label"
-                       pointer-events="none"
-                       id="g3801">
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,306)"
-                         font-size="20px"
-                         id="text3785">40</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,263.14286)"
-                         font-size="20px"
-                         id="text3787">60</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,220.28571)"
-                         font-size="20px"
-                         id="text3789">80</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,177.42857)"
-                         font-size="20px"
-                         id="text3791">100</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,134.57143)"
-                         font-size="20px"
-                         id="text3793">120</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,91.714286)"
-                         font-size="20px"
-                         id="text3795">140</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,48.857143)"
-                         font-size="20px"
-                         id="text3797">160</text>
-                      <text
-                         style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
-                         transform="translate(-7,6)"
-                         font-size="20px"
-                         id="text3799">180</text>
-                    </g>
-                    <g
-                       class="mark-rule role-axis-domain"
-                       pointer-events="none"
-                       id="g3805">
-                      <line
-                         style="opacity:1;stroke:#888888;stroke-width:1"
-                         y1="0"
-                         x1="0"
-                         transform="translate(0,300)"
-                         x2="0"
-                         y2="-300"
-                         id="line3803" />
-                    </g>
-                    <g
-                       class="mark-text role-axis-title"
-                       pointer-events="none"
-                       id="g3809">
-                      <text
-                         style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="rotate(-90,50.81543,99.18457)"
-                         font-size="20px"
-                         font-weight="bold"
-                         id="text3807">NO2 level (µg/m3)</text>
-                    </g>
-                  </g>
-                  <path
-                     style="display:none"
-                     inkscape:connector-curvature="0"
-                     class="foreground"
-                     aria-hidden="true"
-                     d=""
-                     pointer-events="none"
-                     display="none"
-                     id="path3813" />
-                </g>
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_0_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3829">
                 <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                   style="display:none"
                    inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 67.1003925734"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,241.92773)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3819" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 65.097807268"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,246.21898)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3821" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 70.5711794464"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,234.49033)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3823" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 60.1220640022"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,256.88129)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3825" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 74.9860361756"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,225.02992)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3827" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_1_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3841">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 72.8935601287"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,229.5138)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3831" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 71.3472914811"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,232.82723)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3833" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 77.8523040912"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,218.88792)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3835" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 70.9063229209"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,233.77217)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3837" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 84.1440467698"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,205.40561)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3839" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_2_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3853">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 76.5710413626"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,221.63348)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3843" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 75.3418980112"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,224.26736)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3845" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 82.5305119647"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,208.86319)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3847" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 78.2041568805"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,218.13395)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3849" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 90.1074916961"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,192.6268)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3851" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_3_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3865">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 79.6401956963"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,215.05672)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3855" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 78.6912476682"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,217.09018)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3857" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 86.4667679137"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,200.42835)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3859" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 84.5633860846"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,204.50703)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3861" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 95.1706626443"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,181.77715)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3863" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_4_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3877">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 82.4994773591"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,208.92969)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3867" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 81.823823615"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,210.37752)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3869" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 90.1591347803"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,192.51614)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3871" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 90.7075611468"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,191.34094)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3873" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 99.9564539748"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,171.52188)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3875" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_5_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3889">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 85.3634769362"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,202.79255)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3879" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 84.9730500565"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,203.62918)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3881" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 93.8813362234"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,184.53999)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3883" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 97.0743424215"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,177.69784)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3885" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 104.81528833"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,161.1101)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3887" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_6_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3901">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 88.4256905606"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,196.23066)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3891" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 88.3525567973"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,196.38738)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3893" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 97.886705468"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,175.95706)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3895" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 104.116910002"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,162.60662)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3897" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 110.081030248"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,149.82636)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3899" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_7_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3913">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 91.9638826604"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,188.64882)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3903" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 92.2727233541"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,187.98702)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3905" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 102.54660008"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,165.97157)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3907" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 112.556650418"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,144.52146)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3909" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 116.254202561"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,136.59814)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3911" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_8_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3925">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 96.5904419076"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,178.73477)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3915" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 97.4227133835"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,176.95133)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3917" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 108.689889428"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,152.80738)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3919" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 124.081611591"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,119.82512)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3921" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 124.466626164"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,119.00009)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3923" />
-              </g>
-              <g
-                 class="mark-symbol role-mark layer_9_marks"
-                 role="graphics-object"
-                 aria-roledescription="symbol mark container"
-                 id="g3937">
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 104.892270434"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(60,160.94513)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3927" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t1; NO2 level (µg/m3): 106.728486433"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(180,157.01039)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3929" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t2; NO2 level (µg/m3): 119.848930866"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(300,128.89515)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3931" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t3; NO2 level (µg/m3): 146.150769552"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(420,72.534065)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3933" />
-                <path
-                   style="opacity:0.7;stroke:#00008b;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t4; NO2 level (µg/m3): 139.588150452"
-                   role="graphics-symbol"
-                   aria-roledescription="point"
-                   transform="translate(540,86.59682)"
-                   d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
-                   id="path3935" />
-              </g>
-              <g
-                 class="mark-line role-mark layer_10_marks"
-                 role="graphics-object"
-                 aria-roledescription="line mark container"
-                 id="g3941">
-                <path
-                   style="stroke:#add8e6;stroke-width:2"
-                   inkscape:connector-curvature="0"
-                   aria-label="Time of Day: t0; NO2 level (µg/m3): 83.9194040669"
-                   role="graphics-symbol"
-                   aria-roledescription="line mark"
-                   d="m 60,205.88699 120,1.14784 120,-18.46686 120,-3.93412 120,-18.25669"
-                   id="path3939" />
-              </g>
-              <g
-                 class="mark-group role-title"
-                 id="g3955">
-                <g
-                   transform="translate(300,-34)"
-                   id="g3953">
-                  <path
-                     inkscape:connector-curvature="0"
-                     class="background"
-                     aria-hidden="true"
-                     d="M 0,0 Z"
-                     pointer-events="none"
-                     id="path3943" />
-                  <g
-                     id="g3949">
-                    <g
-                       class="mark-text role-title-text"
-                       role="graphics-symbol"
-                       aria-roledescription="title"
-                       aria-label="Title text 'NO2 prediction levels - Dot Chart'"
-                       pointer-events="none"
-                       id="g3947">
-                      <text
-                         style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
-                         transform="translate(0,16)"
-                         font-size="20px"
-                         font-weight="bold"
-                         id="text3945">NO2 prediction levels - Dot Chart</text>
-                    </g>
-                  </g>
-                  <path
-                     style="display:none"
-                     inkscape:connector-curvature="0"
-                     class="foreground"
-                     aria-hidden="true"
-                     d=""
-                     pointer-events="none"
-                     display="none"
-                     id="path3951" />
-                </g>
+                   class="foreground"
+                   aria-hidden="true"
+                   d=""
+                   pointer-events="none"
+                   display="none"
+                   id="path3689" />
               </g>
             </g>
-            <path
-               style="display:none"
-               inkscape:connector-curvature="0"
-               class="foreground"
+            <g
+               class="mark-group role-axis"
                aria-hidden="true"
-               d=""
-               display="none"
-               id="path3959" />
+               id="g3721">
+              <g
+                 transform="translate(0.5,0.5)"
+                 id="g3719">
+                <path
+                   inkscape:connector-curvature="0"
+                   class="background"
+                   aria-hidden="true"
+                   d="M 0,0 Z"
+                   pointer-events="none"
+                   id="path3695" />
+                <g
+                   id="g3715">
+                  <g
+                     class="mark-rule role-axis-grid"
+                     pointer-events="none"
+                     id="g3713">
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,300)"
+                       x2="600"
+                       y2="0"
+                       id="line3697" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,257)"
+                       x2="600"
+                       y2="0"
+                       id="line3699" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,214)"
+                       x2="600"
+                       y2="0"
+                       id="line3701" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,171)"
+                       x2="600"
+                       y2="0"
+                       id="line3703" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,129)"
+                       x2="600"
+                       y2="0"
+                       id="line3705" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,86)"
+                       x2="600"
+                       y2="0"
+                       id="line3707" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,43)"
+                       x2="600"
+                       y2="0"
+                       id="line3709" />
+                    <line
+                       style="opacity:1;stroke:#dddddd;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       x2="600"
+                       y2="0"
+                       id="line3711" />
+                  </g>
+                </g>
+                <path
+                   style="display:none"
+                   inkscape:connector-curvature="0"
+                   class="foreground"
+                   aria-hidden="true"
+                   d=""
+                   pointer-events="none"
+                   display="none"
+                   id="path3717" />
+              </g>
+            </g>
+            <g
+               class="mark-group role-axis"
+               role="graphics-symbol"
+               aria-roledescription="axis"
+               aria-label="X-axis titled 'Time of Day' for a discrete scale with 5 values: t0, t1, t2, t3, t4"
+               id="g3763">
+              <g
+                 transform="translate(0.5,300.5)"
+                 id="g3761">
+                <path
+                   inkscape:connector-curvature="0"
+                   class="background"
+                   aria-hidden="true"
+                   d="M 0,0 Z"
+                   pointer-events="none"
+                   id="path3723" />
+                <g
+                   id="g3757">
+                  <g
+                     class="mark-rule role-axis-tick"
+                     pointer-events="none"
+                     id="g3735">
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(60)"
+                       x2="0"
+                       y2="5"
+                       id="line3725" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(180)"
+                       x2="0"
+                       y2="5"
+                       id="line3727" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(300)"
+                       x2="0"
+                       y2="5"
+                       id="line3729" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(420)"
+                       x2="0"
+                       y2="5"
+                       id="line3731" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(540)"
+                       x2="0"
+                       y2="5"
+                       id="line3733" />
+                  </g>
+                  <g
+                     class="mark-text role-axis-label"
+                     pointer-events="none"
+                     id="g3747">
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(60,23)"
+                       font-size="20px"
+                       id="text3737">t0</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(180,23)"
+                       font-size="20px"
+                       id="text3739">t1</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(300,23)"
+                       font-size="20px"
+                       id="text3741">t2</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(420,23)"
+                       font-size="20px"
+                       id="text3743">t3</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(540,23)"
+                       font-size="20px"
+                       id="text3745">t4</text>
+                  </g>
+                  <g
+                     class="mark-rule role-axis-domain"
+                     pointer-events="none"
+                     id="g3751">
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       x2="600"
+                       y2="0"
+                       id="line3749" />
+                  </g>
+                  <g
+                     class="mark-text role-axis-title"
+                     pointer-events="none"
+                     id="g3755">
+                    <text
+                       style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(300,47)"
+                       font-size="20px"
+                       font-weight="bold"
+                       id="text3753">Time of Day</text>
+                  </g>
+                </g>
+                <path
+                   style="display:none"
+                   inkscape:connector-curvature="0"
+                   class="foreground"
+                   aria-hidden="true"
+                   d=""
+                   pointer-events="none"
+                   display="none"
+                   id="path3759" />
+              </g>
+            </g>
+            <g
+               class="mark-group role-axis"
+               role="graphics-symbol"
+               aria-roledescription="axis"
+               aria-label="Y-axis titled 'NO2 level (µg/m3)' for a linear scale with values from 40 to 180"
+               id="g3817">
+              <g
+                 transform="translate(0.5,0.5)"
+                 id="g3815">
+                <path
+                   inkscape:connector-curvature="0"
+                   class="background"
+                   aria-hidden="true"
+                   d="M 0,0 Z"
+                   pointer-events="none"
+                   id="path3765" />
+                <g
+                   id="g3811">
+                  <g
+                     class="mark-rule role-axis-tick"
+                     pointer-events="none"
+                     id="g3783">
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,300)"
+                       x2="-5"
+                       y2="0"
+                       id="line3767" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,257)"
+                       x2="-5"
+                       y2="0"
+                       id="line3769" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,214)"
+                       x2="-5"
+                       y2="0"
+                       id="line3771" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,171)"
+                       x2="-5"
+                       y2="0"
+                       id="line3773" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,129)"
+                       x2="-5"
+                       y2="0"
+                       id="line3775" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,86)"
+                       x2="-5"
+                       y2="0"
+                       id="line3777" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,43)"
+                       x2="-5"
+                       y2="0"
+                       id="line3779" />
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       x2="-5"
+                       y2="0"
+                       id="line3781" />
+                  </g>
+                  <g
+                     class="mark-text role-axis-label"
+                     pointer-events="none"
+                     id="g3801">
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,306)"
+                       font-size="20px"
+                       id="text3785">40</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,263.14286)"
+                       font-size="20px"
+                       id="text3787">60</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,220.28571)"
+                       font-size="20px"
+                       id="text3789">80</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,177.42857)"
+                       font-size="20px"
+                       id="text3791">100</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,134.57143)"
+                       font-size="20px"
+                       id="text3793">120</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,91.714286)"
+                       font-size="20px"
+                       id="text3795">140</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,48.857143)"
+                       font-size="20px"
+                       id="text3797">160</text>
+                    <text
+                       style="font-size:20px;font-family:sans-serif;text-anchor:end;opacity:1;fill:#000000"
+                       transform="translate(-7,6)"
+                       font-size="20px"
+                       id="text3799">180</text>
+                  </g>
+                  <g
+                     class="mark-rule role-axis-domain"
+                     pointer-events="none"
+                     id="g3805">
+                    <line
+                       style="opacity:1;stroke:#888888;stroke-width:1"
+                       y1="0"
+                       x1="0"
+                       transform="translate(0,300)"
+                       x2="0"
+                       y2="-300"
+                       id="line3803" />
+                  </g>
+                  <g
+                     class="mark-text role-axis-title"
+                     pointer-events="none"
+                     id="g3809">
+                    <text
+                       style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="rotate(-90,50.81543,99.18457)"
+                       font-size="20px"
+                       font-weight="bold"
+                       id="text3807">NO2 level (µg/m3)</text>
+                  </g>
+                </g>
+                <path
+                   style="display:none"
+                   inkscape:connector-curvature="0"
+                   class="foreground"
+                   aria-hidden="true"
+                   d=""
+                   pointer-events="none"
+                   display="none"
+                   id="path3813" />
+              </g>
+            </g>
+            <g
+               class="mark-symbol role-mark layer_0_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3829">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 67.1003925734"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,241.92773)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3819" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 65.097807268"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,246.21898)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3821" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 70.5711794464"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,234.49033)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3823" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 60.1220640022"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,256.88129)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3825" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 74.9860361756"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,225.02992)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3827" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_1_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3841">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 72.8935601287"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,229.5138)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3831" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 71.3472914811"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,232.82723)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3833" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 77.8523040912"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,218.88792)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3835" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 70.9063229209"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,233.77217)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3837" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 84.1440467698"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,205.40561)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3839" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_2_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3853">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 76.5710413626"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,221.63348)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3843" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 75.3418980112"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,224.26736)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3845" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 82.5305119647"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,208.86319)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3847" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 78.2041568805"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,218.13395)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3849" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 90.1074916961"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,192.6268)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3851" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_3_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3865">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 79.6401956963"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,215.05672)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3855" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 78.6912476682"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,217.09018)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3857" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 86.4667679137"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,200.42835)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3859" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 84.5633860846"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,204.50703)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3861" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 95.1706626443"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,181.77715)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3863" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_4_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3877">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 82.4994773591"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,208.92969)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3867" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 81.823823615"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,210.37752)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3869" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 90.1591347803"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,192.51614)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3871" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 90.7075611468"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,191.34094)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3873" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 99.9564539748"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,171.52188)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3875" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_5_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3889">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 85.3634769362"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,202.79255)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3879" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 84.9730500565"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,203.62918)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3881" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 93.8813362234"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,184.53999)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3883" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 97.0743424215"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,177.69784)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3885" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 104.81528833"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,161.1101)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3887" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_6_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3901">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 88.4256905606"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,196.23066)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3891" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 88.3525567973"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,196.38738)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3893" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 97.886705468"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,175.95706)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3895" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 104.116910002"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,162.60662)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3897" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 110.081030248"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,149.82636)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3899" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_7_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3913">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 91.9638826604"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,188.64882)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3903" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 92.2727233541"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,187.98702)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3905" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 102.54660008"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,165.97157)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3907" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 112.556650418"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,144.52146)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3909" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 116.254202561"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,136.59814)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3911" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_8_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3925">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 96.5904419076"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,178.73477)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3915" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 97.4227133835"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,176.95133)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3917" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 108.689889428"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,152.80738)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3919" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 124.081611591"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,119.82512)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3921" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 124.466626164"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,119.00009)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3923" />
+            </g>
+            <g
+               class="mark-symbol role-mark layer_9_marks"
+               role="graphics-object"
+               aria-roledescription="symbol mark container"
+               id="g3937">
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 104.892270434"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(60,160.94513)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3927" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t1; NO2 level (µg/m3): 106.728486433"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(180,157.01039)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3929" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t2; NO2 level (µg/m3): 119.848930866"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(300,128.89515)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3931" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t3; NO2 level (µg/m3): 146.150769552"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(420,72.534065)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3933" />
+              <path
+                 style="opacity:0.7;stroke:#00008b;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t4; NO2 level (µg/m3): 139.588150452"
+                 role="graphics-symbol"
+                 aria-roledescription="point"
+                 transform="translate(540,86.59682)"
+                 d="M 5,0 A 5,5 0 1 1 -5,0 5,5 0 1 1 5,0"
+                 id="path3935" />
+            </g>
+            <g
+               class="mark-line role-mark layer_10_marks"
+               role="graphics-object"
+               aria-roledescription="line mark container"
+               id="g3941">
+              <path
+                 style="stroke:#add8e6;stroke-width:2"
+                 inkscape:connector-curvature="0"
+                 aria-label="Time of Day: t0; NO2 level (µg/m3): 83.9194040669"
+                 role="graphics-symbol"
+                 aria-roledescription="line mark"
+                 d="m 60,205.88699 120,1.14784 120,-18.46686 120,-3.93412 120,-18.25669"
+                 id="path3939" />
+            </g>
+            <g
+               class="mark-group role-title"
+               id="g3955">
+              <g
+                 transform="translate(300,-34)"
+                 id="g3953">
+                <path
+                   inkscape:connector-curvature="0"
+                   class="background"
+                   aria-hidden="true"
+                   d="M 0,0 Z"
+                   pointer-events="none"
+                   id="path3943" />
+                <g
+                   id="g3949">
+                  <g
+                     class="mark-text role-title-text"
+                     role="graphics-symbol"
+                     aria-roledescription="title"
+                     aria-label="Title text 'NO2 prediction levels - Dot Chart'"
+                     pointer-events="none"
+                     id="g3947">
+                    <text
+                       style="font-weight:bold;font-size:20px;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
+                       transform="translate(0,16)"
+                       font-size="20px"
+                       font-weight="bold"
+                       id="text3945">NO2 prediction levels -Natural Frequency Time</text>
+                  </g>
+                </g>
+                <path
+                   style="display:none"
+                   inkscape:connector-curvature="0"
+                   class="foreground"
+                   aria-hidden="true"
+                   d=""
+                   pointer-events="none"
+                   display="none"
+                   id="path3951" />
+              </g>
+            </g>
           </g>
+          <path
+             style="display:none"
+             inkscape:connector-curvature="0"
+             class="foreground"
+             aria-hidden="true"
+             d=""
+             display="none"
+             id="path3959" />
         </g>
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none"
-       x="875.56525"
-       y="1124.3733"
-       id="text10918"><tspan
-         id="tspan10920"
-         sodipodi:role="line"
-         x="875.56525"
-         y="1124.3733"
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none">Each circle represents</tspan></text>
-    <text
-       id="text10930"
-       y="1144.3732"
-       x="875.56525"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         style="font-size:18.66666603px;fill:#fe3400;fill-opacity:1"
-         y="1144.3732"
-         x="875.56525"
-         sodipodi:role="line"
-         id="tspan10928">the center of a decile</tspan></text>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
+     x="836.72278"
+     y="525.54565"
+     id="text10918"><tspan
+       id="tspan10920"
+       sodipodi:role="line"
+       x="836.72278"
+       y="525.54565"
+       style="font-size:18.6667px;fill:#fe3400;fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none">Each circle represents</tspan></text>
+  <text
+     id="text10930"
+     y="545.54553"
+     x="836.72278"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
+       y="545.54553"
+       x="836.72278"
+       sodipodi:role="line"
+       id="tspan10928">each of the 10 percentiles</tspan></text>
+  <text
+     id="text10930-3"
+     y="565.8949"
+     x="837.4696"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fe3400;fill-opacity:1;stroke:none"
+     xml:space="preserve"><tspan
+       style="font-size:18.6667px;fill:#fe3400;fill-opacity:1"
+       y="565.8949"
+       x="837.4696"
+       sodipodi:role="line"
+       id="tspan10928-6">between 5% and 95%</tspan></text>
 </svg>
