@@ -56,16 +56,27 @@ probabilistic forecasting \sep visualization \sep natural frequency chart
 \section{Introduction}
 \label{sec:intro}
 
-From the early stages of data processing and decision making, analysts are confronted with uncertainty. This uncertainty
-has several sources: incomplete information, missing values, unpredictability of the future ... As stated by Padilla et al.,
+Uncertainty
+
+From the early stages of decision making, analysts are confronted with uncertainty. 
+
+
+Forecast 
+
+For example, in the case of weather forecast, people may have well formed 
+expectations based on prior experiences, and those expectations already include some sort of uncertainty: like 
+expecting a range of temperatures, instead of a single value. Therefore, they also expect the forecasting models
+to have that uncertainty. 
+As stated by Padilla et al.,
 taking it into account is essential to estimate the potential risks and rewards derived from the decisions. 
+Also the unpredictability of the future makes us expect some sort of uncertainty 
+in the predictions. As stated by Joslyn et al, those forecasts with uncertainty can validate or correct the invalid 
+biases from their expectations.
+Rouston et al. 
+\cite{roulston_laboratory_2006} showed that analysts improved their rewards when taking decisions from temperature forecasts with uncertainty.
 
-For example in the context of weather forecast, Joslyn et al explain 
-that people can use uncertainty to correct invalid biases from their expectations (whih bias and exectatinos ?).
-Also in weather forecast, Rouston et al. 
-\cite{roulston_laboratory_2006} showed that analysts could improve their rewards and reduce their exposure 
-to risk how ? Elaborate. 
-
+Probabilistic forecast provides a full probability distribution instead of a single value and it's a much 
+better approximation to uncertainty.
 One of the primary examples of this is when basing our decisions on machine learning forecasts.
 One way to present uncertainty is to present probabilistic forecasting, which instead of showing the evolution 
 of the predicted value of a target variable, presents the evolution of the full distribution or main quantiles 
@@ -74,15 +85,31 @@ of wind energy generation. In air quality forecasting, Perez-Vasseur et al. show
 enables the estimation of the probability the No2 pollutant will reach a certain threshold and become a danger 
 to the city inhabitants.
 
+Uncertainty visualization 
+
 However, uncertainty visualization and understanding has faced many challenges. As Padilla et al. \cite{balakrishnan_uncertainty_2021} 
 points out, this could be due not only to the abstract nature of probability 
 but also to poor communication techniques. Weiskopf et al. reaches a similar conclusion and states 
 that uncertainty understanding should be linked to the way it is communicated. 
 
+Data Visualization 
+
 One area of research which could alleviate this problem is data visualization. Indeed, as 
 stated by Islam et al., visualizations are easier for the human brain to understand and process.
 For instance, Perez Cota et al. mentions how visualization are playing an important role in the business 
 environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
+
+Intention 
+
+Therefore, inspired by Brenner et al., we propose a social experiment where we will compare different charts 
+in terms of probability reading: confidence interval, time series box plot, visual semiotics.
+Also, we are introducing a novel type of chart based on frequency framing: Natural frequency time chart.
+
+We will use as an application ground for this comparison a probabilistic forecast of NO levels 
+in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
+and we display this very same time series with uncertainty in each of the visualization mentioned above. 
+We then estimate for each one how well its numeric values are read by assessing how several individuals read 
+and understand the charts.
 
 \section{State of the art}
 \label{sec:results}
@@ -135,15 +162,7 @@ However, we can also evaluate the performance of those visualizations on probabi
 Brenner et al. \cite{brennen_instrument_2018} developed a methodology to systematically evaluate the performance
 of uncertainty visualizations, based on four measures: cognitive load, confidence, accuracy and time to read. 
 
-Therefore, inspired by Brenner et al., we propose a social experiment where we will compare those charts 
-in terms of probability reading: confidence interval, time series box plot, visual semiotics.
-Also, we are introducing a novel type of chart based on frequency framing: Natural frequency time chart.
 
-We will use as an application ground for this comparison a probabilistic forecast of NO levels 
-in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
-and we display this very same time series with uncertainty in each of the visualization mentioned above. 
-We then estimate for each one how well its numeric values are read by assessing how several individuals read 
-and understand the charts.
 
 \section{Time Series probabilistic charts}  
 \label{sec:time_series}
