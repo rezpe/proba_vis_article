@@ -63,32 +63,24 @@ several causes such as missing information, statistical errors or modelling appr
 This uncertainty also affects machine learning models, whose estimations are naturally 
 subject to some degree of uncertainty. One way to present this uncertainty is to provide 
 a full probability distribution as an estimation instead of a single value. Probabilistic 
-time series forecasting models are an example of this and they provide the full probability distribution 
-of the future values of a time series.
+time series forecasting models are an example of this and they provide the full probability 
+distribution of the future values of a time series.
 
-Decision making with those kinds of estimations is proven to provide higher rewards and correct invalid biases.
-
-1 People expect uncertainty
-
-However, most of the time, those predictions are shown as deterministic.
-
-Indeed, there is a concern that people will not be able to understand predictions that come with uncertainty. 
+However, there is a concern that people will not be able to understand predictions that come with uncertainty. 
 This could be due to the abstract nature of the probability concepts or because the presentation of this uncertainty
-is confusing. 
+can be perceived as confusing. 
 
-However people are already used to deal with uncertainty when they use weather forecasts, for example. 
-As such, displaying the uncertainty of machine learning predictions can actually be more helpful than presenting 
-a single-value forecast. This is because people are already accustomed to thinking in terms of ranges, 
-and so a range forecast from a machine learning model can help them to refine their own predictions.
+This worry prevents people from acessing decision making with uncertainty and it is superior to decision making without.  
+People already think in terms of uncertainty 
+and they expect it for forecasts: for weather forecast they
+think in terms of ranges. Then using uncertainty can help you estimate the potential rewards and 
+risks derived from your decision. For example Pinson mentioned how we can optimize the use of wind energy forecasts with 
+uncertainty. Another example is the simulation where they gave uncertain estimations to participants and they were 
+getting more revenues than the others.
 
 
-
-Forecast 
-
-For example, weather forecast estimations do present uncertainty and people are as noted by Joslyn et al  
-
-, people may have well formed 
-expectations based on prior experiences, and those expectations already include some sort of uncertainty: like 
+Also, the uncertainty permits to correct the biases the people nmight have: 
+Forecast like 
 expecting a range of temperatures, instead of a single value. Therefore, they also expect the forecasting models
 to have that uncertainty. 
 As stated by Padilla et al.,
@@ -99,8 +91,6 @@ biases from their expectations.
 Rouston et al. 
 \cite{roulston_laboratory_2006} showed that analysts improved their rewards when taking decisions from temperature forecasts with uncertainty.
 
-Probabilistic forecast provides a full probability distribution instead of a single value and it's a much 
-better approximation to uncertainty.
 One of the primary examples of this is when basing our decisions on machine learning forecasts.
 One way to present uncertainty is to present probabilistic forecasting, which instead of showing the evolution 
 of the predicted value of a target variable, presents the evolution of the full distribution or main quantiles 
