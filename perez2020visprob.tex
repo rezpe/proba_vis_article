@@ -110,16 +110,21 @@ and understand the charts.
 \section{State of the art}
 \label{sec:results}
 
+(As noted by Joslyn et al. \cite{joslyn_communicating_2010},the shortcomings in uncertainty visualization have lead to a new surge of 
+research in visualization techniques. Also Van 
+der Bles et al. \cite{van_der_bles_communicating_nodate} state that there is more than 
+error bars to show uncertainty. )
+
 Pang et al. were the first to gather uncertainty visualization techniques and classify them in order to bring order to the field and help 
 practitioners choose the right visualization. However, their taxonomy did not explain how the visualization works nor helped creating new 
-visualizations. Following uncertainty visualization surveys were based on data types (Potter et al. (2011) and Brodlie et al. (2012)), 
-sources of uncertainty (Bonneau et al. (2014)), types of uncertainty (Ristovski et al. (2014)). 
-
-Jena et al. (2020) classified the techniques based on the publication channel and audience and even made their findings available online as a 
+visualizations. Following uncertainty visualization surveys were based on data types (Potter et al. (2011) and Brodlie et al. (2012)), 
+sources of uncertainty (Bonneau et al. (2014)), types of uncertainty (Ristovski et al. (2014)). Jena et al. (2020) classified the techniques 
+based on the publication channel and audience and even made their findings available online as a 
 public web site. 
 
-The most notable work is the state of the art delivered by PAdilla et al. which goes into the design space and classifies according to 
-design criteria. 
+The most notable work is the classifications delivered by Padilla et al. which classifies according to 
+the type of visual mapping. They provide the main types of uncertainty visualization techniques with their shortcomings and 
+explain to the reader that there's no one size-fits-all solution and the visualization technique must be chosen according to the use case.
 
 According to them, one of the most typical approaches, Visual Boundaries such as isocontours and error 
 bars display value areas within a certain confidence interval. The problem with this approach is 
@@ -130,14 +135,10 @@ standard errors and confidence intervals. In addition, Joslyn and LeClerc showed
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
-As noted by Joslyn et al. \cite{joslyn_communicating_2010}, this has lead to a new surge of 
-research in visualization techniques: Van 
-der Bles et al. \cite{van_der_bles_communicating_nodate} point that there is more than 
-error bars to show uncertainty. 
-
 As stated by Padilla et al., one possible solution to this problem is the use of HOPs (hypothetical outcome plot). HOPs display 
 sequentially in an animation, random values from a distribution. However, this technique can not be 
-applied to static visualizations. 
+applied to static visualizations and requires media formats like video or animated images: This makes difficult the distribution 
+of that type of visualization.
 
 An alternative approach, Visual Semiotics uses visual encoding such as fuzziness or color to represent 
 the probability of a certain value. An example of this would be the use of gradients to represent the 
@@ -157,15 +158,13 @@ The visualizations would need to show the evolution of uncertainty in time: this
 is especially challenging as a visualization must display several distributions in a constrained space.  
 As pointed out by Leffrang et al. \cite{leffrang_should_2021}, not much research has been applied to the 
 field of uncertainty visualization in this field. 
-However, we have already seen in the literature solutions for this problem as confidence interval charts,
- box plots or gradient charts. Those 3 types of charts correspond to the different solutions for uncertainty 
- we have seen above. However, we have not seen yet a solution involving frequency framing. As stated by van Wijk,
+However, we can apply for this problem some of the solutions described above such as confidence interval charts or 
+box plots (visual boundaries) or gradient charts (visual semiotics). However, we have not seen yet a solution involving 
+frequency framing. It it true that as stated by van Wijk,
  data visualization can be considered an art and therefore subject to criteria like taste or design aesthetics. 
-However, we can also evaluate the performance of those visualizations on probability readability.
+However, we can evaluate the performance of those visualizations on probability readability.
 Brenner et al. \cite{brennen_instrument_2018} developed a methodology to systematically evaluate the performance
 of uncertainty visualizations, based on four measures: cognitive load, confidence, accuracy and time to read. 
-
-
 
 \section{Time Series probabilistic charts}  
 \label{sec:time_series}
