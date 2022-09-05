@@ -79,8 +79,7 @@ it's easier to correct a range of values with another range of values rather tha
 However, there is a concern that people will not be able to understand predictions that come with uncertainty.
 This fear is reinforced by cases where uncertainty seems to confuse the users. For example,
 Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
-trouble reading error bars and they confused 
-standard errors and confidence intervals. 
+trouble reading error bars. 
 As Padilla et al. \cite{balakrishnan_uncertainty_2021} 
 points out, this could be due to to the abstract nature of the probability concepts or to poor communication techniques. 
 
@@ -94,12 +93,11 @@ but as pointed out by Leffrang et al. there's few research on uncertainty on tim
 estimating probabilities from the forecasts with uncertainty helps to estimate the risks and rewards derived from those 
 decision. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
 
-Following this thought, we will present the current research on uncertainty visualization. We will then
-design different soutions applied to the Probabilistic time series forecasting models and 
+Following this thought, we will present in section 2 the current research on uncertainty visualization. We will then
+design different soutions applied to the Probabilistic time series forecasting models in section 3 and in section 4 and 5,
 we will compare those methods against the question: how well can we estimate probabilities with it. 
 For that, inspired by Brenner et al., we propose a social experiment where we will compare different charts 
-in terms of probability reading. Those charts will be extracted from the ways of presenting uncertainty.
-Also we are going to see if we can envision novel ways to present the information based on the generalistic techniques.
+in terms of probability reading. 
 
 We will use as an application ground for this comparison a probabilistic forecast of NO levels 
 in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
@@ -110,27 +108,25 @@ and understand the charts.
 \section{State of the art}
 \label{sec:results}
 
-(As noted by Joslyn et al. \cite{joslyn_communicating_2010},the shortcomings in uncertainty visualization have lead to a new surge of 
-research in visualization techniques. Also Van 
-der Bles et al. \cite{van_der_bles_communicating_nodate} state that there is more than 
-error bars to show uncertainty. )
+As noted by Joslyn et al. \cite{joslyn_communicating_2010},the shortcomings in uncertainty visualization lead to a new surge of 
+research in visualization techniques. 
 
 Pang et al. were the first to gather uncertainty visualization techniques and classify them in order to bring order to the field and help 
 practitioners choose the right visualization. However, their taxonomy did not explain how the visualization works nor helped creating new 
-visualizations. Following uncertainty visualization surveys were based on data types (Potter et al. (2011) and Brodlie et al. (2012)), 
+ones. Following uncertainty visualization surveys were based on data types (Potter et al. (2011) and Brodlie et al. (2012)), 
 sources of uncertainty (Bonneau et al. (2014)), types of uncertainty (Ristovski et al. (2014)). Jena et al. (2020) classified the techniques 
 based on the publication channel and audience and even made their findings available online as a 
 public web site. 
 
 The most notable work is the classifications delivered by Padilla et al. which classifies according to 
 the type of visual mapping. They provide the main types of uncertainty visualization techniques with their shortcomings and 
-explain to the reader that there's no one size-fits-all solution and the visualization technique must be chosen according to the use case.
+explain to the reader that there's no one size-fits-all solution and that visualization technique must be chosen according to their use case.
 
 According to them, one of the most typical approaches, Visual Boundaries such as isocontours and error 
 bars display value areas within a certain confidence interval. The problem with this approach is 
-that individuals may exclude as possible values outside the confidence interval, which are still 
-possible, only less probable. Also, Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
-trouble reading error bars and they confused 
+that individuals may exclude as possible, values outside the confidence interval, which are still 
+possible, only less probable. Also, as stated previously, Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
+trouble reading error bars as they confused 
 standard errors and confidence intervals. In addition, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
@@ -143,7 +139,9 @@ of that type of visualization.
 An alternative approach, Visual Semiotics uses visual encoding such as fuzziness or color to represent 
 the probability of a certain value. An example of this would be the use of gradients to represent the 
 full probabiliity distribution. Neverthless, this type of encoding makes it difficult to read specific 
-values. Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
+values. 
+
+Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
 Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
 lead to the development of the quantile dot plot. This plot, created by Kay et al. 
 \cite{2016-when-ish-is-my-bus} 
@@ -156,8 +154,8 @@ understanding and probability estimates reading.
 However those approaches do not address specifically the problem of uncertainty in the case of time series.
 The visualizations would need to show the evolution of uncertainty in time: this 
 is especially challenging as a visualization must display several distributions in a constrained space.  
-As pointed out by Leffrang et al. \cite{leffrang_should_2021}, not much research has been applied to the 
-field of uncertainty visualization in this field. 
+As pointed out by Leffrang et al. \cite{leffrang_should_2021}, not much research has been applied to this 
+field. 
 However, we can apply for this problem some of the solutions described above such as confidence interval charts or 
 box plots (visual boundaries) or gradient charts (visual semiotics). However, we have not seen yet a solution involving 
 frequency framing. 
@@ -165,7 +163,7 @@ frequency framing.
 Once all this visualizations are defined, we should find a way to compare them. It it true that as stated by van Wijk,
 data visualization can be considered an art and therefore subject to criteria like taste or design aesthetics.
 
-As noted by Pang et al., the basic methodology to compare visualizations is to measure how accurate is the 
+However, as noted by Pang et al., the basic methodology to compare visualizations is to measure how accurate is the 
 decoding of the visualization: we compare the value encoded in the visualization with the value read
 by the user. In their classical paper, Cleveland et al. produced a ranking of visual encodings for numerical values 
 with position being the most accurate encoder. However, as noted by Brenner et al. \cite{brennen_instrument_2018}
@@ -185,7 +183,8 @@ The confidence interval chart shows in a line the evolution of the median of the
  User estimates the probabilities with the distance of the points to those lines.
 
 The box plot chart shows different percentile with “boxes”. For each point in time, a white 
-line shows the location of mean, then a rectangle (or box) lower and upper part is located 
+line shows the location of mean, then 2 boxes display different percentiles: the
+first rectangle (or box) lower and upper part are located 
 at the 25\% and 75\% percentile respectively, a narrower box upper and lower part shows 
 the 5\% and 95\% percentile and finally a line’s edge shows the 1\% and 99\% percentile. 
 This visual boundary representation shows more percentile than the confidence interval and 
