@@ -176,9 +176,11 @@ cognitive load, confidence, accuracy and time to read.
 \section{Time Series probabilistic charts}  
 \label{sec:time_series}
 
-Figure \ref{figure:charts} shows a summary of the studied probabilistic time series charts.
+Based on the research above, we have identified the following charts as suitable to display 
+uncertainty in time series.
 
-The confidence interval chart shows in a line the evolution of the median of the distribution
+The first one is the confidence interval chart  which shows in a line the evolution of the 
+median of the distribution
  over time alongside 2 lines: the evolution of the 5\% and 95\% percentile of the distribution. 
  User estimates the probabilities with the distance of the points to those lines.
 
@@ -214,6 +216,7 @@ probability of being in an interval as 10 times the number of circles in that in
 We have chosen 10 percentiles as it makes it easy to calculate the probability (just multiply by 10), also a higher number
 would have cramped the chart and made it difficult to view the circles as separate. 
 
+Figure \ref{figure:charts} shows a summary of the described probabilistic time series charts.
 
 \begin{figure}
   \centering
@@ -226,10 +229,21 @@ would have cramped the chart and made it difficult to view the circles as separa
 \section{Experimental Design}
 \label{sec:exp_design}
 
-Our objective is to compare the readability of the four types of probabilistic time series charts 
-described in the previous section and displayed in figure 1. 
-The main question for this comparison is to understand how well each charts can be read 
-when estimating the probability that the evolving target is within a certain interval at a certain time point. 
+We would like to compare the charts described in the previous section in terms of probability 
+reading, ie how well 
+can the charts communicate the probability that the evolving target is within a certain interval 
+at a certain time point. For this, we will inspire ourselves from the experiments of Brenner et al. 
+and will use the same metrics 
+as them: accuracy, time to answer, cognitive load and perception.
+
+We have built a probabilistic time series forecasting model that estimates the distribution of NO 
+levels of one of the air quality stations in Madrid. Those stations measure the level of certain 
+pollutants like O3 or NO and serve as a monitoring tool for the air quality of the city. If the pollutant 
+reach certain levels, it can be dangerous for the city inhabitants. Therefore it becomes necessary 
+for the city administration to 
+forecast the air quality levels to take decisions based on it (like limiting car traffic to reduce it beforehand).
+Our model produces an hourly forecast for the next day of one of the pollutants: NO. This forecast contains
+for each hour of the day the probability distribution of the target variable. 
 
 As stated previously, 
 the evolving distribution is the probabilistic forecast of NO levels. 
