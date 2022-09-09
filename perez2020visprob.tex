@@ -171,7 +171,7 @@ the complexity of a visualization could lead to better readability but higher ti
 they noticed that those measures do not take into account the perception of the user, specially when the visualization
 is showing uncertainty. Therefore they developed a methodology 
 to systematically evaluate the performance of uncertainty visualizations, based on four measures: 
-cognitive load, confidence, accuracy and time to read. 
+cognitive load, confidence, reading error and time to read. 
 
 \section{Time Series probabilistic charts}  
 \label{sec:time_series}
@@ -235,8 +235,8 @@ reading, ie how well
 can the charts communicate the probability that the evolving target is within a certain interval 
 at a certain time point.
  For this, we will use as inspiration the experiments of Brenner et al. 
-and will use the same metrics 
-as them: accuracy, time to answer, cognitive load and perception. The accuracy will be estimated as the 
+and will use similar metrics 
+as them: readinig error, time to answer, cognitive load and perception. The reading error will be estimated as the 
 absolute value of the difference between the read probability and the real probability. The time to answer 
 will be calculated from the moment the reader sees the chart until he submits his answer. The cognitive 
 load and the confidence are the perceived difficulty reading the charts and the perceived confidence on 
@@ -263,8 +263,9 @@ et al. \cite{brennen_instrument_2018}, we select Master level participants, who 
 large number of Requesters'').
 
 We then implemented a web site which guides the user through a presentation of the chart and the questions.
-Each individual is presented a unique type of chart from the 4 presented above, gets a brief 
-explanation on how it works and they have to estimate 5 probabilities from the chart. An example question is: 
+Indeed,  each individual is presented a unique type of chart from the 4 presented above, gets a brief 
+explanation on how it works and they have to estimate 5 probabilities at 5 different moments from the chart. 
+An example question is: 
 "What is the probability of the NO2 levels being between 150 and 200 on 
 November 21st at 22:00 ?". For each question, we are measuring the accuracy and the time it took to 
 perform each estimation. Once the individuals have estimated the probabilities, they are asked how confident they 
@@ -276,9 +277,7 @@ type of chart.
 \section{Results}
 \label{sec:results}
 
-First, for each answer, we define the 
-reading error as the absolute value of the difference 
-between the provided answer and the true probability displayed in the chart. Figure \ref{figure:errors} shows 
+First, we gathered all the answers. Figure \ref{figure:errors} shows 
 the distribution of the reading error per type of chart. We see clearly how the natural frequency time chart
 has a much lower reading error then the other charts. 
 
