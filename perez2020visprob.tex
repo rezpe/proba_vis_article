@@ -253,7 +253,7 @@ Our model produces an hourly forecast for the next day of one of the pollutants:
 for each hour of the day the probability distribution of the target variable and therefore provides the evolution 
 of the probability distribution of the target variable (NO level).
 
-We will display this very same evolution on each of the 4 charts and we will evaluate how well we can 
+We will display this very same evolution on each of the 4 charts and we will evaluate how well users can 
 read the probability the NO level is within a certain range at a certain hour. 
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
@@ -264,7 +264,7 @@ large number of Requesters'').
 
 We then implemented a web site which guides the user through a presentation of the chart and the questions.
 Indeed,  each individual is presented a unique type of chart from the 4 presented above, gets a brief 
-explanation on how it works and they have to estimate 5 probabilities at 5 different moments from the chart. 
+explanation on how it works and they are asked to estimate 5 probabilities at 5 different moments from the chart. 
 An example question is: 
 "What is the probability of the NO2 levels being between 150 and 200 on 
 November 21st at 22:00 ?". For each question, we are measuring the accuracy and the time it took to 
@@ -277,9 +277,15 @@ type of chart.
 \section{Results}
 \label{sec:results}
 
-First, we gathered all the answers. Figure \ref{figure:errors} shows 
-the distribution of the reading error per type of chart. We see clearly how the natural frequency time chart
-has a much lower reading error then the other charts. 
+After gathering all the answers from the participants, we grouped together the estimations per type of chart and built figure \ref{figure:errors} 
+which shows 
+the distribution of the reading error per type of chart, the confidence and the perceived difficulty. 
+
+This distribution let us build a ranking of visualizations where the worst chart in terms of readability is the 
+gradient chart and the best is the natural frequency time chart as it has a much lower reading error then the other charts. As stated before, 
+gradient charts are designed to showcase an general overview of the distribution as they represent the evolution of the
+full range of percentiles, however the use of the "color" visual encoding limits the readability of the chart. On the other hand, natural 
+frequency charts have a much lower readability error and we can see how the use of natural frequencies creates a more accurate reading experience.
 
 \begin{figure}
   \centering
