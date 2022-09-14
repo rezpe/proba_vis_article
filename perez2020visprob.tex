@@ -283,8 +283,11 @@ the distribution of the reading error per type of chart, the confidence and the 
 
 This distribution let us build a ranking of visualizations where the worst chart in terms of readability is the 
 gradient chart and the best is the natural frequency time chart as it has a much lower reading error then the other charts. As stated before, 
-gradient charts are designed to showcase an general overview of the distribution as they represent the evolution of the
-full range of percentiles, however the use of the "color" visual encoding limits the readability of the chart. On the other hand, natural 
+gradient charts are designed to showcase a general overview of the distribution as they represent the evolution of the
+full range of percentiles, however as shown by Cleveland et al., the "color" visual encoding is one of the 
+worst encoders and limits the readability of the chart. Box plots and confidence interval have similar reading errors: This is surprising
+as box plots displey more percentiles than the confidence interval, and shows that if we had to chose between those 2 types of charts, confidence 
+interval should be chosen as it is simpler to build. On the other hand, natural 
 frequency charts have a much lower readability error and we can see how the use of natural frequencies creates a more accurate reading experience.
 
 \begin{figure}
@@ -314,16 +317,6 @@ frequency charts have a much lower readability error and we can see how the use 
   \label{table:resultsperquestion}
   \end{table}
 
-We see in figure \ref{figure:duration} that for every chart, the time it takes 
-to read and answer the question decreases for every question answered. As we see in the figure, those times 
-are very similar for all the types of charts. 
-
-\begin{figure}
-  \centering
-   \includegraphics[width=0.6\textwidth]{duration_evo2}
-  \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
-\end{figure}  
-
 Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
 of the natural frequency time chart. Users reported higher levels of confidence and 
 lower levels of perceived difficulty for the natural frequency time chart.
@@ -332,6 +325,19 @@ Finally although we selected users with master level, we still did received answ
 above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
 users and reinforces the fears discussed in the introduction. 
 We identified 9 users from 80 whose answers could not be used because of those reasons.
+
+\begin{figure}
+  \centering
+   \includegraphics[width=0.6\textwidth]{duration_evo2}
+  \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
+\end{figure}  
+
+We see in figure \ref{figure:duration} that for every chart, the time it takes 
+to read and answer the question decreases for every question answered. As we see in the figure, those times 
+are very similar for all the types of charts. 
+
+
+
 
 \section{Conclusions}
 \label{sec:concl}
