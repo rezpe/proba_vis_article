@@ -64,7 +64,7 @@ uncertainty is to provide a full probability distribution as an estimation inste
 Probabilistic time series forecasting models are an example of this and they provide the full probability 
 distribution of the future values of a time series.
 
-As stated by Padilla et al., it is beneficial to take into account uncertainty when making decisions as it
+As stated by Padilla et al. \cite{padilla_uncertainty_2021}, it is beneficial to take into account uncertainty when making decisions as it
 helps to estimate the potential risks and rewards derived from decisions. For example, Pinson mentioned how uncertainty 
 in wind energy forecasts optimized the use of this ressource. In air quality forecasting, we showed 
 how probabilistic forecasting enables the estimation of the risk the No2 pollutant will surpass a certain threshold 
@@ -72,7 +72,8 @@ and become a danger to the city inhabitants. Rouston et al. \cite{roulston_labor
 improved their rewards thanks to uncertainty when taking decisions from temperature forecasts.
 Also, people already think in terms of uncertainty and they naturally expect it in the forecasts: 
 for example, for weather forecast 
-they already think in terms of temperature ranges or words which cover a range ("warm" or "cold"). As stated by Joslyn et al, 
+they already think in terms of temperature ranges or words which cover a range ("warm" or "cold"). As stated by Joslyn et al.
+\cite{joslyn_communicating_2010} , 
 those forecasts with uncertainty can validate or correct the invalid biases from their original expectations: Indeed,
 it's easier to correct a range of values with another range of values rather than a single value.
 
@@ -80,23 +81,24 @@ However, there is a concern that people will not be able to understand predictio
 This fear is reinforced by cases where uncertainty seems to confuse the users. For example,
 Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
 trouble reading error bars. 
-As Padilla et al. \cite{balakrishnan_uncertainty_2021} 
+As Padilla et al. \cite{padilla_uncertainty_2021} 
 points out, this could be due to to the abstract nature of the probability concepts or to poor communication techniques. 
 
 One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
-stated by Islam et al., visualizations are easier for the human brain to understand and process.
-For instance, Perez Cota et al. mentions how visualization are playing an important role in the business 
+stated by Islam et al. \cite[]{islam_overview_2019}, visualizations are easier for the human brain to understand and process.
+For instance, Perez Cota et al. \cite[]{cota_importance_2014} mentions how visualization are playing an important role in the business 
 environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
 
-As pointed out by Weiskopf et al. or Padilla et al., there's existing research around uncertainty visualization 
-but as pointed out by Leffrang et al. there's few research on uncertainty on time series forecasting. Also, 
+As pointed out by Weiskopf et al. \cite[]{weiskopf_uncertainty_2022} or Padilla et al. \cite[]{padilla_uncertainty_2021}, 
+there's existing research around uncertainty visualization 
+but as pointed out by Leffrang et al. \cite[]{leffrang_should_2021} there's few research on uncertainty on time series forecasting. Also, 
 estimating probabilities from the forecasts with uncertainty helps to estimate the risks and rewards derived from those 
 decision. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
 
 Following this thought, we will present in section 2 the current research on uncertainty visualization. We will then
 design different soutions applied to the Probabilistic time series forecasting models in section 3 and in section 4 and 5,
 we will compare those methods against the question: how well can we estimate probabilities with it. 
-For that, inspired by Brenner et al., we propose a social experiment where we will compare different charts 
+For that, inspired by Brennen et al. \cite[]{brennen_instrument_2018}, we propose a social experiment where we will compare different charts 
 in terms of probability reading. 
 
 We will use as an application ground for this comparison a probabilistic forecast of NO levels 
@@ -111,14 +113,17 @@ and understand the charts.
 As noted by Joslyn et al. \cite{joslyn_communicating_2010},the shortcomings in uncertainty visualization lead to a new surge of 
 research in visualization techniques. 
 
-Pang et al. were the first to gather uncertainty visualization techniques and classify them in order to bring order to the field and help 
+Pang et al. \cite[]{pang_approaches_1997} were the first to gather uncertainty visualization techniques and classify them in 
+order to bring order to the field and help 
 practitioners choose the right visualization. However, their taxonomy did not explain how the visualization works nor helped creating new 
-ones. Following uncertainty visualization surveys were based on data types (Potter et al. (2011) and Brodlie et al. (2012)), 
-sources of uncertainty (Bonneau et al. (2014)), types of uncertainty (Ristovski et al. (2014)). Jena et al. (2020) classified the techniques 
+ones. Following uncertainty visualization surveys were based on data types (Potter et al. \cite[]{potter_quantification_2012} and Brodlie et al. 
+\cite[]{brodlie_review_2012}), 
+sources of uncertainty (Bonneau et al. \cite[]{bonneau_overview_2014}), types of uncertainty 
+(Ristovski et al. \cite[]{ristovski_uncertainty_2014}). Jena et al. \cite[]{jena_uncertainty_2020} classified the techniques 
 based on the publication channel and audience and even made their findings available online as a 
 public web site. 
 
-The most notable work is the classifications delivered by Padilla et al. which classifies according to 
+The most notable work is the classifications delivered by Padilla et al. \cite[]{padilla_uncertainty_2021} which classifies according to 
 the type of visual mapping. They provide the main types of uncertainty visualization techniques with their shortcomings and 
 explain to the reader that there's no one size-fits-all solution and that visualization technique must be chosen according to their use case.
 
@@ -131,7 +136,8 @@ standard errors and confidence intervals. In addition, Joslyn and LeClerc showed
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
-As stated by Padilla et al., one possible solution to this problem is the use of HOPs (hypothetical outcome plot). HOPs display 
+As stated by Padilla et al. \cite[]{padilla_uncertainty_2021}, one possible solution to this problem is the use of HOPs 
+(hypothetical outcome plot). HOPs display 
 sequentially in an animation, random values from a distribution. However, this technique can not be 
 applied to static visualizations and requires media formats like video or animated images: This makes difficult the distribution 
 of that type of visualization.
@@ -143,7 +149,7 @@ values.
 
 Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
 Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
-lead to the development of the quantile dot plot. This plot, created by Kay et al. 
+lead to the development of the quantile dot plot. This plot, created by Kay et al. \cite[]{2016-when-ish-is-my-bus}
 \cite{2016-when-ish-is-my-bus} 
 represents 
 the probability distribution with dots: by using 20 dots, each would represent 1/20 probability 
@@ -163,10 +169,10 @@ frequency framing.
 Once all this visualizations are defined, we should find a way to compare them. It it true that as stated by van Wijk,
 data visualization can be considered an art and therefore subject to criteria like taste or design aesthetics.
 
-However, as noted by Pang et al., the basic methodology to compare visualizations is to measure how accurate is the 
+However, as noted by Pang et al. \cite[]{pang_approaches_1997}, the basic methodology to compare visualizations is to measure how accurate is the 
 decoding of the visualization: we compare the value encoded in the visualization with the value read
-by the user. In their classical paper, Cleveland et al. produced a ranking of visual encodings for numerical values 
-with position being the most accurate encoder. However, as noted by Brenner et al. \cite{brennen_instrument_2018}
+by the user. In their classical paper, Cleveland et al. \cite[]{cleveland_graphical_1984} produced a ranking of visual encodings for numerical values 
+with position being the most accurate encoder. However, as noted by Brennen et al. \cite{brennen_instrument_2018}
 the complexity of a visualization could lead to better readability but higher time to read the chart. Also, 
 they noticed that those measures do not take into account the perception of the user, specially when the visualization
 is showing uncertainty. Therefore they developed a methodology 
@@ -234,7 +240,7 @@ in terms of probability
 reading, ie how well 
 can the charts communicate the probability that the evolving target is within a certain interval 
 at a certain time point.
- For this, we will use as inspiration the experiments of Brenner et al. 
+ For this, we will use as inspiration the experiments of Brennen et al. \cite[]{brennen_instrument_2018}
 and will use similar metrics 
 as them: readinig error, time to answer, cognitive load and perception. The reading error will be estimated as the 
 absolute value of the difference between the read probability and the real probability. The time to answer 
@@ -257,7 +263,7 @@ We will display this very same evolution on each of the 4 charts and we will eva
 read the probability the NO level is within a certain range at a certain hour. 
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
-This service picks randomly 100 individuals with a minimum skill set (as proposed by Brenner 
+This service picks randomly 100 individuals with a minimum skill set (as proposed by Brennen 
 et al. \cite{brennen_instrument_2018}, we select Master level participants, who are workers who 
 ''have consistently demonstrated a high degree of success in performing a wide range of HITs across a 
 large number of Requesters'').
