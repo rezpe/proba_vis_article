@@ -277,24 +277,39 @@ November 21st at 22:00 ?". For each question, we are measuring the accuracy and 
 perform each estimation. Once the individuals have estimated the probabilities, they are asked how confident they 
 felt and how difficult the task was considered.
 
-We are testing 20 individuals per type of chart and therefore we have 100 answers per 
+We are testing 80 individuals: 20 individuals per type of chart and therefore we have 100 answers per 
 type of chart.
 
 \section{Results}
 \label{sec:results}
 
-After gathering all the answers from the participants, we grouped together the estimations per type of chart and built figure \ref{figure:errors} 
+
+After gathering all the answers from the participants, we calculated the different metrics described in the previous section and 
+grouped the answers per type of chart, then we built figure \ref{figure:errors} 
 which shows 
 the distribution of the reading error per type of chart, the confidence and the perceived difficulty. 
 
-This distribution let us build a ranking of visualizations where the worst chart in terms of readability is the 
+Although we selected users with master level, we still did received answers with probabilities 
+above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
+users and reinforces the fears discussed in the introduction. We identified 9 users from 80 whose answers could not be used because of those reasons.
+
+TALK ABOUT THE DISTRIBUTION.
+
+We can see a ranking of visualizations in figure \ref{figure:errors}, where the worst chart in terms of readability is the 
 gradient chart and the best is the natural frequency time chart as it has a much lower reading error then the other charts. As stated before, 
 gradient charts are designed to showcase a general overview of the distribution as they represent the evolution of the
 full range of percentiles, however as shown by Cleveland et al., the "color" visual encoding is one of the 
 worst encoders and limits the readability of the chart. Box plots and confidence interval have similar reading errors: This is surprising
-as box plots displey more percentiles than the confidence interval, and shows that if we had to chose between those 2 types of charts, confidence 
+as box plots display more percentiles than the confidence interval, and shows that if we had to chose between those 2 types of charts, confidence 
 interval should be chosen as it is simpler to build. On the other hand, natural 
 frequency charts have a much lower readability error and we can see how the use of natural frequencies creates a more accurate reading experience.
+
+Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) mirror the results in the reading errors chart.
+However, we see less confidence for the gradient chart.
+also show the superior ease of use 
+of the natural frequency time chart. Users reported higher levels of confidence and 
+lower levels of perceived difficulty for the natural frequency time chart.
+
 
 \begin{figure}
   \centering
@@ -323,9 +338,6 @@ frequency charts have a much lower readability error and we can see how the use 
   \label{table:resultsperquestion}
   \end{table}
 
-Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) also show the superior ease of use 
-of the natural frequency time chart. Users reported higher levels of confidence and 
-lower levels of perceived difficulty for the natural frequency time chart.
 
 Finally although we selected users with master level, we still did received answers with probabilities 
 above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
