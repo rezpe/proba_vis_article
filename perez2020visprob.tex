@@ -85,20 +85,20 @@ As Padilla et al. \cite{padilla_uncertainty_2021}
 points out, this could be due to to the abstract nature of the probability concepts or to poor communication techniques. 
 
 One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
-stated by Islam et al. \cite[]{islam_overview_2019}, visualizations are easier for the human brain to understand and process.
-For instance, Perez Cota et al. \cite[]{cota_importance_2014} mentions how visualization are playing an important role in the business 
+stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to understand and process.
+For instance, Perez Cota et al. \cite{cota_importance_2014} mentions how visualization are playing an important role in the business 
 environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
 
-As pointed out by Weiskopf et al. \cite[]{weiskopf_uncertainty_2022} or Padilla et al. \cite[]{padilla_uncertainty_2021}, 
+As pointed out by Weiskopf et al. \cite{weiskopf_uncertainty_2022} or Padilla et al. \cite{padilla_uncertainty_2021}, 
 there's existing research around uncertainty visualization 
-but as pointed out by Leffrang et al. \cite[]{leffrang_should_2021} there's few research on uncertainty on time series forecasting. Also, 
+but as pointed out by Leffrang et al. \cite{leffrang_should_2021} there's few research on uncertainty on time series forecasting. Also, 
 estimating probabilities from the forecasts with uncertainty helps to estimate the risks and rewards derived from those 
 decision. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
 
 Following this thought, we will present in section 2 the current research on uncertainty visualization. We will then
 design different soutions applied to the Probabilistic time series forecasting models in section 3 and in section 4 and 5,
 we will compare those methods against the question: how well can we estimate probabilities with it. 
-For that, inspired by Brennen et al. \cite[]{brennen_instrument_2018}, we propose a social experiment where we will compare different charts 
+For that, inspired by Brennen et al. \cite{brennen_instrument_2018}, we propose a social experiment where we will compare different charts 
 in terms of probability reading. 
 
 We will use as an application ground for this comparison a probabilistic forecast of NO levels 
@@ -113,17 +113,17 @@ and understand the charts.
 As noted by Joslyn et al. \cite{joslyn_communicating_2010},the shortcomings in uncertainty visualization lead to a new surge of 
 research in visualization techniques. 
 
-Pang et al. \cite[]{pang_approaches_1997} were the first to gather uncertainty visualization techniques and classify them in 
+Pang et al. \cite{pang_approaches_1997} were the first to gather uncertainty visualization techniques and classify them in 
 order to bring order to the field and help 
 practitioners choose the right visualization. However, their taxonomy did not explain how the visualization works nor helped creating new 
-ones. Following uncertainty visualization surveys were based on data types (Potter et al. \cite[]{potter_quantification_2012} and Brodlie et al. 
-\cite[]{brodlie_review_2012}), 
-sources of uncertainty (Bonneau et al. \cite[]{bonneau_overview_2014}), types of uncertainty 
-(Ristovski et al. \cite[]{ristovski_uncertainty_2014}). Jena et al. \cite[]{jena_uncertainty_2020} classified the techniques 
+ones. Following uncertainty visualization surveys were based on data types (Potter et al. \cite{potter_quantification_2012} and Brodlie et al. 
+\cite{brodlie_review_2012}), 
+sources of uncertainty (Bonneau et al. \cite{bonneau_overview_2014}), types of uncertainty 
+(Ristovski et al. \cite{ristovski_uncertainty_2014}). Jena et al. \cite{jena_uncertainty_2020} classified the techniques 
 based on the publication channel and audience and even made their findings available online as a 
 public web site. 
 
-The most notable work is the classifications delivered by Padilla et al. \cite[]{padilla_uncertainty_2021} which classifies according to 
+The most notable work is the classifications delivered by Padilla et al. \cite{padilla_uncertainty_2021} which classifies according to 
 the type of visual mapping. They provide the main types of uncertainty visualization techniques with their shortcomings and 
 explain to the reader that there's no one size-fits-all solution and that visualization technique must be chosen according to their use case.
 
@@ -136,7 +136,7 @@ standard errors and confidence intervals. In addition, Joslyn and LeClerc showed
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
-As stated by Padilla et al. \cite[]{padilla_uncertainty_2021}, one possible solution to this problem is the use of HOPs 
+As stated by Padilla et al. \cite{padilla_uncertainty_2021}, one possible solution to this problem is the use of HOPs 
 (hypothetical outcome plot). HOPs display 
 sequentially in an animation, random values from a distribution. However, this technique can not be 
 applied to static visualizations and requires media formats like video or animated images: This makes difficult the distribution 
@@ -149,7 +149,7 @@ values.
 
 Finally, Frequency Framing uses natural frequencies to display probabilities. As noted by Gerd 
 Gigerenzer, individuals prefer frequencies or ratio, like 1/10, when understanding probability. This has 
-lead to the development of the quantile dot plot. This plot, created by Kay et al. \cite[]{2016-when-ish-is-my-bus}
+lead to the development of the quantile dot plot. This plot, created by Kay et al. \cite{2016-when-ish-is-my-bus}
 \cite{2016-when-ish-is-my-bus} 
 represents 
 the probability distribution with dots: by using 20 dots, each would represent 1/20 probability 
@@ -169,9 +169,9 @@ frequency framing.
 Once all this visualizations are defined, we should find a way to compare them. It it true that as stated by van Wijk,
 data visualization can be considered an art and therefore subject to criteria like taste or design aesthetics.
 
-However, as noted by Pang et al. \cite[]{pang_approaches_1997}, the basic methodology to compare visualizations is to measure how accurate is the 
+However, as noted by Pang et al. \cite{pang_approaches_1997}, the basic methodology to compare visualizations is to measure how accurate is the 
 decoding of the visualization: we compare the value encoded in the visualization with the value read
-by the user. In their classical paper, Cleveland et al. \cite[]{cleveland_graphical_1984} produced a ranking of visual encodings for numerical values 
+by the user. In their classical paper, Cleveland et al. \cite{cleveland_graphical_1984} produced a ranking of visual encodings for numerical values 
 with position being the most accurate encoder. However, as noted by Brennen et al. \cite{brennen_instrument_2018}
 the complexity of a visualization could lead to better readability but higher time to read the chart. Also, 
 they noticed that those measures do not take into account the perception of the user, specially when the visualization
@@ -240,7 +240,7 @@ in terms of probability
 reading, ie how well 
 can the charts communicate the probability that the evolving target is within a certain interval 
 at a certain time point.
- For this, we will use as inspiration the experiments of Brennen et al. \cite[]{brennen_instrument_2018}
+ For this, we will use as inspiration the experiments of Brennen et al. \cite{brennen_instrument_2018}
 and will use similar metrics 
 as them: readinig error, time to answer, cognitive load and perception. The reading error will be estimated as the 
 absolute value of the difference between the read probability and the real probability. The time to answer 
@@ -285,30 +285,32 @@ type of chart.
 
 
 After gathering all the answers from the participants, we calculated the different metrics described in the previous section and 
-grouped the answers per type of chart, then we built figure \ref{figure:errors} 
-which shows 
-the distribution of the reading error per type of chart, the confidence and the perceived difficulty. 
+then built figure \ref{figure:errors} 
+which displays 
+the distribution of the reading error, the confidence and the perceived difficulty per type of chart. 
 
-Although we selected users with master level, we still did received answers with probabilities 
+It is interesting to note that although we selected users with master level, we still did received answers with probabilities 
 above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
 users and reinforces the fears discussed in the introduction. We identified 9 users from 80 whose answers could not be used because of those reasons.
 
-TALK ABOUT THE DISTRIBUTION.
-
-We can see a ranking of visualizations in figure \ref{figure:errors}, where the worst chart in terms of readability is the 
+In the reading errors chart of figure \ref{figure:errors}, the worst chart in terms of readability seems to be the 
 gradient chart and the best is the natural frequency time chart as it has a much lower reading error then the other charts. As stated before, 
 gradient charts are designed to showcase a general overview of the distribution as they represent the evolution of the
 full range of percentiles, however as shown by Cleveland et al., the "color" visual encoding is one of the 
 worst encoders and limits the readability of the chart. Box plots and confidence interval have similar reading errors: This is surprising
-as box plots display more percentiles than the confidence interval, and shows that if we had to chose between those 2 types of charts, confidence 
-interval should be chosen as it is simpler to build. On the other hand, natural 
+as box plots display more percentiles than the confidence interval. On the other hand, natural 
 frequency charts have a much lower readability error and we can see how the use of natural frequencies creates a more accurate reading experience.
 
-Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) mirror the results in the reading errors chart.
-However, we see less confidence for the gradient chart.
-also show the superior ease of use 
-of the natural frequency time chart. Users reported higher levels of confidence and 
-lower levels of perceived difficulty for the natural frequency time chart.
+Confidence and perceived difficulty charts (also shown on figure \ref{figure:errors}) mirror the results in the reading error chart.
+It also shows the superior ease of use 
+of the natural frequency time chart: Users reported higher levels of confidence and 
+lower levels of perceived difficulty for this chart. Also, although box plot and confidence interval have similar reading errors,
+user perceive the confidence interval as more difficult to read and are less confident with their readings. This can be explained with 
+the simpler nature of the confidence interval which only displays 2 percentiles and demand users to estimate the position of the other 
+percentiles only from those 2.
+
+We can perform a statistical comparison of the reading errors with the ... test. This test shows the following ranking and confirms 
+our conclusions from the visual inspection of the chart.
 
 
 \begin{figure}
@@ -337,12 +339,6 @@ lower levels of perceived difficulty for the natural frequency time chart.
   \caption{Error}
   \label{table:resultsperquestion}
   \end{table}
-
-
-Finally although we selected users with master level, we still did received answers with probabilities 
-above 1 or a probability as an interval. This could be due a lack of statistical knowledge from those 
-users and reinforces the fears discussed in the introduction. 
-We identified 9 users from 80 whose answers could not be used because of those reasons.
 
 \begin{figure}
   \centering
