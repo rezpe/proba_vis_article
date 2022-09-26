@@ -273,7 +273,16 @@ Indeed,  each individual is presented a unique type of chart from the 4 presente
 explanation on how it works and they are asked to estimate 5 probabilities at 5 different moments from the chart. 
 An example question is: 
 "What is the probability of the NO2 levels being between 150 and 200 on 
-November 21st at 22:00 ?". For each question, we are measuring the accuracy and the time it took to 
+November 21st at 22:00 ?". The 5 questions were:
+\begin{itemize}
+  \item What is the probability of the NO2 levels being between 150 and 200 on November 21st at 22:00 ?
+  \item What is the probability of the NO2 levels being between 70 and 120 on November 21st at 14:00 ?
+  \item What is the probability of the NO2 levels being above 150 on November 22nd at 09:00 ?
+  \item What is the probability of the NO2 levels being between 50 and 100 on November 21st at 11:00 ?
+  \item What is the probability of the NO2 levels being above 200 on November 21st at 20:00 ?
+\end{itemize}
+
+For each question, we are measuring the accuracy and the time it took to 
 perform each estimation. Once the individuals have estimated the probabilities, they are asked how confident they 
 felt and how difficult the task was considered.
 
@@ -309,10 +318,13 @@ user perceive the confidence interval as more difficult to read and are less con
 the simpler nature of the confidence interval which only displays 2 percentiles and demand users to estimate the position of the other 
 percentiles only from those 2.
 
-We can perform a statistical comparison of the reading errors with the Krustal-wallis test \cite{krustal} and 
+We can perform a statistical comparison of the reading errors of each chart with the Krustal-wallis test \cite{krustal} and 
 the Quade test \cite{quade_rank_1967}. Both tests have a 
 significantly low p-value (6.6e-10 and 5.6e-07) and confirms our conclusions from the visual inspection of the chart.
 
+Figure \ref{table:resultsperquestion} shows the error per question and interestingly we can see that the open interval questions (questions 3 and 5) 
+had less errors than the other questions. Question 4 error rate is high as the distribution of the target at that time was concentrated in a relatively 
+small interval and it was more difficult to estimate the probability in that area. 
 
 \begin{figure}
   \centering
@@ -347,7 +359,7 @@ significantly low p-value (6.6e-10 and 5.6e-07) and confirms our conclusions fro
   \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
 \end{figure}  
 
-Interestingly, we also recorded the time it takes to answer a question and built chart in figure \ref{figure:duration}. We 
+We also recorded the time it takes to answer each of the questions and built the chart in figure \ref{figure:duration}. We 
 can see that the answering times are similar for every chart and that this time decreases as the users answer questions.
 This must be due to the fact that they are learning to use the charts and needing less time to answer the questions.
 However, due to the higher perceived difficulty, we were expecting different answering times. Perhaps if we had 
@@ -365,6 +377,8 @@ provide better numeric readability than any previous alternative. Natural freque
 the statistic knowledge requirement and is also easier to read as it consists on counting.
 We could improve even more the ease of use with interactive elements in the chart: for example
 by applying different colors to the circles within a certain interval defined by the user interactively.
+An interactive chart with zoom capabilities would have solved that 
+issue in question 4.
 
 This type of chart is less well known that the other alternatives and an information effort should be made to motivate 
 researchers and the general public to use it.
