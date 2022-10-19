@@ -70,18 +70,18 @@ in wind energy forecasts optimized the use of this natural ressource. In air qua
 how probabilistic forecasting enables the estimation of the risk the No pollutant will surpass a certain threshold 
 and become a danger to the city inhabitants. Rouston et al. \cite{roulston_laboratory_2006} revealed how analysts 
 took better decisions from temperature forecasts when using uncertainty.
-Also, people already think in terms of temperature ranges or words which cover a range like "warm" or "cold" and naturally
+Also in this case, people already think in terms of temperature ranges or words which cover a range like "warm" or "cold" and naturally
 expect uncertainty in those forecast. Therefore as stated by Joslyn et al.
 \cite{joslyn_communicating_2010} , 
 forecasts with uncertainty match the analysts' original expectations and are more suited to 
-validate or correct invalid biases from those expectations.
+validate or correct invalid biases that may arise from those expectations.
 
 However, there is a concern that people will not be able to understand predictions that come with uncertainty.
 This fear is reinforced by cases where tools to communicate uncertainty seem to confuse the users. For example,
 Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
 trouble reading error bars. 
 As Padilla et al. \cite{padilla_uncertainty_2021} 
-points out, this could be due to the abstract nature of the probability concepts or to poor communication techniques. 
+points out, this could be due to either the abstract nature of the probability concepts or to poor communication techniques. 
 
 One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
 stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to understand and process.
@@ -89,9 +89,10 @@ For instance, Perez Cota et al. \cite{cota_importance_2014} mentions how visuali
 environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
 
 As pointed out by Weiskopf et al. \cite{weiskopf_uncertainty_2022} or Padilla et al. \cite{padilla_uncertainty_2021}, 
-there's existing research around uncertainty visualization 
-but as pointed out by Leffrang et al. \cite{leffrang_should_2021} there's few research on uncertainty on time series forecasting. Also, 
-estimating probabilities from the forecasts with uncertainty helps to estimate the risks and rewards derived from those 
+there's already existing research around uncertainty visualization 
+but as pointed out by Leffrang et al. \cite{leffrang_should_2021}, there's few research on uncertainty applied to time series 
+and specially time series forecasting. Also, 
+estimating outcome probabilities from the probabilistic forecasts helps estimating the risks and rewards derived from the analyst'
 decision. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
 
 Following this thought, we will present in section 2 the current research on uncertainty visualization. We will then
@@ -241,7 +242,7 @@ can the charts communicate the probability that the evolving target is within a 
 at a certain time point.
  For this, we will use as inspiration the experiments of Brennen et al. \cite{brennen_instrument_2018}
 and will use similar metrics 
-as them: readinig error, time to answer, cognitive load and perception. The reading error will be estimated as the 
+as them: reading error, time to answer, cognitive load and perception. The reading error will be estimated as the 
 absolute value of the difference between the read probability and the real probability. The time to answer 
 will be calculated from the moment the reader sees the chart until he submits his answer. The cognitive 
 load and the confidence are the perceived difficulty reading the charts and the perceived confidence on 
