@@ -59,41 +59,38 @@ probabilistic forecasting \sep visualization \sep natural frequency chart
 During all the stages of data analysis, users are confronted with uncertainty, which can have 
 several causes such as missing information, statistical errors or modelling approximations.
 This uncertainty also affects forecasting models whose estimations are naturally 
-subject to some degree of uncertainty as happens to any other model. One way to present this 
-uncertainty is to provide a full probability distribution as an estimation instead of a single value. 
-Probabilistic time series forecasting models are an example of this and they provide the full probability 
-distribution of the future values of a time series.
+subject to some degree of uncertainty as happens to any other model. 
 
 As stated by Padilla et al. \cite{padilla_uncertainty_2021}, it is beneficial to take into account uncertainty when making decisions as it
-helps to estimate the potential risks and rewards derived from decisions. For example, Pinson mentioned how uncertainty 
+helps to estimate the potential risks and rewards derived from decisions. Also, 
+estimating outcome probabilities from the probabilistic forecasts helps estimating the risks and rewards derived from the analyst'
+decision. For example, Pinson mentioned how uncertainty 
 in wind energy forecasts optimized the use of this natural ressource. In air quality forecasting, we showed 
 how probabilistic forecasting enables the estimation of the risk the No pollutant will surpass a certain threshold 
 and become a danger to the city inhabitants. Rouston et al. \cite{roulston_laboratory_2006} revealed how analysts 
 took better decisions from temperature forecasts when using uncertainty.
-Also in this case, people already think in terms of temperature ranges or words which cover a range like "warm" or "cold" and naturally
-expect uncertainty in those forecast. Therefore as stated by Joslyn et al.
-\cite{joslyn_communicating_2010} , 
-forecasts with uncertainty match the analysts' original expectations and are more suited to 
-validate or correct invalid biases that may arise from those expectations.
 
 However, there is a concern that people will not be able to understand predictions that come with uncertainty.
 This fear is reinforced by cases where tools to communicate uncertainty seem to confuse the users. For example,
 Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
 trouble reading error bars. 
 As Padilla et al. \cite{padilla_uncertainty_2021} 
-points out, this could be due to either the abstract nature of the probability concepts or to poor communication techniques. 
+points out, this could be due to either the abstract nature of the probability concepts or to poor communication techniques.
+
+One way to present 
+uncertainty is to provide a full probability distribution as an estimation instead of a single value. 
+Probabilistic time series forecasting models are an example of this and they provide the full probability 
+distribution of the future values of a time series.
 
 One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
-stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to understand and process.
+stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to intuitively understand and process.
 For instance, Perez Cota et al. \cite{cota_importance_2014} mentions how visualization are playing an important role in the business 
 environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
 
 As pointed out by Weiskopf et al. \cite{weiskopf_uncertainty_2022} or Padilla et al. \cite{padilla_uncertainty_2021}, 
 there's already existing research around uncertainty visualization 
-but as pointed out by Leffrang et al. \cite{leffrang_should_2021}, there's few research on uncertainty applied to time series 
-and specially time series forecasting. Also, 
-estimating outcome probabilities from the probabilistic forecasts helps estimating the risks and rewards derived from the analyst'
-decision. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
+but as pointed out by Leffrang et al. \cite{leffrang_should_2021}, there's few research on uncertainty visualization applied to time series 
+and specially time series forecasting. Therefore, we can ask ourselves how good are the different solutions derived from research in that area. 
 
 Following this thought, we will present in section 2 the current research on uncertainty visualization. We will then
 design different solutions applied to the Probabilistic time series forecasting models in section 3 and in section 4 and 5,
@@ -378,6 +375,12 @@ novel way to visualize uncertainty based on natural frequencies.
 As the probabilities might be used to take decisions,we wanted to compare them against a predefined metric: probability readability.
 We based our comparison on previous experiments on uncertainty visualizations and we use the amazon turk to find 
 users for that comparison.
+
+Also in this case, people already think in terms of temperature ranges or words which cover a range like "warm" or "cold" and naturally
+expect uncertainty in those forecast. Therefore as stated by Joslyn et al.
+\cite{joslyn_communicating_2010} , 
+forecasts with uncertainty match the analysts' original expectations and are more suited to 
+validate or correct invalid biases that may arise from those expectations.
 
 Although we could remark that the gradient chart, the box plot or the confidence interval charts are very good at 
 providing an overall picture of the uncertainty in the time series, we can see from this work that the application of natural 
