@@ -60,17 +60,18 @@ During all the stages of data analysis, users are confronted with uncertainty, w
 several causes such as missing information, statistical errors or modelling approximations.
 This uncertainty also affects forecasting models whose estimations are naturally 
 subject to some degree of uncertainty as happens to any other model. 
-
 As stated by Padilla et al. \cite{padilla_uncertainty_2021}, it is beneficial to take into account uncertainty 
-when taking decisions as it
-helps to estimate the potential risks and rewards derived from those decisions. One way to model uncertainty is through a 
-probability distribution that indicates the probability of the different outcomes of the target variable. 
-Those probablities helps estimating the risks and rewards derived from the analyst'
-decision. For example, Pinson mentioned how uncertainty 
-in wind energy forecasts optimized the use of this natural ressource. In air quality forecasting, we showed 
+when taking decisions as it help estimating the risks and rewards derived from the analyst'
+decision. For example, Rouston et al. \cite{roulston_laboratory_2006} revealed how analysts 
+took better decisions from temperature forecasts when using uncertainty. 
+
+One way to model uncertainty is through a full 
+probability distribution that indicates the probability of the different outcomes of the target variable:
+Probablistic forecasting is a forecasting model that produces such probability distribution.
+As an example, Pinson mentioned how probabilistic forecasting 
+in wind energy optimized the use of this natural ressource. In air quality forecasting, we showed 
 how probabilistic forecasting enables the estimation of the risk the No pollutant will surpass a certain threshold 
-and become a danger to the city inhabitants. Rouston et al. \cite{roulston_laboratory_2006} revealed how analysts 
-took better decisions from temperature forecasts when using uncertainty.
+and become a danger to the city inhabitants. 
 
 However, there is a concern that people will not be able to understand predictions that come with uncertainty.
 This fear is reinforced by cases where tools to communicate uncertainty seem to confuse the users. For example,
@@ -78,11 +79,6 @@ Belia et al \cite{belia_researchers_2005} showed that even leading researchers h
 trouble reading error bars. 
 As Padilla et al. \cite{padilla_uncertainty_2021} 
 points out, this could be due to either the abstract nature of the probability concepts or to poor communication techniques.
-
-One way to present 
-uncertainty is to provide a full probability distribution as an estimation instead of a single value. 
-Probabilistic time series forecasting models are an example of this and they provide the full probability 
-distribution of the future values of a time series.
 
 One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
 stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to intuitively understand and process.
