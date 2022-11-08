@@ -677,7 +677,7 @@
                        class="mark-text role-title-text"
                        role="graphics-symbol"
                        aria-roledescription="title"
-                       aria-label="Title text 'NO2 prediction levels - Box Plot Chart'"
+                       aria-label="Title text 'Visual Boundary - Box Plot Chart'"
                        pointer-events="none"
                        id="g2716">
                       <text
@@ -685,7 +685,7 @@
                          transform="translate(0,16)"
                          font-size="20px"
                          font-weight="bold"
-                         id="text2714">NO2 prediction levels - Box Plot</text>
+                         id="text2714">Visual Boundary - Box Plot</text>
                     </g>
                   </g>
                   <path
@@ -3902,7 +3902,7 @@
                      class="mark-text role-title-text"
                      role="graphics-symbol"
                      aria-roledescription="title"
-                     aria-label="Title text 'NO2 prediction levels - Dot Chart'"
+                     aria-label="Title text 'Frequency Framing - Natural Frequency Time'"
                      pointer-events="none"
                      id="g3947">
                     <text
@@ -3910,7 +3910,7 @@
                        transform="translate(0,16)"
                        font-size="20px"
                        font-weight="bold"
-                       id="text3945">NO2 prediction levels -Natural Frequency Time</text>
+                       id="text3945">Frequency Framing - Natural Frequency Time</text>
                   </g>
                 </g>
                 <path
