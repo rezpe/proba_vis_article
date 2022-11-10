@@ -378,30 +378,24 @@ before its end).
 As stated before, although the uncertainty visualization research field is full of novel visualization types, there's few 
 visualization techniques applied to uncertainty visualization applied to time series, where we need to see the evolution of uncertainty 
 in time. After reviewing the existing literature on the field, we found 3 visualization techniques we could apply for this case:
-the gradient chart, the box plot or the confidence interval charts. Also, basaed on the literature, we come up with a 
+the gradient chart, the box plot or the confidence interval charts. Also, we came up with a 
 novel way to visualize uncertainty based on natural frequencies.
-As the probabilities might be used to take decisions,we wanted to compare them against a predefined metric: probability readability.
-We based our comparison on previous experiments on uncertainty visualizations and we use the amazon turk to find 
-users for that comparison.
-
-Also in this case, people already think in terms of temperature ranges or words which cover a range like "warm" or "cold" and naturally
-expect uncertainty in those forecast. Therefore as stated by Joslyn et al.
-\cite{joslyn_communicating_2010} , 
-forecasts with uncertainty match the analysts' original expectations and are more suited to 
-validate or correct invalid biases that may arise from those expectations.
+As the probabilities are used to estimate risks and rewards from decisions, we wanted to compare them against a predefined set of 
+metrics around the user's probability reading ability.
+We based our comparison on previous experiments on uncertainty visualizations and we devised a social experiment through amazon turk to 
+evaluate the different charts.
 
 Although we could remark that the gradient chart, the box plot or the confidence interval charts are very good at 
 providing an overall picture of the uncertainty in the time series, we can see from this work that the application of natural 
 frequencies in an uncertainty chart does indeed
 provide better numeric readability than any previous alternative. Natural frequencies does indeed simplify 
 the statistic knowledge requirement and is also easier to read as it consists on counting.
-We could improve even more the ease of use with interactive elements in the chart: for example
-by applying different colors to the circles within a certain interval defined by the user interactively.
-An interactive chart with zoom capabilities would have solved that 
-issue in question 4.
 
-This type of chart is less well known that the other alternatives and an information effort should be made to motivate 
-researchers and the general public to use it.
+When using the natural frequency chart, there are a number of options like colors, the number of circles or the 
+zoom level that are static. Further research would be necessary to assess the effects of those 
+choice and check if providing interactivity to modify those would improve or worsen the user's reading ability. 
+Also, the charts were tested on desktop computer: testing and optimizing the charts for different form factors
+would also be interesting as it would have a new dimension for the research.
 
 \section{References}
 \label{sec:ref}
