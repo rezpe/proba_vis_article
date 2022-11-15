@@ -69,8 +69,9 @@ took better decisions from temperature forecasts when using uncertainty.
 One way to model uncertainty is through a full 
 probability distribution that indicates the probability of the different outcomes of the target variable:
 Probablistic forecasting is a forecasting model that produces such probability distribution.
-Pinson mentioned how probabilistic forecasting 
-in wind energy optimized the use of this natural ressource. In a previous paper on air quality forecasting, we showed 
+For example, Pinson \cite{pinson_non-parametric_2007} mentioned how probabilistic forecasting 
+in wind energy optimized the use of this natural ressource. In a previous paper on air quality forecasting 
+\cite{vasseur_comparing_2021}, we showed 
 how probabilistic forecasting enables the estimation of the risk the No pollutant will surpass a certain threshold 
 and become a danger to the city inhabitants. 
 
@@ -81,10 +82,11 @@ trouble reading error bars.
 As Padilla et al. \cite{padilla_uncertainty_2021} 
 points out, this could be due to either the abstract nature of the probability concepts or to poor communication techniques.
 
-One way to improve the communication of uncertainty is based on data visualization. Indeed, as 
+One way to improve the communication of uncertainty is based on data visualization. For instance, Perez Cota et al. 
+\cite{cota_importance_2014} mentions how visualization are playing an important role in the business 
+environment where all the analytical tools are embracing visualization to better understand large quantities of data. Indeed, as 
 stated by Islam et al. \cite{islam_overview_2019}, visualizations are easier for the human brain to intuitively understand and process.
-For instance, Perez Cota et al. \cite{cota_importance_2014} mentions how visualization are playing an important role in the business 
-environment where all the analytical tools are embracing visualization to better understand large quantities of data. 
+
 
 Indeed with a good visualization, it is easier to have a qualitative understanding of the uncertainty of the target variable. 
 However it is even more important to be able to quantitatively estimate this uncertainty as it helps estimating precisely 
@@ -98,13 +100,14 @@ there's few research on uncertainty visualization applied to time series
 and specially time series forecasting. Indeed, time series forecasting presents an additional challenge as it requires to present 
 the evolution of the uncertainty in a relatively small visualization area.
 
-Following this thought, this paper will attempt to fill this gap by designing and comparing different uncertainty techniques 
-applied to time series and will compare their reading accuracy. We will present in section 2 the current research on uncertainty 
-visualization. We will then
-design different solutions applied to the Probabilistic time series forecasting models in section 3 and in section 4 and 5,
-we will compare those methods against the question: how well can we estimate probabilities with it. 
-For that, inspired by Brennen et al. \cite{brennen_instrument_2018}, we propose a social experiment where we will compare different charts 
-in terms of probability reading. 
+Following this thought, this paper will attempt to fill this gap by applying different visualization techniques 
+to time series uncertainty and will compare those methods against the question: how well can we estimate outcome probabilities with it. 
+We will present in section 2 the current research on uncertainty 
+visualization. We will then in section 3
+present different solutions and use them to visualize the uncertainty around the predictions 
+of a Probabilistic time series forecasting model and in section 4 and 5,
+inspired by Brennen et al. \cite{brennen_instrument_2018}, we will propose a 
+social experiment where we will compare different charts in terms of probability reading. 
 
 We will use as an application ground for this comparison a probabilistic forecast of NO levels 
 in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
@@ -174,15 +177,16 @@ research on uncertainty of waiting times or Brennen et al. \cite{brennen_instrum
 approach to evaluate uncertainty visualizations.
 Leffrang et al. \cite{leffrang_should_2021} paper is the only example applied to time series forecasting uncertainty.
 
-As noted by Pang et al. \cite{pang_approaches_1997}, the basic methodology to compare visualizations is to measure how accurate is the 
-decoding of the visualization: we compare the value encoded in the visualization with the value read
+As noted by Cleveland et al. \cite{cleveland_graphical_1984}, the basic methodology to compare visualizations is to measure how accurate is the 
+decoding of the visualization: comparing the value encoded in the visualization with the value read
 by the user. In their classical paper, Cleveland et al. \cite{cleveland_graphical_1984} produced a ranking of visual encodings for numerical values 
 with position being the most accurate encoder. However, as noted by Brennen et al. \cite{brennen_instrument_2018}
 the complexity of a visualization could lead to better readability but higher time to read the chart. Also, 
 they noticed that those measures do not take into account the perception of the user, specially when the visualization
 is showing uncertainty. Therefore they developed a methodology 
 to systematically evaluate the performance of uncertainty visualizations, based on four measures: 
-cognitive load, confidence, reading error and time to read. 
+cognitive load, confidence, reading error and time to read. Those metrics will be used in section 4 to compare the different 
+visualization techniques.
 
 \section{Time Series probabilistic charts}  
 \label{sec:time_series}
@@ -193,10 +197,10 @@ uncertainty in time series.
 The first one is the confidence interval chart  which shows in a line the evolution of the 
 median of the distribution
  over time alongside 2 lines: the evolution of the 5\% and 95\% percentile of the distribution. 
- User estimates the probabilities with the distance of the points to those lines.
+ The user estimates the probabilities with the distance of the points to those lines.
 
-The box plot chart shows different percentile with “boxes”. For each point in time, a white 
-line shows the location of mean, then 2 boxes display different percentiles: the
+The box plot chart shows different percentile with “boxes”. For each point in time, a 
+line shows the location of the mean, then 2 boxes display different percentiles: the
 first rectangle (or box) lower and upper part are located 
 at the 25\% and 75\% percentile respectively, a narrower box upper and lower part shows 
 the 5\% and 95\% percentile and finally a line’s edge shows the 1\% and 99\% percentile. 
@@ -215,11 +219,12 @@ each of the methods have their own shortcomings. The confidence interval gives a
 and values outside of the interval will not be taken into account. The confidence interval is also not a good solution 
 when the distribution of the target variable has a long tail. The box plot shows only some percentiles and it can be difficult to 
 estimate the probabilities from the boxes boundaries. Finally, although the gradient displays the most information, it has been 
-proven that color is not 
-a good visual encoding and is more difficult to read than other encodings. We plan on showing those shortcomings during the comparison in our experiments.
+proven \cite{cleveland_graphical_1984} that color is not 
+a good visual encoding and is more difficult to read than other encodings.
 
-Since no solution was based on natural frequencies, we decided to apply the idea for time series and design the natural frequency time chart.
-This visualization is a novel technique based on frequency framing and has 
+Since no solution for time series was based on natural frequencies, we decided to apply this idea for time series 
+and design the natural frequency time chart.
+The application of frequency framing for time series uncertainty visualization is novel and this chart has 
 specifically been designed for probability readability. First, 
 it shows the evolution of the median of the distribution in a line. And then, for each time 
 step, 10 percentiles from 5\% to 95\% (5\%, 10\%, 15\%, ...) are represented: this way, we can estimate the percentage 
@@ -240,7 +245,7 @@ Figure \ref{figure:charts} shows a summary of the described probabilistic time s
 \section{Experimental Design}
 \label{sec:exp_design}
 
-We would like to compare the charts described in the previous section (displayed in Figure 1) 
+We compare the charts described in the previous section (displayed in Figure 1) 
 in terms of probability 
 reading, ie how well 
 can the charts communicate the probability that the evolving target is within a certain interval 
@@ -252,7 +257,7 @@ absolute value of the difference between the read probability and the real proba
 will be calculated from the moment the reader sees the chart until he submits his answer. The cognitive 
 load and the confidence are the perceived difficulty reading the charts and the perceived confidence on 
 the accuracy of 
-the answer. Both of those metrics are requested explicitly to the reader.
+the answer. The user is asked to do a self assessment on those metrics at the end of the survey.
 
 We have built a probabilistic time series forecasting model that estimates the distribution of NO 
 levels in one of the air quality stations in Madrid. Those stations measure the level of certain 
@@ -268,17 +273,15 @@ We will display this very same evolution on each of the 4 charts and we will eva
 read the probability the NO level is within a certain range at a certain hour. 
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
-This service picks randomly 100 individuals with a minimum skill set (as proposed by Brennen 
+This service picks randomly 80 individuals with a minimum skill set (as proposed by Brennen 
 et al. \cite{brennen_instrument_2018}, we select Master level participants, who are workers who 
 ''have consistently demonstrated a high degree of success in performing a wide range of HITs across a 
 large number of Requesters'').
 
-We then implemented a web site which guides the user through a presentation of the chart and the questions.
-Indeed,  each individual is presented a unique type of chart from the 4 presented above, gets a brief 
-explanation on how it works and they are asked to estimate 5 probabilities at 5 different moments from the chart. 
-An example question is: 
-"What is the probability of the NO2 levels being between 150 and 200 on 
-November 21st at 22:00 ?". The 5 questions were:
+We then directed the participants to a web site we implemented for this experiment: Each individual is presented a 
+unique type of chart from the 4 presented above with an explanation on how it works, 
+then when the user considers himself ready, he is asked to estimate 5 probabilities at 5 different moments from the chart. 
+The 5 questions are:
 \begin{itemize}
   \item What is the probability of the NO2 levels being between 150 and 200 on November 21st at 22:00 ?
   \item What is the probability of the NO2 levels being between 70 and 120 on November 21st at 14:00 ?
@@ -375,13 +378,14 @@ before its end).
 \section{Conclusions}
 \label{sec:concl}
 
-As stated before, although the uncertainty visualization research field is full of novel visualization types, there's few 
-visualization techniques applied to uncertainty visualization applied to time series, where we need to see the evolution of uncertainty 
+As stated before, although the uncertainty visualization research field is rich and presents an extensive list of visualization techniques, 
+there are few 
+visualization techniques applied to time series, where we need to see the evolution of uncertainty 
 in time. After reviewing the existing literature on the field, we found 3 visualization techniques we could apply for this case:
-the gradient chart, the box plot or the confidence interval charts. Also, we came up with a 
-novel way to visualize uncertainty based on natural frequencies.
-As the probabilities are used to estimate risks and rewards from decisions, we wanted to compare them against a predefined set of 
-metrics around the user's probability reading ability.
+the gradient chart, the box plot or the confidence interval charts. Also, we applied frequency framing 
+to design a fourth and novel way to visualize uncertainty in time series.
+As the outcome probabilities are used to calculate risks and rewards from decisions, we wanted to compare them against a predefined set of 
+metrics around the user's ability to estimate those probabilities.
 We based our comparison on previous experiments on uncertainty visualizations and we devised a social experiment through amazon turk to 
 evaluate the different charts.
 
@@ -396,6 +400,11 @@ zoom level that are static. Further research would be necessary to assess the ef
 choice and check if providing interactivity to modify those would improve or worsen the user's reading ability. 
 Also, the charts were tested on desktop computer: testing and optimizing the charts for different form factors
 would also be interesting as it would have a new dimension for the research.
+
+This type of chart should be promoted and used in real world applications as it helps decision making when 
+dealing with the uncertainty in time series data. All the code is based in the altair python library 
+\cite{vanderplas2018altair} and 
+available as open source software.
 
 \section{References}
 \label{sec:ref}
