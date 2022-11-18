@@ -63,15 +63,15 @@ several causes such as missing information, statistical errors or modelling appr
 This uncertainty also affects forecasting models whose estimations are naturally 
 subject to some degree of uncertainty as happens to any other model. 
 As stated by Padilla et al. \cite{padilla_uncertainty_2021}, it is beneficial to take into account uncertainty 
-when taking decisions as it help estimating the risks and rewards derived from the analyst'
+when taking decisions as it helps estimating the risks and rewards derived from the analyst'
 decision. For example, Rouston et al. \cite{roulston_laboratory_2006} 
 revealed how analysts 
 took better decisions from temperature forecasts when taking uncertainty into account. 
 
 One way to model uncertainty is through a full 
-probability distribution that indicates the probability of the different outcomes of the target variable:
+probability distribution indicating the probability of the different outcomes of the target variable:
 Probablistic forecasting is a forecasting model that produces such probability distribution.
-For example, Pinson \cite{pinson_non-parametric_2007} mentioned how probabilistic forecasting 
+For example, Pinson et al. \cite{pinson_non-parametric_2007} mentioned how probabilistic forecasting 
 in wind energy optimized the use of this natural ressource. In a previous paper on air quality forecasting 
 \cite{vasseur_comparing_2021}, we showed 
 how probabilistic forecasting enables the estimation of the risk the \no pollutant will surpass a certain threshold 
@@ -108,10 +108,10 @@ visualization. We will then in section 3
 present different solutions and use them to visualize the uncertainty around the predictions 
 of a Probabilistic time series forecasting model and in section 4 and 5,
 inspired by Brennen et al. \cite{brennen_instrument_2018}, we will propose a 
-social experiment where we will compare different charts in terms of probability reading. 
+social experiment where we will compare those charts in terms of probability reading. 
 
-We will use as an application ground for this comparison a probabilistic forecast of NO levels 
-in the city of Madrid. This forecast contains the full predicted distribution of NO levels over time
+We will use as an application ground for this comparison a probabilistic forecast of \no levels 
+in the city of Madrid. This forecast contains the full predicted distribution of \no levels over time
 and each chart will display this very same time series with uncertainty. 
 
 \section{State of the art}
@@ -136,10 +136,11 @@ explain that there's no one size-fits-all solution and that visualization techni
 
 According to them, one of the most typical approaches, Visual Boundaries such as isocontours and error 
 bars display value areas within a certain confidence interval. The problem with this approach is 
-that individuals may exclude as possible values outside the confidence interval, which are still 
+that individuals may exclude as possible, values outside the confidence interval, which are still 
 possible, only less probable. Also, as stated previously, Belia et al \cite{belia_researchers_2005} showed that even leading researchers had 
 trouble reading error bars as they confused 
-standard errors and confidence intervals. In addition, Joslyn and LeClerc showed that individuals could also be inclined to take uncertain 
+standard errors and confidence intervals. In addition, Joslyn and LeClerc \cite{joslyn_decisions_2013} 
+showed that individuals could also be inclined to take uncertain 
 information as deterministic, for example by considering the confidence interval for whether temperature 
 forecast as high and low temperature. 
 
@@ -223,7 +224,7 @@ estimate the probabilities from the boxes boundaries. Finally, although the grad
 shown \cite{cleveland_graphical_1984} that color is not 
 a good visual encoding and is more difficult to read than other encodings.
 
-Since no solution for time series was based on natural frequencies, we decided to apply this idea for time series 
+Since no solution for time series was based on natural frequencies, we decided to apply this idea for this case 
 and design the natural frequency time chart.
 While frequency framing has already been used to display uncertainty, the application of this technique for time series 
 uncertainty visualization is novel. First, 
@@ -258,18 +259,18 @@ load and the confidence are the perceived difficulty reading the charts and the 
 the accuracy of 
 the answer. The participant is asked to do a self assessment on those metrics at the end of the survey.
 
-We have built a probabilistic time series forecasting model that estimates the distribution of NO 
+We have built a probabilistic time series forecasting model that estimates the distribution of \no 
 levels in one of the air quality stations in Madrid. Those stations measure the level of certain 
-pollutants like O3 or NO and serve as a monitoring tool for the air quality of the city. If the pollutant 
+pollutants like O3 or \no and serve as a monitoring tool for the air quality of the city. If the pollutant 
 reach certain levels, it can be dangerous for the city inhabitants. Therefore it becomes necessary 
 for the city administration to 
 forecast the air quality levels to take decisions based on it (like limiting car traffic to reduce it beforehand).
-Our model produces an hourly forecast for the next day of one of the pollutants: NO. This forecast contains
+Our model produces an hourly forecast for the next day of one of the pollutants: \no. This forecast contains
 for each hour of the day the probability distribution of the target variable and therefore provides the evolution 
-of the probability distribution of the target variable (NO level).
+of the probability distribution of the target variable (\no level).
 
 We will display this very same evolution on each of the 4 charts and we will evaluate how well users can 
-read the probability the NO level is within a certain range at a certain hour. 
+read the probability the \no level is within a certain range at a certain hour. 
 
 For this, we request the participation of users through the Amazon Mechanical Turk website. 
 This service picks randomly 80 individuals with a minimum skill set (as proposed by Brennen 
@@ -334,10 +335,11 @@ percentiles only from those two.
 
 We can perform a statistical comparison of the reading errors of each chart with the Krustal-wallis test \cite{krustal} and 
 the Quade test \cite{quade_rank_1967}. Both tests have a 
-significantly low p-value (6.6e-10 and 5.6e-07) and confirms our conclusions from the visual inspection of the chart.
+significantly low p-value (6.6e-10 and 5.6e-07) and confirms the differences in reading errors are statistically significant.
 
-Table \ref{table:resultsperquestion} shows the error per question and interestingly we can see that the open interval questions (questions 3 and 5) 
-had less errors than the other questions. Question 4 error rate is high as the distribution of the target at that time was concentrated in a relatively 
+Table \ref{table:resultsperquestion} shows the error per question and interestingly we can see that the open interval questions (3\ts{rd} and 5\ts{th} questions) 
+had less errors than the other questions. The 4\ts{th} question's error rate is high as the distribution of the target 
+at that time was concentrated in a relatively 
 small interval and it was more difficult to estimate the probability in that area. 
 
 \begin{figure}
@@ -387,8 +389,8 @@ before its end).
 As stated before, although the uncertainty visualization research field is rich and presents an extensive list of visualization techniques, 
 there are few 
 visualization techniques applied to time series, where we need to see the evolution of uncertainty 
-in time. After reviewing the existing literature on the field, we found 3 visualization techniques we could apply for this case:
-the gradient chart, the box plot or the confidence interval charts. Also, we applied frequency framing 
+over time. After reviewing the existing literature on the field, we found 3 visualization techniques we could apply for this case:
+the gradient chart, the box plot and the confidence interval charts. Also, we applied frequency framing 
 to design a fourth and novel way to visualize uncertainty in time series.
 As the outcome probabilities are used to calculate risks and rewards from decisions, we wanted to compare them against a predefined set of 
 metrics around the user's ability to estimate those probabilities.
