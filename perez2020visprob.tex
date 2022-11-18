@@ -28,6 +28,8 @@
 
 % Macro para escribir NO$_2$
 \newcommand{\no}{NO\textsubscript{2}\xspace}
+% Macro for superscript
+\newcommand{\ts}{\textsuperscript}
 
 \begin{frontmatter}
 
@@ -72,7 +74,7 @@ Probablistic forecasting is a forecasting model that produces such probability d
 For example, Pinson \cite{pinson_non-parametric_2007} mentioned how probabilistic forecasting 
 in wind energy optimized the use of this natural ressource. In a previous paper on air quality forecasting 
 \cite{vasseur_comparing_2021}, we showed 
-how probabilistic forecasting enables the estimation of the risk the No pollutant will surpass a certain threshold 
+how probabilistic forecasting enables the estimation of the risk the \no pollutant will surpass a certain threshold 
 and become a danger to the city inhabitants. 
 
 However, there is a concern that people will not be able to understand predictions that come with uncertainty.
@@ -195,20 +197,20 @@ uncertainty in time series. Figure \ref{figure:charts} shows a summary of those 
 
 The first is the confidence interval chart  which shows in a line the evolution of the 
 median of the distribution
- over time alongside 2 lines: the evolution of the 5^th and 95^th percentile of the distribution. 
+ over time alongside 2 lines: the evolution of the 5\ts{th} and 95\ts{th} percentile of the distribution. 
  The user estimates the probabilities with the distance of the points to those lines.
 
 The box plot chart shows different percentiles with “boxes”. For each point in time, a 
 line shows the location of the mean, then 2 boxes display different percentiles: the
 first rectangle (or box) lower and upper part are located 
-at the 25^th and 75^th percentile respectively, a narrower box upper and lower part shows 
-the 5^th and 95^th percentile and finally a line’s edge shows the 1^st and 99^th percentile. 
+at the 25\ts{th} and 75\ts{th} percentile respectively, a narrower box upper and lower part shows 
+the 5\ts{th} and 95\ts{th} percentile and finally a line’s edge shows the 1\ts{st} and 99\ts{th} percentile. 
 This visual boundary representation shows more percentiles than the confidence interval and 
 is recommended when the distribution is not symmetrical and to show the edges of the distribution.
 
 The gradient chart shows the evolution of the median in a line and then displays the different percentiles
 with overlapping areas whose color corresponds to the percentile. We end up having an area with a gradient 
-delimited by 2 lines: the 1^st and 99^th percentile. This representation allows to have the
+delimited by 2 lines: the 1\ts{st} and 99\ts{th} percentile. This representation allows to have the
  full range of percentiles represented.
 
 The 3 methods described above have been used in the literature as a way to display the overall uncertainty 
@@ -226,7 +228,7 @@ and design the natural frequency time chart.
 While frequency framing has already been used to display uncertainty, the application of this technique for time series 
 uncertainty visualization is novel. First, 
 it shows the evolution of the median of the distribution in a line. And then, for each time 
-step, 10 percentiles from 5^th to 95^th (5^th, 10^th, 15^th, ...) are represented: this way, we can estimate the percentage 
+step, 10 percentiles from 5\ts{th} to 95\ts{th} (5\ts{th}, 10\ts{th}, 15\ts{th}, ...) are represented: this way, we can estimate the percentage 
 probability of being in an interval as 10 times the number of circles in that interval. 
 We have chosen 10 percentiles as it makes it easy to calculate the probability (just multiply by 10), also a higher number
 would have cramped the chart and made it difficult to view the circles as separate. 
@@ -290,8 +292,8 @@ The 5 questions are:
   \item What is the probability of the NO2 levels being above 200 on November 21st at 20:00 ?
 \end{itemize}
 
-Note that the 1^st, 2^nd and 4^th questions are requesting the probability the target variable is in a closed interval, whereas
-the 3^rd and 5^th question are requesting it for an open interval (value greater than). 
+Note that the 1\ts{st}, 2\ts{nd} and 4\ts{th} questions are requesting the probability the target variable is in a closed interval, whereas
+the 3^rd and 5\ts{th} question are requesting it for an open interval (value greater than). 
 For each question, we measure the accuracy and the time it took to 
 perform each estimation. Once the individuals have estimated the probabilities, they are asked how confident they 
 felt and how difficult the task was considered.
