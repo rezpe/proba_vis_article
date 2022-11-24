@@ -363,53 +363,16 @@ theoretically have 100 answers per type of chart.
 \section{Results}
 \label{sec:results}
 
-After gathering all the answers from the participants, we calculated the different metrics described in the previous section.
- Figure \ref{figure:errors} displays
-the distribution of the reading error, the confidence, and the perceived difficulty per type of chart.
-
-It is interesting to note that although we selected users with master level, we did receive answers with probabilities
-above 1 or a probability as an interval. This could be due to a misunderstanding of the chart's instructions or
-a lack of statistical knowledge from those
-users and reinforces the fears discussed in the introduction. We identified 9 users (3 for the natural frequency chart,
-4 for the confidence interval chart and 1 for the gradient chart)
- from 80 whose answers could not be used because of those reasons.
-
-In the reading errors chart of figure \ref{figure:errors}, the worst chart in terms of readability seems to be the
-gradient chart and the best is the natural frequency time chart as it has a much lower reading error than the other charts. As stated before,
-gradient charts are designed to showcase a general overview of the distribution as they represent the evolution of the
-full range of percentiles, however as shown by Cleveland et al., the "color" visual encoding is one of the
-worst forms of visual encoding and limits the readability of the chart. Box plots and confidence interval charts have similar reading errors: This is surprising
-as box plots display more percentiles than the confidence interval. On the other hand, natural
-frequency charts have a much lower readability error, and we can see how the use of natural frequencies creates a more accurate reading experience.
-
-Confidence and perceived difficulty charts (also shown in figure \ref{figure:errors}) mirror the results in the reading error chart.
-It also shows the superior ease of use
-of the natural frequency time chart: Users reported higher levels of confidence and
-lower levels of perceived difficulty for this chart. Also, although the box plot and confidence interval have similar reading errors,
-users perceive the confidence interval as more difficult to read and are less confident with their readings. This can be explained by
-the simpler nature of the confidence interval which only displays two percentiles and requires users to estimate the position of the other
-percentiles only from those two.
-
-We can perform a statistical comparison of the reading errors of each chart with the Krustal-wallis test \cite{krustal} and
-the Quade test \cite{quade_rank_1967}. Both tests have a
-significantly low p-value (6.6e-10 and 5.6e-07) and confirm the differences in reading errors are statistically significant.
-
-Table \ref{table:resultsperquestion} shows the error per question and interestingly we can see that the open interval questions (3\ts{rd} and 5\ts{th} questions)
-had fewer errors than the other questions. The 4\ts{th} question's error rate is high as the distribution of the target
-at that time was concentrated in a relatively
-small interval and it was more difficult to estimate the probability in that area.
-
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{comparison}
-  \caption{\label{figure:errors}Reading Error, confidence, and perceived difficulty per
-  type of visualization. The black vertical line represents the median.
-  The whiskers represent the 10 and 90 percentile and the box shows the 25 and
-  75 percentile.}
+  \caption{\label{figure:errors}Reading Error, confidence, and perceived
+    difficulty per type of visualization. The black vertical line represents the
+    median. The whiskers represent the 10 and 90 percentile and the box shows
+    the 25 and 75 percentile.}
 \end{figure}
 
-
-\begin{table}[h!]
+\begin{table}
   \centering
   \begin{tabular}{lrr}
     \toprule
@@ -421,24 +384,76 @@ small interval and it was more difficult to estimate the probability in that are
     4 &  27.0 &  26.9 \\
     5 &  16.1 &  15.6 \\
     \bottomrule
-    \end{tabular}
-  \caption{Mean and Standard Deviation per question}
+  \end{tabular}
+  \caption{Mean and standard deviation per question.}
   \label{table:resultsperquestion}
-  \end{table}
+\end{table}
 
 \begin{figure}
   \centering
-   \includegraphics[width=0.6\textwidth]{duration_evo2}
-  \caption{\label{figure:duration} Median Time it took to answer each question for each of the types of chart.}
+  \includegraphics[width=0.6\textwidth]{duration_evo2}
+  \caption{\label{figure:duration} Median time it took to answer each question
+    for each of the types of chart.}
 \end{figure}
 
-We also recorded the time it takes to answer each of the questions as shown in figure \ref{figure:duration}. We
-can see that the answering times are similar for every chart and that this time decreases as the users answer questions.
-This may be due to the fact that they are learning to use the charts and need less time to answer the questions.
-However, due to the higher perceived difficulty, we were expecting different answering times. Perhaps if we had
-increased the number of questions, we would have seen a difference in the answering time due to fatigue (or users simply quitting the test
-before its end).
+After gathering all the answers from the participants, we calculated the
+different metrics described in the previous section. Figure \ref{figure:errors}
+displays the distribution of the reading error, the confidence, and the
+perceived difficulty per type of chart.
 
+It is interesting to note that, although we selected users with Masters level,
+we did receive answers with probabilities above 1 or a probability as an
+interval. This could be due to a misunderstanding of the chart's instructions or
+a lack of statistical knowledge from those users and reinforces the fears
+discussed in the introduction. We identified 9 users (3 for the natural
+frequency chart, 4 for the confidence interval chart and 1 for the gradient
+chart) from the whole set whose answers could not be used due to these reasons.
+
+In the reading errors boxplot of figure \ref{figure:errors}, the worst chart in
+terms of readability seems to be the gradient chart and the best is the natural
+frequency time chart as it has a much lower reading error than the other charts.
+As stated before, gradient charts are designed to showcase a general overview of
+the distribution as they represent the evolution of the full range of
+percentiles, however as shown by Cleveland et al. \cite{citation needed}, the
+color visual encoding is one of the worst forms of visual encoding and
+limits the readability of the chart. Box plots and confidence interval charts
+have similar reading errors: This is surprising as box plots display more
+percentiles than the confidence interval. On the other hand, natural frequency
+charts have a much lower readability error, and we can see how the use of
+natural frequencies creates a more accurate reading experience.
+
+Confidence and perceived difficulty boxplots (also shown in figure
+\ref{figure:errors}) mirror the results in the reading error chart. It also
+shows the superior ease of use of the natural frequency time chart: users
+reported higher levels of confidence and lower levels of perceived difficulty
+for this chart. Also, although the box plot and confidence interval have similar
+reading errors, users perceive the confidence interval as more difficult to read
+and are less confident with their readings. This can be explained by the simpler
+nature of the confidence interval which only displays two percentiles and
+requires users to estimate the position of the other percentiles only from those
+two.
+
+We can perform a statistical comparison of the reading errors of each chart with
+the Kruskal-Wallis test \cite{krustal} and the Quade test
+\cite{quade_rank_1967}. Both tests have a significantly low $p$-value (6.6e-10
+and 5.6e-07) and confirm that the differences in reading errors are
+statistically significant.
+
+Table \ref{table:resultsperquestion} shows the error per question.
+Interestingly, we can see that the open interval questions (3\ts{rd} and
+5\ts{th} questions) had fewer errors than the other questions. The 4\ts{th}
+question's error rate is high as the distribution of the target for that
+question was concentrated in a relatively small interval and it was thus more
+difficult to estimate the probability in that area.
+
+We also recorded the time it takes to answer each of the questions as shown in
+figure \ref{figure:duration}. We can see that the answering times are similar
+for every chart and that this time decreases as the users answer questions. This
+may be due to the fact that they are learning to use the charts and need less
+time to answer the questions. However, due to the higher perceived difficulty,
+we were expecting different answering times. Perhaps if we had increased the
+number of questions, we would have seen a difference in the answering time due
+to fatigue (or users simply quitting the test before its end).
 
 \section{Conclusions}
 \label{sec:concl}
