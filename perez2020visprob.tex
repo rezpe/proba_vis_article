@@ -228,7 +228,7 @@ Section 4 to compare the different visualization techniques.
 \begin{figure}
   \centering
   \includegraphics[width=.9\textwidth]{charts_vector}
-  \caption{\label{figure:charts} Probabilistic Forecast of NO2 levels in Madrid
+  \caption{\label{figure:charts} Probabilistic Forecast of \no~concentrations in Madrid
     with different types of time Series Chart. Top Left: Confidence Interval.
     Top Right: Box Plot. Bottom Left: Gradient Chart. Bottom Right: Natural
     Frequency Time Chart.}
@@ -291,66 +291,77 @@ cramped the chart and made it difficult to view the circles as separate.
 \section{Experimental Design}
 \label{sec:exp_design}
 
-We compare the charts described in the previous section (displayed in Figure 1)
-in terms of probability
-reading: how well
-can the charts communicate the probability that the evolving target is within a certain interval
-at a certain time point?
- For this, we will use as inspiration the experiments of Brennen et al. \cite{brennen_instrument_2018}
-and will use similar metrics
-as them: reading error, time to answer, cognitive load, and perception. The reading error will be estimated as the
-absolute value of the difference between the read probability and the real probability. The time to answer
-will be calculated from the moment the reader sees the chart until they submit their answer. The cognitive
-load and the confidence are the perceived difficulty reading the charts and the perceived confidence in
-the accuracy of
-the answer. The participant is asked to do a self-assessment on those metrics at the end of the survey.
+We compare the charts described in the previous section and displayed in Figure
+\ref{figure:charts} in terms of probability reading ease: how well can the
+charts communicate the probability that the evolving target is within a certain
+interval at a certain time point? For this, we will use as inspiration the
+experiments of Brennen et al. \cite{brennen_instrument_2018} and will use
+similar metrics as them: reading error, time to answer, cognitive load, and
+perception.
 
-We have built a probabilistic time series forecasting model that estimates the distribution of \no
-levels in one of the air quality stations in Madrid. Those stations measure the level of certain
-pollutants like O3 or \no and serve as a monitoring tool for the air quality of the city. If the pollutant
-reaches certain levels, it can be dangerous for the city's inhabitants. Therefore, it becomes necessary
-for the city administration to
-forecast the air quality levels to take decisions based on it (like limiting car traffic to reduce it beforehand).
-Our model produces an hourly forecast for the next day of one of the pollutants: \no. This forecast contains
-for each hour of the day the probability distribution of the target variable and therefore provides the evolution
-of the probability distribution of the target variable (\no level).
+The reading error will be estimated as the absolute value of the difference
+between the read probability and the real probability. The time to answer will
+be calculated from the moment the reader sees the chart until they submit their
+answer. The cognitive load and the confidence are the perceived difficulty
+reading the charts and the perceived confidence in the accuracy of the answer.
+The participant is asked to do a self-assessment on those metrics at the end of
+the survey.
 
-We will display this very same evolution on each of the 4 charts and we will evaluate how well users can
-read the probability the \no level is within a certain range at a certain hour.
+We have built a probabilistic time series forecasting model that estimates the
+distribution of \no~concentrations in one of the air quality stations deployed
+in the city of Madrid, Spain. Those stations continuously measure the level of
+certain pollutants like O$_{3}$ or \no and serve as a monitoring tool for the
+air quality of the city. If the pollutant reaches certain levels, it can be
+dangerous for the city's inhabitants health. Therefore, it becomes necessary for
+the city administration to forecast the air quality levels to take decisions
+based on it (like limiting car traffic to reduce it beforehand). Our model
+produces an hourly forecast for the next day of one of the more dangerous
+pollutants: \no. This forecast contains, for each future hour of the day, the
+probability distribution of the target variable and therefore provides the
+evolution of the probability distribution of the target variable
+(\no~concentration).
 
-For this, we request the participation of users through the Amazon Mechanical Turk website.
-This service picks randomly 80 individuals with a minimum skill set (as proposed by Brennen
-et al. \cite{brennen_instrument_2018}, we select Master level participants, who are workers who
-''have consistently demonstrated a high degree of success in performing a wide range of Human Intelligence Tasks across a
-large number of Requesters'').
+We will display this very same evolution using each of the four types of charts
+and we will evaluate how well users can read the probability of the
+\no~concentration being within a certain range at a certain future hour.
 
-We implemented the charts in the python programming language using the Altair python library
-\cite{vanderplas2018altair} and saved them as static vector images for their use in our experiments. The source code is
-available as open-source software. We then directed the participants to a website implemented for this experiment:
-Each individual is presented a
-single type of chart from the 4 presented above with an explanation of how it works,
-then when they consider themselves ready, they are asked to estimate 5 probabilities at 5 different moments from the chart.
-The 5 questions are:
+For this, we request the participation of users through the Amazon Mechanical
+Turk website. This service randomly picks 80 individuals with a minimum skill
+set (as proposed by Brennen et al. \cite{brennen_instrument_2018}, we select
+Master level participants, who are workers who ''have consistently demonstrated
+a high degree of success in performing a wide range of human intelligence tasks
+across a large number of requesters'').
+
+We implemented the charts in the python programming language using the Altair
+python library \cite{vanderplas2018altair} and saved them as static vector
+images for their use in our experiments. The source code is available as
+open-source software \cite{citation needed}. We then directed the participants
+to a website implemented for this experiment: each individual is presented a
+single type of chart from the four described above with an explanation of how it
+works, then when they consider themselves ready, they are asked to estimate from
+the chart five probabilities at five different moments. The questions were:
 \begin{itemize}
-  \item What is the probability of the NO2 levels being between 150 and 200 on November 21st at 22:00?
-  \item What is the probability of the NO2 levels being between 70 and 120 on November 21st at 14:00?
-  \item What is the probability of the NO2 levels being above 150 on November 22nd at 09:00?
-  \item What is the probability of the NO2 levels being between 50 and 100 on November 21st at 11:00?
-  \item What is the probability of the NO2 levels being above 200 on November 21st at 20:00?
+  \item What is the probability of the \no~concentrations being between 150 and 200 on November 21st at 22:00?
+  \item What is the probability of the \no~concentrations being between 70 and 120 on November 21st at 14:00?
+  \item What is the probability of the \no~concentrations being above 150 on November 22nd at 09:00?
+  \item What is the probability of the \no~concentrations being between 50 and 100 on November 21st at 11:00?
+  \item What is the probability of the \no~concentrations being above 200 on November 21st at 20:00?
 \end{itemize}
 
-Note that the 1\ts{st}, 2\ts{nd} and 4\ts{th} questions are requesting the probability the target variable is in a closed interval, whereas
-the 3\ts{rd} and 5\ts{th} questions are requesting it for an open interval (value greater than).
-For each question, we measure the accuracy and the time it took to
-perform each estimation. Once the individuals have estimated the probabilities, they are asked how confident they
-felt and how difficult the task was considered.
+Note that the 1\ts{st}, 2\ts{nd} and 4\ts{th} questions are requesting the
+probability of the target variable being in a closed interval, whereas the
+3\ts{rd} and 5\ts{th} questions are requesting for an open interval (a value
+greater than a threshold). For each question, we measure the accuracy and the
+time it took to perform each estimation. Once the individuals have estimated the
+probabilities, they are asked how confident they felt and how difficult the task
+was considered.
 
-We are testing 80 individuals: 20 individuals per type of chart and, therefore we would theoretically have 100 answers per
-type of chart.
+In order to guarantee statistical significance, we tested our hypotheses on 80
+individuals: 20 individuals per type of chart and, therefore we would
+theoretically have 100 answers per type of chart.
 
 \section{Results}
 \label{sec:results}
-
 
 After gathering all the answers from the participants, we calculated the different metrics described in the previous section.
  Figure \ref{figure:errors} displays
