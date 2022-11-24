@@ -222,57 +222,71 @@ the performance of uncertainty visualizations, based on four measures: cognitive
 load, confidence, reading error, and time to read. Those metrics will be used in
 Section 4 to compare the different visualization techniques.
 
-\section{Time Series probabilistic charts}
+\section{Time Series Probabilistic Charts}
 \label{sec:time_series}
-
-Based on the research above, we have identified the following charts as suitable to display
-uncertainty in time series. Figure \ref{figure:charts} shows a summary of those time series charts.
-
-The first is the confidence interval chart which shows in a line the evolution of the
-median of the distribution
- over time alongside 2 lines: the evolution of the 5\ts{th} and 95\ts{th} percentile of the distribution.
- The user estimates the probabilities with the distance of the points to those lines.
-
-The box plot chart shows different percentiles with “boxes”. For each point in time, a
-line shows the location of the mean, then 2 boxes display different percentiles: the
-first rectangle (or box) lower and upper parts are located
-at the 25\ts{th} and 75\ts{th} percentile respectively, a narrower box upper and lower parts show
-the 5\ts{th} and 95\ts{th} percentile and finally a line’s edges show the 1\ts{st} and 99\ts{th} percentile.
-This visual boundary representation shows more percentiles than the confidence interval and
-is recommended when the distribution is not symmetrical and to show the edges of the distribution.
-
-The gradient chart shows the evolution of the median in a line and then displays the different percentiles
-with overlapping areas whose color corresponds to the percentile. We end up having an area with a gradient
-delimited by 2 lines: the 1\ts{st} and 99\ts{th} percentile. This representation allows having the
- full range of percentiles represented.
-
-The 3 methods described above have been used in the literature as a way to display the overall uncertainty
-of the target variable. However, they are not designed for probability readability: for example, to determine
-the probability the target variable is within a certain range or above a certain value. Also,
-each of those methods has its shortcomings. The confidence interval gives a false sense of determinism as mentioned previously
-and values outside the interval may not be taken into account. The confidence interval is also not a good solution
-when the distribution of the target variable has a long tail. The box plot shows only some percentiles and it can be difficult to
-estimate the probabilities from the boxes' boundaries. Finally, although the gradient displays the most information, it has been
-shown \cite{cleveland_graphical_1984} that color is not
-a good visual encoding and is more difficult to read than other encodings.
-
-Since no solution for time series was based on natural frequencies, we decided to apply this idea to this case
-and design the natural frequency time chart.
-While frequency framing has already been used to display uncertainty, the application of this technique for time series
-uncertainty visualization is novel. First,
-it shows the evolution of the median of the distribution in a line. And then, for each time
-step, 10 percentiles from 5\ts{th} to 95\ts{th} (5\ts{th}, 10\ts{th}, 15\ts{th}, ...) are represented: this way, we can estimate the percentage
-probability of being in an interval as 10 times the number of circles in that interval.
-We have chosen 10 percentiles as it makes it easy to calculate the probability (just multiply by 10), also a higher number
-would have cramped the chart and made it difficult to view the circles as separate.
 
 \begin{figure}
   \centering
   \includegraphics[width=.9\textwidth]{charts_vector}
-  \caption{\label{figure:charts} Probabilistic Forecast of NO2 levels in Madrid with different types of time Series Chart.
-  Top Left: Confidence Interval. Top Right: Box Plot.
-  Bottom Left: Gradient Chart. Bottom Right: Natural Frequency Time Chart. }
+  \caption{\label{figure:charts} Probabilistic Forecast of NO2 levels in Madrid
+    with different types of time Series Chart. Top Left: Confidence Interval.
+    Top Right: Box Plot. Bottom Left: Gradient Chart. Bottom Right: Natural
+    Frequency Time Chart.}
 \end{figure}
+
+Based on the aforementioned research, we have identified the following charts as
+suitable to display uncertainty in time series. Figure \ref{figure:charts} shows
+a summary of those time series charts.
+
+The first is the confidence interval chart. This shows the evolution of the
+median of the distribution over time with a central line which is flanked by
+other two lines representing the evolution of the 5\ts{th} and 95\ts{th}
+percentile of the distribution. The user estimates the probabilities with the
+distance of the points to those lines.
+
+Secondly, the box plot chart shows different percentiles with “boxes”. For each
+point in time, a line shows the location of the mean, then 2 boxes display
+different percentiles: the first rectangle (or box) lower and upper parts are
+located at the 25\ts{th} and 75\ts{th} percentile respectively, a narrower box
+upper and lower parts show the 5\ts{th} and 95\ts{th} percentile and finally a
+line’s edges show the 1\ts{st} and 99\ts{th} percentile. This visual boundary
+representation shows more percentiles than the confidence interval and is
+recommended when the distribution is not symmetrical and to show the edges of
+the distribution. An evolution of this chart in meteorology is called EPSgram or
+ensemble meteogram, and shows still more quantiles in smaller boxes on top and
+below the main one.
+
+The gradient chart shows the evolution of the median with a line and then
+displays the different percentiles with overlapping areas whose degraded color
+corresponds to the percentile. We end up having an area with a gradient
+delimited by 2 lines: the 1\ts{st} and 99\ts{th} percentile. This representation
+allows having the full range of percentiles represented.
+
+The 3 methods described above have been used in the literature as a way to
+display the overall uncertainty of the target variable. However, they are not
+designed for probability readability: they are not so useful, for example, to
+determine the probability of the target variable being within a certain range or
+above a certain value. Also, each of those methods has its shortcomings. The
+confidence interval gives a false sense of determinism as mentioned previously
+and values outside the interval may not be taken into account. The confidence
+interval is also not a good solution when the distribution of the target
+variable has a long tail. The box plot shows only some percentiles and it can be
+difficult to estimate the probabilities from the boxes' boundaries. Finally,
+although the gradient displays the most information, it has been shown that
+color is not a good visual encoding and is more difficult to read than other
+encodings \cite{cleveland_graphical_1984}.
+
+Since none of these solutions was based on natural frequencies for time series,
+we decided to apply this idea to this case and design the natural frequency time
+chart. While frequency framing has already been used to display uncertainty, the
+application of this technique for time series uncertainty visualization is
+novel. First, it shows the evolution of the median of the distribution in a
+line. And then, for each time step, 10 percentiles from 5\ts{th} to 95\ts{th}
+(5\ts{th}, 10\ts{th}, 15\ts{th}, \ldots) are represented: in this way we can estimate
+the percentage probability of being in an interval as 10 times the number of
+circles in that interval. We have chosen 10 percentiles as it makes it easy to
+calculate the probability (just multiply by 10). Also a higher number would have
+cramped the chart and made it difficult to view the circles as separate.
 
 \section{Experimental Design}
 \label{sec:exp_design}
