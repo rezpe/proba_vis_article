@@ -75,14 +75,14 @@ confronted with uncertainty, which can have several causes such as missing
 information, statistical errors, or modeling approximations, and which has
 important implications for the modelling process. This also affects time series
 forecasting models, whose regressors and estimations are naturally subject to
-some degree of uncertainty. The latest M competition (2022)\cite{makridakis_m5_2022}, 
+some degree of uncertainty. The latest M competition \cite{makridakis_m5_2022}, 
 aiming to advance the 
 theory and practice of time series forecasting has now an "uncertainty" 
 mode confirming uncertainty is becoming an important topic. In any case, 
 it is always beneficial to take into
 account uncertainty when making decisions as it helps estimate the risks and
-rewards that can be expected (Padilla et al., 2021 \cite{padilla_uncertainty_2021}).
-For example, Rouston et al. (2006) \cite{roulston_laboratory_2006} revealed how
+rewards that can be expected (Padilla et al. \cite{padilla_uncertainty_2021}).
+For example, Rouston et al. \cite{roulston_laboratory_2006} revealed how
 analysts took better decisions from temperature forecasts when taking
 uncertainty into account. 
 
@@ -90,27 +90,26 @@ One way to model uncertainty is through the use of a probability distribution
 which indicates the probability of the different outcomes of the target
 variable. In that sense, probabilistic forecasting is a set of techniques
 designed to produce forecasting models that are able to predict such probability
-distributions instead of single valued predictions. For example, Pinson et al. (2007)
+distributions instead of single valued predictions. For example, Pinson et al.
 \cite{pinson_non-parametric_2007} showed how probabilistic forecasting in wind
 energy optimized the use of this natural resource. Also regarding air
-quality forecasting, Perez-Vasseur et al. (2021) \cite{vasseur_comparing_2021} indicated 
-how probabilistic
+quality forecasting, \cite{vasseur_comparing_2021} indicated how probabilistic
 forecasting enabled the estimation of the future risk of a pollutant surpassing
 a certain regulatory threshold.
 
 However, there is a concern that the public will not be able to understand
 predictions that come with a measure of their uncertainty. This fear is
 reinforced by cases where tools to communicate uncertainty seem to confuse the
-users. For example, Belia et al. (2005) \cite{belia_researchers_2005} showed that even
-leading researchers had trouble reading error bars. As Padilla et al. (2021)
+users. For example, Belia et al \cite{belia_researchers_2005} showed that even
+leading researchers had trouble reading error bars. As Padilla et al.
 \cite{padilla_uncertainty_2021} points out, this could be due to either the
 abstract nature of the probability concepts or to poor communication techniques.
 
 One way to improve the communication of uncertainty is based on data
-visualization. For instance, Perez Cota et al. (2014) \cite{cota_importance_2014}
+visualization. For instance, Perez Cota et al. \cite{cota_importance_2014}
 mentioned how analytical tools in the business environment are embracing data
 visualizations to provide a better view of the data. Indeed, as stated by Islam
-et al. (2019) \cite{islam_overview_2019}, visualizations are easier for the human brain
+et al. \cite{islam_overview_2019}, visualizations are easier for the human brain
 to intuitively understand and process.
 
 With a good visualization, it is easier to have a qualitative understanding of
@@ -118,12 +117,12 @@ the uncertainty of the target variable. However, in some cases, it is even more
 important to be able to quantitatively estimate this uncertainty as it helps
 estimate precisely the risks and rewards stemming from the decision process.
 
-As pointed out by Weiskopf et al. (2022) \cite{weiskopf_uncertainty_2022} or Padilla et
-al. (2021) \cite{padilla_uncertainty_2021}, uncertainty visualization has motivated
+As pointed out by Weiskopf et al. \cite{weiskopf_uncertainty_2022} or Padilla et
+al. \cite{padilla_uncertainty_2021}, uncertainty visualization has motivated
 research in recent years. However, this research on uncertainty visualization
 usually consists of the classification of visualization techniques for
 uncertainty, and few works have measured the reading accuracy of those.
-Furthermore, as pointed out by Leffrang et al. (2021) \cite{leffrang_should_2021},
+Furthermore, as pointed out by Leffrang et al. \cite{leffrang_should_2021},
 there's little research on uncertainty visualization applied to time series and
 especially time series forecasting. Indeed, time series forecasting presents an
 additional challenge as it requires a presentation of the evolution of the
@@ -136,7 +135,7 @@ probabilities with it? We will present in Section 2 the current research on
 uncertainty visualization. We will then, in Section 3, present different
 solutions and use them to visualize the uncertainty around the predictions of a
 Probabilistic time series forecasting model and in Sections 4 and 5, inspired by
-Brennen et al. (2018) \cite{brennen_instrument_2018}, we will propose a social
+Brennen et al. \cite{brennen_instrument_2018}, we will propose a social
 experiment which will allow to compare those charts in terms of probability
 reading difficulty.
 
@@ -149,22 +148,22 @@ uncertainty.
 \section{State of the art}
 \label{sec:results}
 
-As noted by Joslyn et al. (2010) \cite{joslyn_communicating_2010}, the shortcomings in
+As noted by Joslyn et al. \cite{joslyn_communicating_2010}, the shortcomings in
 uncertainty visualization lead to a new surge of research in visualization
-techniques. Pang et al. (1997) \cite{pang_approaches_1997} were the first to gather
+techniques. Pang et al. \cite{pang_approaches_1997} were the first to gather
 uncertainty visualization techniques and classify them to bring order to the
 field and help practitioners choose the right visualization. However, their
 taxonomy did not explain how the visualization works nor helped create new ones.
 
 Following uncertainty visualization surveys were based on data types (Potter et
-al., 2012 \cite{potter_quantification_2012} and Brodlie et al., 2012)
-\cite{brodlie_review_2012}), sources of uncertainty (Bonneau et al., 2014
-\cite{bonneau_overview_2014}), types of uncertainty (Ristovski et al., 2014
-\cite{ristovski_uncertainty_2014}). Jena et al. (2020) \cite{jena_uncertainty_2020}
+al. \cite{potter_quantification_2012} and Brodlie et al.
+\cite{brodlie_review_2012}), sources of uncertainty (Bonneau et al.
+\cite{bonneau_overview_2014}), types of uncertainty (Ristovski et al.
+\cite{ristovski_uncertainty_2014}). Jena et al. \cite{jena_uncertainty_2020}
 classified the techniques based on the publication channel and audience and even
 made their findings available online as a public website.
 
-The most notable work is the classifications delivered by Padilla et al. (2021)
+The most notable work is the classifications delivered by Padilla et al.
 \cite{padilla_uncertainty_2021} which classifies according to the type of visual
 mapping. They provide the main types of uncertainty visualization techniques
 with their shortcomings and explain that there's no one-size-fits-all solution
@@ -176,9 +175,9 @@ boundaries such as isocontours and error bars to display value areas within a
 certain confidence interval. The problem with this approach is that individuals
 may exclude as impossible values that lie outside the confidence interval, while
 those values are still possible, only less probable. Also, as stated previously,
-Belia et al. (2005) \cite{belia_researchers_2005} showed that even leading researchers
+Belia et al \cite{belia_researchers_2005} showed that even leading researchers
 had trouble reading error bars as they confused standard errors and confidence
-intervals. In addition, Joslyn and LeClerc \cite{joslyn_decisions_2013} (2013) showed
+intervals. In addition, Joslyn and LeClerc \cite{joslyn_decisions_2013} showed
 that individuals could also be inclined to take uncertain information as
 deterministic, for example by considering the confidence interval of a
 temperature forecast as high and low temperatures.
@@ -197,17 +196,17 @@ distribution. Nevertheless, this type of encoding makes it difficult to read
 specific values.
 
 Finally, frequency framing uses natural frequencies to display probabilities. As
-noted by Gerd Gigerenzer (1996) \cite{gigerenzer_psychology_1996}, individuals prefer frequencies
+noted by Gerd Gigerenzer \cite{gigerenzer_psychology_1996}, individuals prefer frequencies
 or ratios, like 1/10, when confronted to understanding probability. This has led
 to the development of the quantile dot plot, for example. This plot, created by
-Kay et al. (2016) \cite{2016-when-ish-is-my-bus}, represents the probability
+Kay et al. \cite{2016-when-ish-is-my-bus}, represents the probability
 distribution with dots: by using 20 dots, each would represent 1/20 probability
 and they are placed according to the quantiles of the distribution. Quantile dot
 plots have proved to lead to better distribution understanding and probability
 estimate reading.
 
 However those approaches do not address specifically the problem of uncertainty
-in time series and, as pointed out by Leffrang et al. (2021)
+in time series and, as pointed out by Leffrang et al.
 \cite{leffrang_should_2021}, not much research has been applied to this field.
 Indeed, as stated previously, this is challenging as the visualizations would
 need to show the evolution of uncertainty in time in a relatively constrained
@@ -219,18 +218,18 @@ knowledge, a solution involving frequency framing is yet to be proposed.
 Furthermore, most of the existing research concentrates on providing exhaustive
 lists of uncertainty visualization techniques and does not focus on the user's
 ability to read them. There are notable exceptions like the research by Kay et
-al. (2016) \cite{2016-when-ish-is-my-bus} on the uncertainty of waiting times or
-Brennen et al. (2018) \cite{brennen_instrument_2018}, who developed an approach to
-evaluate uncertainty visualizations. Leffrang et al. (2021) \cite{leffrang_should_2021}
+al. \cite{2016-when-ish-is-my-bus} on the uncertainty of waiting times or
+Brennen et al. \cite{brennen_instrument_2018}, who developed an approach to
+evaluate uncertainty visualizations. Leffrang et al. \cite{leffrang_should_2021}
 paper is the only example applied to time series forecasting uncertainty.
 
-As noted by Cleveland et al. (1984) \cite{cleveland_graphical_1984} the basic
+As noted by Cleveland et al. \cite{cleveland_graphical_1984} the basic
 methodology to compare visualizations is to measure how accurate is the decoding
 of the information enclosed therein: comparing the value encoded in the
 visualization with the value read by the user. In their classic paper, Cleveland
-et al. (1984)\cite{cleveland_graphical_1984} produced a ranking of visual encodings
+et al. \cite{cleveland_graphical_1984} produced a ranking of visual encodings
 for numerical values with the position being the most accurate encoder. However,
-as noted by Brennen et al. (2018) \cite{brennen_instrument_2018}, more complex
+as noted by Brennen et al. \cite{brennen_instrument_2018}, more complex
 visualizations could lead to better readability but would also require longer
 times to read the chart. Also, they noted that those measures do not take into
 account the perception of the user, especially when the visualization is showing
@@ -312,7 +311,7 @@ We compare the charts described in the previous section and displayed in Figure
 \ref{figure:charts} in terms of probability reading ease: how well can the
 charts communicate the probability that the evolving target is within a certain
 interval at a certain time point? For this, we will use as inspiration the
-experiments of Brennen et al. (2018) \cite{brennen_instrument_2018} and will use
+experiments of Brennen et al. \cite{brennen_instrument_2018} and will use
 similar metrics as them: reading error, time to answer, cognitive load, and
 perception.
 
@@ -344,7 +343,7 @@ and we will evaluate how well users can read the probability of the
 
 For this, we request the participation of users through the Amazon Mechanical
 Turk website. This service randomly picks 80 individuals with a minimum skill
-set (as proposed by Brennen et al. (2018) \cite{brennen_instrument_2018}, we select
+set (as proposed by Brennen et al. \cite{brennen_instrument_2018}, we select
 Master level participants, who are workers who ''have consistently demonstrated
 a high degree of success in performing a wide range of human intelligence tasks
 across a large number of requesters'').
@@ -452,9 +451,8 @@ requires users to estimate the position of the other percentiles only from those
 two.
 
 We can perform a statistical comparison of the reading errors of each chart with
-the Kruskal-Wallis test (Kruskal et al. 1952 \cite{krustal}) 
-and the Quade test (Quade et al., 1967\cite{quade_rank_1967}). 
-Both tests have a significantly low $p$-value (6.6e-10
+the Kruskal-Wallis test \cite{krustal} and the Quade test
+\cite{quade_rank_1967}. Both tests have a significantly low $p$-value (6.6e-10
 and 5.6e-07) and confirm that the differences in reading errors are
 statistically significant.
 
