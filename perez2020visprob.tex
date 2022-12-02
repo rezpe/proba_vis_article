@@ -75,7 +75,7 @@ confronted with uncertainty, which can have several causes such as missing
 information, statistical errors, or modeling approximations, and which has
 important implications for the modelling process. This also affects time series
 forecasting models, whose regressors and estimations are naturally subject to
-some degree of uncertainty. The latest M competition (2022)\cite{makridakis_m5_2022}, 
+some degree of uncertainty. The latest M competition (Makridakis et al., 2022)\cite{makridakis_m5_2022}, 
 aiming to advance the 
 theory and practice of time series forecasting has now an "uncertainty" 
 mode confirming uncertainty is becoming an important topic. In any case, 
@@ -184,7 +184,8 @@ deterministic, for example by considering the confidence interval of a
 temperature forecast as high and low temperatures.
 
 One possible solution to this problem is the use of so-called HOPs (hypothetical
-outcome plots) \cite{padilla_uncertainty_2021}. HOPs sequentially display random
+outcome plots) (Hullman et al., 2015) \cite{hullman_hypothetical_2015}. 
+HOPs sequentially display random
 values from a distribution in an animation. However, this technique can not be
 applied to static visualizations and requires media formats like video or
 animated images: This makes the diffusion of that type of visualization more
@@ -291,7 +292,7 @@ variable has a long tail. The box plot shows only some percentiles and it can be
 difficult to estimate the probabilities from the boxes' boundaries. Finally,
 although the gradient displays the most information, it has been shown that
 color is not a good visual encoding and is more difficult to read than other
-encodings \cite{cleveland_graphical_1984}.
+encodings (Cleveland et al., 1984) \cite{cleveland_graphical_1984}.
 
 Since none of these solutions was based on natural frequencies for time series,
 we decided to apply this idea to this case and design the natural frequency time
@@ -344,15 +345,16 @@ and we will evaluate how well users can read the probability of the
 
 For this, we request the participation of users through the Amazon Mechanical
 Turk website. This service randomly picks 80 individuals with a minimum skill
-set (as proposed by Brennen et al. (2018) \cite{brennen_instrument_2018}, we select
+set (as proposed by Brennen et al., 2018) \cite{brennen_instrument_2018}, we select
 Master level participants, who are workers who ''have consistently demonstrated
 a high degree of success in performing a wide range of human intelligence tasks
 across a large number of requesters'').
 
 We implemented the charts in the python programming language using the Altair
-python library \cite{vanderplas2018altair} and saved them as static vector
+python library (Van der Plas et al., 2018) \cite{vanderplas2018altair} 
+and saved them as static vector
 images for their use in our experiments. The source code is available as
-open-source software \cite{Perez-Vasseur_Time_Series_Uncertainty_2022}. 
+open-source software. 
 We then directed the participants
 to a website implemented for this experiment: each individual is presented a
 single type of chart from the four described above with an explanation of how it
@@ -452,8 +454,8 @@ requires users to estimate the position of the other percentiles only from those
 two.
 
 We can perform a statistical comparison of the reading errors of each chart with
-the Kruskal-Wallis test (Kruskal et al. 1952 \cite{krustal}) 
-and the Quade test (Quade et al., 1967\cite{quade_rank_1967}). 
+the Kruskal-Wallis test (Kruskal et al., 1952 \cite{krustal}) 
+and the Quade test (Quade et al., 1967 \cite{quade_rank_1967}). 
 Both tests have a significantly low $p$-value (6.6e-10
 and 5.6e-07) and confirm that the differences in reading errors are
 statistically significant.
