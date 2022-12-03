@@ -8,19 +8,20 @@
 \usepackage{booktabs}
 \usepackage{makecell}
 \usepackage{lineno}
-\usepackage{amsmath}
-\usepackage{apacite} 
-\DeclareRobustCommand{\citeext}[1]{\citeauthor{#1}~\cite{#1}}
+\usepackage{amsmath} 
+\usepackage{natbib}
+\DeclareRobustCommand{\citeext}[1]{\citeauthor{#1},~\citeyear{#1}~\cite{#1}} 
+\DeclareRobustCommand{\citeextp}[1]{\citeauthor{#1}~(\citeyear{#1})~\cite{#1}} 
 
 \usepackage[nomargin,inline,draft]{fixme}
 \fxsetup{theme=color,mode=multiuser}
-\FXRegisterAuthor{j}{jla}{\color{purple}JLA}
+\FXRegisterAuthor{j}{jla}{\color{purple}JLA} 
 \FXRegisterAuthor{s}{spv}{\color{teal}SPV}
 
-\journal{-}
+\journal{-} 
 
 %% `Elsevier LaTeX' style
-\bibliographystyle{apa}
+\bibliographystyle{apalike}  
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -67,15 +68,15 @@ probabilistic forecasting \sep visualization \sep natural frequency chart
 
 %\linenumbers
 
-\section{Introduction}
+\section{Introduction} 
 \label{sec:intro}
 
 During all the stages of data analysis and modelling, practitioners are
 confronted with uncertainty, which can have several causes such as missing
-information, statistical errors, or modeling approximations, and which has
-important implications for the modelling process. This also affects time series
+information, statistical errors, or modelling approximations, and which has
+important implications for the modeling process. This also affects time series
 forecasting models, whose regressors and estimations are naturally subject to
-some degree of uncertainty. The latest M competition (Makridakis et al., 2022)\cite{makridakis_m5_2022}, 
+some degree of uncertainty. The latest M competition (\citeext{makridakis_m5_2022}), 
 aiming to advance the 
 theory and practice of time series forecasting has now an "uncertainty" 
 mode confirming uncertainty is becoming an important topic. In any case, 
