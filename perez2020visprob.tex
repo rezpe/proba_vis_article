@@ -15,9 +15,6 @@
 
 \usepackage[nomargin,inline,draft]{fixme}
 \fxsetup{theme=color,mode=multiuser}
-\FXRegisterAuthor{j}{jla}{\color{purple}JLA} 
-\FXRegisterAuthor{s}{spv}{\color{teal}SPV}
-
 \journal{-} 
 
 %% `Elsevier LaTeX' style
@@ -36,32 +33,8 @@
 
   \title{Introducing a novel visualization technique for time series uncertainty visualization}
 
-
-  \author{Sebasti\'an P\'erez Vasseur}
-  \author{Jos\'e L. Aznarte}
-  \address{Artificial Intelligence Department\\Universidad Nacional de
-    Educaci\'on a Distancia --- UNED\\c/ Juan del Rosal, 16, Madrid, Spain}
-  \ead{jlaznarte@dia.uned.es}
-
-
-\begin{abstract}
-
-There are few studies dealing with visualization techniques applied to uncertainty in time series, 
-where the evolution of uncertainty over time is relevant. After reviewing the existing
-literature on the field, we found 3 visualization techniques we could apply to
-this case: the gradient chart, the box plot, and the confidence interval charts.
-We also applied the frequency framing technique to design a fourth and novel way 
-to visualize uncertainty in time series: the natural frequency chart. We compared those charts 
-against a predefined set of metrics around the user's ability to estimate the outcome 
-probabilities at certain times (accuracy, time to read, confidence and, perceived difficulty) 
-and we devised a social experiment through Amazon Mechanical Turk to evaluate the different charts. 
-From the results of our experiments, we can conclude that the application of natural 
-frequencies does indeed provide better readability than any of the alternatives.
-
-\end{abstract}
-
 \begin{keyword}
-probabilistic forecasting \sep visualization \sep natural frequency chart
+Time series, Uncertainty, Data visualization, Probabilistic forecasting, Social Experiment
 \end{keyword}
 
 \end{frontmatter}
@@ -94,7 +67,7 @@ designed to produce forecasting models that are able to predict such probability
 distributions instead of single valued predictions. For example, 
 \citeextp{pinson_non-parametric_2007} showed how probabilistic forecasting in wind
 energy optimized the use of this natural resource. Also regarding air
-quality forecasting, \citeextp{vasseur_comparing_2021} indicated 
+quality forecasting, [Anonymous, 2021] indicated 
 how probabilistic
 forecasting enabled the estimation of the future risk of a pollutant surpassing
 a certain regulatory threshold.
@@ -355,7 +328,7 @@ We implemented the charts in the python programming language using the Altair
 python library (\citeext{vanderplas2018altair})  
 and saved them as static vector
 images for their use in our experiments. The source code is available as
-open-source software. 
+open-source software [Anonymous, 2022]. 
 We then directed the participants
 to a website implemented for this experiment: each individual is presented a
 single type of chart from the four described above with an explanation of how it
