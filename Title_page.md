@@ -6,9 +6,9 @@ Introducing a novel visualization technique for time series uncertainty visualiz
 
 Authors:
 
-Sebastien Perez-Vasseur (Corresponding author) ([sperez324@alumnos.uned.es](mailto:sperez324@alumno.uned.es)) , UNED, C. de Juan del Rosal, 14, 28040 Madrid
+Sebastien Perez-Vasseur (Corresponding author) ([sperez324@alumnos.uned.es](mailto:sperez324@alumno.uned.es)) , UNED (Universidad Nacional de Educación a Distancia), C. de Juan del Rosal, 14, 28040 Madrid
 
-Jose L.Aznarte ([jlaznarte@dia.uned.es](mailto:jlaznarte@dia.uned.es)), UNED, C. de Juan del Rosal, 14, 28040 Madrid
+Jose L.Aznarte ([jlaznarte@dia.uned.es](mailto:jlaznarte@dia.uned.es)), UNED (Universidad Nacional de Educación a Distancia), C. de Juan del Rosal, 14, 28040 Madrid
 
 Abstract:
 
